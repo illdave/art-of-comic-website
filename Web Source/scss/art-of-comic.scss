@@ -1,0 +1,72 @@
+/* Art of the Comic Book 2.0
+ * Copyright 2020 and beyond Marshall Art Studio.
+ * From David Marshall, America's Artist */
+
+
+// Dependencies -------------------------------------------------- //
+
+/* Zurb Foundation Sites: visual design framework
+https://github.com/foundation/foundation-sites */
+@import "../node_modules/foundation-sites/scss/foundation.scss";
+
+@include foundation-everything;
+
+// Global styles
+// @include foundation-global-styles;
+// @include foundation-forms;
+// @include foundation-typography; 
+// @include foundation-xy-grid-classes;
+
+// Generic components
+// @include foundation-button;
+// @include foundation-button-group;
+// @include foundation-close-button;
+// @include foundation-label;
+// @include foundation-table;
+// @include foundation-media-object;
+
+
+// @include foundation-progress-bar;
+// @include foundation-slider;
+// @include foundation-switch;
+
+// Basic components
+// @include foundation-badge;
+// @include foundation-breadcrumbs;
+// @include foundation-callout;
+// @include foundation-card;
+
+// Menu-based containers
+// @include foundation-menu;
+// @include foundation-menu-icon;
+// @include foundation-accordion-menu;
+// @include foundation-drilldown-menu;
+// @include foundation-dropdown-menu;
+
+// Helpers
+// @include foundation-flex-classes;
+// @include foundation-visibility-classes;
+
+
+/* Font Awesome: font icon library
+https://github.com/FortAwesome/Font-Awesome */
+@import "../lib/fontawesome-5.13.0/scss/fontawesome.scss";
+
+
+// Art of the Comic Book Dependencies -------------------------- //
+
+@import "variables";
+@import "fonts";
+@import "html-elements";
+@import "utility";
+@import "layout";
+@import "main-navigation";
+@import "home";
+@import "footer";
+
+
+
+.back-to-top {
+	text-align: right;
+} 
+

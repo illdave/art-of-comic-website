@@ -1,0 +1,38 @@
+/* home ------------------------------- */
+
+.home {
+
+	.classes {
+		background: white;
+		.cell {
+			padding: 1rem 3rem;
+		}
+		.grid-container {
+			padding: 0;
+		}
+	}
+	
+	.comic-art-reduction {
+		background: #999;
+	}
+	.toth-v-rude {
+		background: #ccc;
+	}
+
+	.demo-1 {
+		background: white;
+	}
+	.demo-2 {
+		background: #999;
+	}
+	
+	.promos {
+		.cell {
+			padding: 1rem 3rem;
+			text-align: center;
+			p {
+				text-align: left;
+			}	
+		}
+	}
+}

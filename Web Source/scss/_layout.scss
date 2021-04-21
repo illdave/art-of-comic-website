@@ -1,0 +1,160 @@
+.section {
+	padding: 2rem 0;
+	border-bottom: 1px solid #ccc;
+	background: #efefef;
+	&.has-no-padding {
+		padding: 0;
+	}
+	
+	&.intro {
+ 		background: white;
+	}
+}
+
+.page-header {
+	border-bottom: 1px solid #666;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	h1 {
+		margin: 0;
+	}
+	h2 {}
+	p {
+		margin-bottom: 0;
+		.author {}
+		.dateline {}
+		.updated {}
+	}
+}
+
+/* picture-figure text wrapping ------- */
+
+.picture-wrapper {
+	position: relative;
+	margin-bottom: $spacer-base-vertical;
+	border-bottom: 1px solid #ccc;
+	&.full {
+		img {
+			width: 100%;
+		}
+	}
+	
+	&.left {
+		float: left;
+		margin-right: 2rem;
+	}
+	&.right {
+		float: right;
+		margin-left: 2rem;
+	}
+	&.half {
+		width: 50%;
+	}
+	&.third {
+		width: 33%;
+	}
+	&.quarter {
+		width: 25%;
+	}
+	&.centered {
+		text-align: center;
+	}
+	img {
+		margin-bottom: .5rem;
+	}
+	p {
+		margin-bottom: .5rem;
+		font-family: $font-family-italic;
+		line-height: 1.4rem;
+	}
+	&.has-border {
+		img {
+			border: 1px solid #ccc;
+		}
+	}
+	&.has-frame {
+		img {
+			border: 1px solid #ccc;
+			background: white;
+			padding: .5rem;
+		}
+	}	
+}
+@media (max-width: 640px) { 
+	.picture-wrapper {
+		&.half, &.third, &.quarter, img {
+			width: 100%;
+		}
+	}
+}
+
+.schedule-table {
+	.location {
+		width: 24%;
+	}
+	.city {
+		width: 10%;
+	}
+	.days {
+		width: 9%;
+	}
+	.dates {
+		width: 14%;
+	}
+	.times {
+		width: 14%;
+	}
+	.tuition {
+		width: 5%;
+		text-align: right;
+	}
+	.credits {
+		width: auto;
+		text-align: center;
+	}
+	.registration {
+		width: auto;
+	}
+}
+@media (max-width: 800px) { 
+	.schedule-table {
+		.location, .city, .days, .dates, .times, .tuition, .credits, .registration  {
+			width: auto;
+		}
+	}
+}
+
+@media (max-width: 570px) {
+	.table th, 
+	.table td {
+		display: block;
+		padding: 5px;
+		text-align: auto;
+	}
+	.table td::before {
+		content: attr(data-header);
+		font-weight: bold;
+		display: inline-block;
+		width: 50%;
+		text-align: right;
+		padding-right: 1rem;
+	}
+	.table th {
+		text-align: left;
+		background-color: #eee;
+		padding: 5px;
+	}
+	.table th[scope="col"] {
+		display: none;
+	}
+	.schedule-table {
+		.location, .city, .days, .dates, .times, .tuition, .credits, .registration  {
+			text-align: inherit;
+		}
+	}
+	
+}
+
+
+
+

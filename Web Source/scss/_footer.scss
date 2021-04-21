@@ -1,0 +1,14 @@
+/* footer ----------------------------- */
+
+footer {
+	padding: 2rem 0;
+	.menu {
+		align-items: center;
+		li.header {
+			padding: 0;
+			a {
+				line-height: normal;
+			}			
+		}
+	}
+}

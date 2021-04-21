@@ -1,0 +1,287 @@
+// Art of the Comic Book variables ----------------------------- //
+
+
+/* brand colors --------------------- */
+
+$artofcomicbook-blue:						#007bff; // stolen from Bootstrap branding
+$artofcomicbook-blue-dark:					#142f56;
+$artofcomicbook-cyan:						#00a0e3; 
+$artofcomicbook-orange:						#ff4e00; // stolen from Strava branding
+$artofcomicbook-yellow:						#fdda00;
+$artofcomicbook-teal:						#0083a9;
+$artofcomicbook-green:						#6d8d23;
+
+
+/* Bootstrap colors ----------------- */
+
+$gray-darker:            					lighten(#000, 13.5%); // #222
+$gray-dark:              					lighten(#000, 20%);   // #333
+$gray:                   					lighten(#000, 33.5%); // #555
+$gray-lightest:             				lighten(#000, 45%);   // #737373
+$gray-light:             					lighten(#000, 75%);   // #bfbfbf
+$gray-light-medium:     					lighten(#000, 80%);   // #ccc
+$gray-lighter:           					lighten(#000, 93.5%); // #eee
+
+
+/* theme colors ---------------------- */
+
+$theme-color-1:								$artofcomicbook-blue; 
+$theme-color-2:								$artofcomicbook-orange;
+$theme-color-3:								$artofcomicbook-cyan;
+$theme-color-4:								$artofcomicbook-green;
+$theme-color-5:								$artofcomicbook-yellow;
+$theme-color-6:								$artofcomicbook-teal;
+$theme-color-7:								darken($theme-color-3, 5%); // dark blue 
+
+$border-default-color: 						$gray-dark;
+$border-default: 							rem(1px solid $border-default-color);
+
+$body-bg:									white;
+
+$headings-color: 							$gray-dark;
+$text-color:								$gray-darker;
+$link-color:								$theme-color-1;
+$link-hover-color:							lighten($link-color, 20%);
+$link-active-color:							darken($link-color, 20%);
+
+$white-glow: 								0 0 10px white;
+
+
+/* section intro colors -------------- */
+
+$section-intro-home: 	$theme-color-2;
+$section-intro-comics: 	$theme-color-5;
+$section-intro-about: 	lighten($theme-color-6, 60%);
+$section-intro-store: 	$theme-color-7;
+
+
+/* typography ------------------------ */
+
+$default-font-weight:						normal;
+
+$roboto-bold: 								"Roboto Bold";
+$roboto-bold-italic: 						"Roboto Bold Italic";
+$roboto-black: 								"Roboto Black";
+$roboto-black-italic: 						"Roboto Black Italic";
+$roboto-italic: 							"Roboto Italic";
+
+$proxima-nova:		 						"Proxima Nova";
+$proxima-nova-italic: 						"Proxima Nova Italic";
+$proxima-nova-bold: 						"Proxima Nova Bold";
+$proxima-nova-bold-italic: 					"Proxima Nova Bold Italic";
+
+$proxima-nova-alt-regular: 					"Proxima Nova Alt";
+$proxima-nova-alt-bold:						"Proxima Nova Alt Bold";
+$proxima-nova-alt-condensed-semibold:		"Proxima Nova Alt Condensed Semibold";
+$proxima-nova-alt-black:					"Proxima Nova Alt Black";
+
+$opensans-regular:							"Open Sans Regular";
+$opensans-bold: 							"Open Sans Bold";
+$opensans-italic:							"Open Sans Italic";
+$opensans-bold-italic:						"Open Sans Bold Italic";
+$opensans-semibold-italic:					"Open Sans Semibold";
+
+$comic-book-font: 							"Spinner Rack Regular";
+$comic-book-font-italic: 					"Spinner Rack Italic";
+$comic-book-font-bold-italic: 				"Spinner Rack Bold Italic";
+
+$font-family-sans-serif: 					$proxima-nova,"helvetica neue", helvetica, arial, sans-serif;
+$font-family-serif:       					georgia, "times new roman", times, serif;
+$font-family-monospace:      				SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:        					$font-family-sans-serif;
+$font-family-headers:						$proxima-nova-bold;
+
+$font-family-italic:						$proxima-nova-italic;
+$font-family-bold:							$proxima-nova-bold;
+$font-family-bold-italic:					$proxima-nova-bold-italic;
+
+$font-size-base:          					1rem;
+$font-size-large:         					ceil(($font-size-base * 1.25));	// ~18px
+$font-size-medium:        					ceil(($font-size-base * 1.12)); // ~16px
+$font-size-small:         					ceil(($font-size-base * 0.85)); // ~12px
+
+$h1-font-size:                				$font-size-base * 2.0;
+$h2-font-size:                				$font-size-base * 1.6;
+$h3-font-size:                				$font-size-base * 1.4;
+$h4-font-size:                				$font-size-base * 1.2;
+$h5-font-size:                				$font-size-base;
+$h6-font-size:                				$font-size-base;
+
+$line-height-base:							$font-size-base * 1.4;
+$line-height-small: 						1.2rem;
+
+$link-hover-decoration:						none;
+$text-indent-for-image:  					-9999px;
+
+
+/* z-index --------------------------- */
+
+$zindex-navbar:            					1000;
+$zindex-dropdown:          					1000;
+$zindex-popover:           					1010;
+$zindex-tooltip:           					1030;
+$zindex-navbar-fixed:      					1030;
+$zindex-modal-background: 					1040;
+$zindex-modal:             					1050;
+
+
+/* paths ----------------------------- */
+
+$image-path:								unquote('../../img');
+$assets-path:								unquote('../assets');
+$comics-image-path:							$image-path/comics;
+$banner-image-path:							$image-path/banner;
+$blog-image-path:							$image-path/blog;
+$brand-image-path:							$image-path/brand;
+$layout-image-path:							$image-path/layout;
+$store-image-path:							$image-path/store;
+$pictures-image-path:						$image-path/pictures;
+$dsm-image-path:							$image-path/dsm;
+$webcomics-image-path:						$assets-path/img/comics;
+$speaker-image-path:						$image-path/speaker;
+$logos-image-path:							$image-path/logos;
+
+
+/* spacing --------------------------- */
+
+$spacer: 									1rem;
+$spacer-base:								$spacer;
+$spacer-large:								$spacer-base * 2;
+$spacer-small:								$spacer-base/2;
+$spacer-xs:									$spacer-base/4;
+
+$spacer-base-vertical:						$spacer-base;
+$spacer-base-horizontal:					$spacer-large;
+
+$spacer-large-vertical:						$spacer-large;
+$spacer-large-horizontal:  					$spacer-large-vertical * 2;
+
+$spacer-small-vertical:    					$spacer-small;
+$spacer-small-horizontal:  					$spacer-small-vertical * 2;
+
+$margin-base:								$spacer-base;
+$margin-base-vertical:						$margin-base;
+$margin-base-horizontal:					$margin-base * 2;
+
+$margin-large-vertical:						$spacer-large;
+$margin-large-horizontal:  					$margin-large-vertical * 2;
+
+$margin-small-vertical:    					$spacer-small;
+$margin-small-horizontal:  					$margin-small-vertical * 2;
+
+$padding-base-vertical:     				$spacer-base;
+$padding-base-horizontal:   				$padding-base-vertical * 2;
+
+$padding-large-vertical:    				$spacer-large;
+$padding-large-horizontal:  				$padding-large-vertical * 2;
+
+$padding-small-vertical:    				$spacer-small;
+$padding-small-horizontal:  				$padding-small-vertical * 2;
+
+$border-radius-base:        				$spacer-small;
+$border-radius-large:       				$border-radius-base * 2;
+$border-radius-small:       				$border-radius-base/2;
+
+$section-padding:		 					$spacer-base 0;
+$section-padding-large: 					$spacer-large 0;
+
+
+/* Font Awesome icons ---------------- */
+
+$icon-link-color: 							$gray-light;
+$icon-link-color-hover: 					$theme-color-1;
+$icon-link-color-active: 					black;
+
+
+/* uncategorized --------------------- */
+
+$footer-border: 							rem(1px solid $gray-light);
+$footer-bg: 								#efefef;
+
+$hr-margin: 								$spacer/2;
+
+$jumbotron-padding: 						$spacer-large $spacer-base;
+$jumbotron-bg: 								$gray-lighter;
+$jumbotron-border-radius: 					0;
+
+$photo-circle-lg: 							20rem;
+$photo-circle-md: 							18rem;
+$photo-circle-sm: 							14rem;
+$photo-circle-xs: 							10rem;
+$circle-border-radius: 						50%;
+
+$intro-bg:  								$theme-color-2;
+	
+
+/* home ------------------------------ */
+
+$latest-work-bg: 							$gray-lighter;
+$latest-work-border: 						rem(1px solid $border-default-color);
+
+$latest-page-color: 						$text-color;
+$latest-page-bg: 							white;
+$latest-page-border: 						rem(1px solid $border-default-color);
+
+$banner-text-bg: 							transparentize(white, 0.1);
+$banner-text-border: 						rem(2px solid $gray-light);
+$banner-text-border-radius: 				$border-radius-base;
+$banner-text-border-radius-large: 			$border-radius-large;
+
+
+/* main navigation ------------------- */
+
+$main-nav-bg:								#142f56 0 0 no-repeat;
+
+$main-nav-padding-horizontal: 				$spacer-small;
+$main-nav-padding-vertical: 				$spacer-base;
+
+$main-nav-logo: 							white;
+$main-nav-logo-hover: 						#b4becc;
+$main-nav-logo-active: 						black;
+
+$navbar-brand:								white;
+$navbar-brand-hover:						$white-glow;
+$navbar-brand-active:						black;
+
+$main-nav-link: 							#b4becc;
+$main-nav-link-hover: 						white;
+$main-nav-link-active:						black;
+
+$nav-link:									rgba(white, .5);
+$nav-link-hover:							white;
+$nav-link-current:							white;
+$nav-link-active:							black;
+
+$nav-link-color:							white;
+$nav-link-bg:								$theme-color-1;
+$nav-link-border:							rem(1px solid $nav-link-bg);
+
+$nav-link-hover-color:						white;
+$nav-link-hover-bg:							$nav-link-bg;
+$nav-link-hover-border-color:				white;
+
+$nav-link-active-color:						$theme-color-1;
+$nav-link-active-bg:						darken($nav-link-bg, 45%);
+$nav-link-active-border-color:				$nav-link-active-bg;
+
+$nav-link-curr-color:						$nav-link-bg;
+$nav-link-curr-bg:							white;
+$nav-link-curr-border-color:				$nav-link-curr-bg;
+
+$navbar-icon:								white;
+$navbar-icon-hover:							$white-glow;
+$navbar-icon-active:						black;
+
+$navbar-brand-padding-vertical: 			0;
+
+$main-nav-brand-width: 						300px;
+$main-nav-brand-width-mobile: 				260px;
+$main-nav-brand-height: 					4rem;
+$main-nav-brand-margin: 					0 $spacer-base 0 6rem;
+$main-nav-brand-logo-margin: 				$main-nav-brand-margin 0;
+$main-nav-x-padding: 						.5rem;
+$main-nav-height: 							$main-nav-brand-height + 2 * $navbar-brand-padding-vertical + $main-nav-padding-vertical;		
+$main-nav-height-mobile: 					$main-nav-height - .5rem;		
+
+
+/* FOO ------------------------------- */

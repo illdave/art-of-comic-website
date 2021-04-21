@@ -1,0 +1,144 @@
+/* html elements ---------------------- */
+
+html {
+	position: relative;
+	min-height: 100%;  
+}
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	color: $text-color;
+	line-height: $line-height-base;
+}
+
+h1, h2, h3, h4, h5, h6, 
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-weight: normal;
+	color: $headings-color;
+	font-family: $font-family-headers;
+}
+
+h1, .h1 {
+	font-size: $h1-font-size;
+}
+h2, .h2 {
+	font-size: $h2-font-size;
+}
+h3, .h3 {
+	font-size: $h3-font-size;
+}
+h4, .h4 {
+	font-size: $h4-font-size;
+}
+h5, .h5 {
+	font-size: $h5-font-size;
+}
+h6, .h6 {
+	font-size: $h6-font-size;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	background-color: transparent;
+	font-weight: normal;
+	&:hover {
+		color: $link-hover-color;
+		text-decoration: $link-hover-decoration;
+	}
+	&:active {
+		color: $link-active-color;
+	}
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+	background: $gray-light-medium;
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: $hr-margin auto;
+	height: 0;
+	width: 100%;
+	max-height: 0;
+	font-size: 1px;
+	line-height: 0;
+	clear: both;
+}
+
+ul {
+}
+
+ul, ol, dl {
+    line-height: $line-height-small;
+	margin-bottom: $spacer-base;
+	font-family: $font-family-italic;
+}
+
+li, dd {
+	margin-bottom: $spacer-small;
+}
+
+dl {
+	dt {
+		font-family: $font-family-headers;
+		font-weight: normal;
+	}
+}
+
+strong, bold {
+	font-family: $font-family-headers;
+	font-weight: normal;
+}
+
+table, .table {
+	width: 100%;
+	th {
+		font-family: $font-family-headers;
+		text-align: left;
+	}
+	caption {
+		text-align: left;
+		padding-left: 0;
+		display: none;
+	}
+}
+
+blockquote {
+	font-family: $font-family-italic;
+	padding: 0 $spacer-large;
+	h4 {
+		font-family: $font-family-italic;
+		line-height: 2rem;
+	}
+}
+
+cite {
+	display: inline;
+	font-size: inherit;
+	color: inherit;
+	&:before {
+		content: "";
+	}	
+}
+
+figure {
+	img {
+		margin-bottom: $spacer-small;
+	}
+}
+
+italic, em {
+	font-family: $font-family-italic;
+	font-style: normal;
+}
+bold, strong {
+	font-family: $font-family-bold;
+	font-weight: normal;
+}
+
+
