@@ -2,7 +2,7 @@
 
 .home {
 
-	.classes {
+	.active-classes {
 		background: white;
 		.cell {
 			padding: 1rem 3rem;
@@ -10,29 +10,35 @@
 		.grid-container {
 			padding: 0;
 		}
-	}
-	
-	.comic-art-reduction {
-		background: #999;
-	}
-	.toth-v-rude {
-		background: #ccc;
-	}
-
-	.demo-1 {
-		background: white;
-	}
-	.demo-2 {
-		background: #999;
-	}
-	
-	.promos {
-		.cell {
-			padding: 1rem 3rem;
-			text-align: center;
-			p {
-				text-align: left;
-			}	
+		h2, p {
+			margin-bottom: 0;
+		}
+		p {
+		
 		}
 	}
+	
+	.blog-teasers {
+		.item {
+			padding: 0;
+			margin-bottom: 1rem;
+			-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+			page-break-inside: avoid; /* Firefox */
+			break-inside: avoid; /* IE 10+ */	
+			p {
+				margin-bottom: .5rem;
+			}
+			.btn {
+				margin-bottom: 0;
+			}
+		}
+	}	
+	.twitter {
+		.tweets {
+			position: relative;
+			width: 100%;
+			height: auto;
+			overflow-y: auto;
+		}
+	}	
 }

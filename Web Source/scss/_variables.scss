@@ -1,12 +1,14 @@
 // Art of the Comic Book variables ----------------------------- //
 
+@use "sass:list";
+@use "sass:math";
 
 /* brand colors --------------------- */
 
 $artofcomicbook-blue:						#007bff; // stolen from Bootstrap branding
-$artofcomicbook-blue-dark:					#142f56;
+$artofcomicbook-blue-dark:					#38568b; // picked up from 2012 site
 $artofcomicbook-cyan:						#00a0e3; 
-$artofcomicbook-orange:						#ff4e00; // stolen from Strava branding
+$artofcomicbook-orange:						#df831e; // picked up from 2012 site
 $artofcomicbook-yellow:						#fdda00;
 $artofcomicbook-teal:						#0083a9;
 $artofcomicbook-green:						#6d8d23;
@@ -31,7 +33,7 @@ $theme-color-3:								$artofcomicbook-cyan;
 $theme-color-4:								$artofcomicbook-green;
 $theme-color-5:								$artofcomicbook-yellow;
 $theme-color-6:								$artofcomicbook-teal;
-$theme-color-7:								darken($theme-color-3, 5%); // dark blue 
+$theme-color-7:								$artofcomicbook-blue-dark;
 
 $border-default-color: 						$gray-dark;
 $border-default: 							rem(1px solid $border-default-color);
@@ -46,13 +48,20 @@ $link-active-color:							darken($link-color, 20%);
 
 $white-glow: 								0 0 10px white;
 
+$border-default-color: 						$gray-light;
+$border-default: 							rem(1px solid $border-default-color);
+$border-light: 								rem(1px solid $gray-light-medium);
+
+$table-border-color:						$border-default-color;
+
+
 
 /* section intro colors -------------- */
 
-$section-intro-home: 	$theme-color-2;
-$section-intro-comics: 	$theme-color-5;
-$section-intro-about: 	lighten($theme-color-6, 60%);
-$section-intro-store: 	$theme-color-7;
+$section-intro-default: 					$theme-color-7;
+$section-intro-home: 						$theme-color-2;
+$section-intro-comics: 						$theme-color-5;
+$section-intro-about: 						lighten($theme-color-6, 60%);
 
 
 /* typography ------------------------ */
@@ -137,7 +146,6 @@ $layout-image-path:							$image-path/layout;
 $store-image-path:							$image-path/store;
 $pictures-image-path:						$image-path/pictures;
 $dsm-image-path:							$image-path/dsm;
-$webcomics-image-path:						$assets-path/img/comics;
 $speaker-image-path:						$image-path/speaker;
 $logos-image-path:							$image-path/logos;
 
@@ -147,8 +155,8 @@ $logos-image-path:							$image-path/logos;
 $spacer: 									1rem;
 $spacer-base:								$spacer;
 $spacer-large:								$spacer-base * 2;
-$spacer-small:								$spacer-base/2;
-$spacer-xs:									$spacer-base/4;
+$spacer-small:								$spacer-base*0.5;
+$spacer-xs:									$spacer-base*0.25;
 
 $spacer-base-vertical:						$spacer-base;
 $spacer-base-horizontal:					$spacer-large;
@@ -180,7 +188,7 @@ $padding-small-horizontal:  				$padding-small-vertical * 2;
 
 $border-radius-base:        				$spacer-small;
 $border-radius-large:       				$border-radius-base * 2;
-$border-radius-small:       				$border-radius-base/2;
+$border-radius-small:       				$border-radius-base*0.5;
 
 $section-padding:		 					$spacer-base 0;
 $section-padding-large: 					$spacer-large 0;
@@ -192,13 +200,20 @@ $icon-link-color: 							$gray-light;
 $icon-link-color-hover: 					$theme-color-1;
 $icon-link-color-active: 					black;
 
+$navbar-toggler-icon:   					quote($fa-var-bars);
+
+$icon-back-to-top:   						quote($fa-var-chevron-up);
+$icon-learn-more:   						quote($fa-var-caret-right);
+$icon-facebook:   							quote($fa-var-facebook);
+$icon-twitter:   							quote($fa-var-twitter);
+$icon-github:   							quote($fa-var-code-branch);
+$icon-linkedin:   							quote($fa-var-linkedin);
+$icon-email:   								quote($fa-var-at);
+
 
 /* uncategorized --------------------- */
 
-$footer-border: 							rem(1px solid $gray-light);
-$footer-bg: 								#efefef;
-
-$hr-margin: 								$spacer/2;
+$hr-margin: 								$spacer*0.5;
 
 $jumbotron-padding: 						$spacer-large $spacer-base;
 $jumbotron-bg: 								$gray-lighter;
@@ -227,6 +242,15 @@ $banner-text-border: 						rem(2px solid $gray-light);
 $banner-text-border-radius: 				$border-radius-base;
 $banner-text-border-radius-large: 			$border-radius-large;
 
+/* footer ---------------------------- */
+
+$footer-border: 							rem(1px solid $gray-light);
+$footer-bg: 								$gray-lighter;
+$footer-color: 								$gray;
+$footer-font-size: 							$font-size-small;
+$footer-padding: 							$spacer-base-vertical $spacer-base-horizontal;
+
+
 
 /* main navigation ------------------- */
 
@@ -252,20 +276,20 @@ $nav-link-hover:							white;
 $nav-link-current:							white;
 $nav-link-active:							black;
 
-$nav-link-color:							white;
-$nav-link-bg:								$theme-color-1;
+$nav-link-color:							$link-color;
+$nav-link-bg:								$white;
 $nav-link-border:							rem(1px solid $nav-link-bg);
 
-$nav-link-hover-color:						white;
+$nav-link-hover-color:						$theme-color-2;
 $nav-link-hover-bg:							$nav-link-bg;
-$nav-link-hover-border-color:				white;
+$nav-link-hover-border-color:				$nav-link-border;
 
-$nav-link-active-color:						$theme-color-1;
-$nav-link-active-bg:						darken($nav-link-bg, 45%);
+$nav-link-active-color:						$nav-link-hover-color;
+$nav-link-active-bg:						darken($nav-link-active-color, 25%);
 $nav-link-active-border-color:				$nav-link-active-bg;
 
-$nav-link-curr-color:						$nav-link-bg;
-$nav-link-curr-bg:							white;
+$nav-link-curr-color:						$white;
+$nav-link-curr-bg:							$theme-color-7;
 $nav-link-curr-border-color:				$nav-link-curr-bg;
 
 $navbar-icon:								white;
@@ -274,14 +298,17 @@ $navbar-icon-active:						black;
 
 $navbar-brand-padding-vertical: 			0;
 
-$main-nav-brand-width: 						300px;
+$main-nav-brand-width: 						30rem;
 $main-nav-brand-width-mobile: 				260px;
 $main-nav-brand-height: 					4rem;
 $main-nav-brand-margin: 					0 $spacer-base 0 6rem;
 $main-nav-brand-logo-margin: 				$main-nav-brand-margin 0;
-$main-nav-x-padding: 						.5rem;
-$main-nav-height: 							$main-nav-brand-height + 2 * $navbar-brand-padding-vertical + $main-nav-padding-vertical;		
-$main-nav-height-mobile: 					$main-nav-height - .5rem;		
+$main-nav-brand-slogan-height: 				1rem;
+$main-nav-brand-slogan-margin: 				.5rem;
+
+$main-nav-padding: 							.5rem;
+$main-nav-height: 							$main-nav-brand-height + 2 * $main-nav-padding + $main-nav-brand-slogan-height + $main-nav-brand-slogan-margin;		
+$main-nav-height-mobile: 					$main-nav-height - 2.5rem;	
 
 
 /* FOO ------------------------------- */

@@ -3,8 +3,10 @@
 html {
 	position: relative;
 	min-height: 100%;  
+	scroll-padding-top: $main-nav-height;
 }
 body {
+	padding-top: $main-nav-height; 
 	font-family: $font-family-base;
 	font-size: $font-size-base;
 	color: $text-color;

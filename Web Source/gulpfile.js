@@ -12,18 +12,11 @@ const newer = require("gulp-newer");
 const plumber = require("gulp-plumber");
 const postcss = require("gulp-postcss");
 const rename = require("gulp-rename");
-const sass = require("gulp-sass");
+const { src, dest } = require("gulp");
+const concat = require("gulp-concat");
+const sass = require("gulp-sass")(require("sass"));
+const sourcemaps = require("gulp-sourcemaps");
 
-
-// test tasks
-gulp.task('hello', function(done) {
-	console.log('Hello Zell');
-	done();
-});
-gulp.task('neo-warning', function(done) {
-	console.log('The Matrix has you, Neo');
-	done();
-});
 
 // browser sync
 function browserSync(done) {
@@ -68,12 +61,18 @@ function images() {
 // CSS 
 function css() {
 	return gulp
-		.src("scss/**/*.scss")
-		.pipe(plumber())
-		.pipe(sass({ outputStyle: 'expanded'}))
-		.pipe(gulp.dest("../Web Root/assets/themes/art-of-comic/"))
-		.pipe(browsersync.stream());
+	.src("scss/**/*.scss")
+	.pipe(sourcemaps.init()) 
+	
+	.pipe(plumber())
+	.pipe(sass({ outputStyle: 'expanded'}))
+	
+	.pipe(sourcemaps.write())
+	
+	.pipe(gulp.dest("../Web Root/assets/themes/art-of-comic/"))
+	.pipe(browsersync.stream());
 }
+
 
 // watch files
 function watchFiles() {
@@ -91,8 +90,9 @@ function watchFiles() {
 }
 
 // define complex tasks
-const build = gulp.series(gulp.parallel(css, images));
 const watch = gulp.parallel(watchFiles, browserSync);
+const build = gulp.series(gulp.parallel(css, images));
+
 
 // export tasks
 exports.images = images;

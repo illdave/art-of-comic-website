@@ -1,0 +1,64 @@
+/* responsive ------------------------- */
+
+@media (max-width: 360px) {
+	body {
+		padding-top: $main-nav-height-mobile; 
+	}
+	.section {
+		padding: 1rem 0;
+	}
+	.main-navigation {
+		.navbar {
+			.navbar-brand-stack {
+				.navbar-brand {
+					width: 15rem;
+					height: 3rem;			
+					margin-right: 0;
+					background-position: center center;
+				}
+				.slogan {
+					display: none;
+				}
+			}
+			.navbar-nav li {
+				font-size: 90%;
+			}			
+		}
+	}
+}
+
+@media (min-width: 361px) and (max-width: 576px) {
+	body {
+		padding-top: $main-nav-height-mobile; 
+	}
+	.section {
+		padding: 1rem 0;
+	}	
+	.main-navigation {
+		.navbar {
+			.navbar-brand-stack {
+				padding: 0;
+				justify-content: center;
+				.navbar-brand {
+					width: 20rem;
+					height: 3rem;			
+					margin-right: 0;
+					background-position: center center;
+				}
+				.slogan {
+					display: none;
+				}
+			}	
+		}
+	}
+}
+
+@media (max-width: 768.98px) { }
+
+@media (max-width: 991px) {
+	.newspaper-columns {
+		column-count: 1;
+		column-gap: 0;
+		column-rule: 0;
+	}	
+}
