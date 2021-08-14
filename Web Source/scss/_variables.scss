@@ -226,6 +226,9 @@ $photo-circle-xs: 							10rem;
 $circle-border-radius: 						50%;
 
 $intro-bg:  								$theme-color-2;
+
+$box-shadow-boxed: 							0 0.5rem 1.5rem 1rem rgb(0 0 0 / 30%);
+$box-shadow-top: 							0 4rem 4rem -3rem rgb(0 0 0 / 80%) inset;
 	
 
 /* home ------------------------------ */
@@ -250,6 +253,18 @@ $footer-color: 								$gray;
 $footer-font-size: 							$font-size-small;
 $footer-padding: 							$spacer-base-vertical $spacer-base-horizontal;
 
+
+/* artboard -------------------------- */
+
+$artboard-border-color: 					lighten($artofcomicbook-cyan, 45%);
+$artboard-border: 							rem(1px solid $artboard-border-color);
+$artboard-spacer: 							5rem;
+$artboard-background: 						$white;
+$artboard-padding: 							4rem 4rem 2rem;
+
+$artboard-box-shadow: 						$box-shadow-boxed;
+$artboard-inner-shadow: 					inset 0 0 2rem $gray-light-medium;
+$artboard-combo-shadow: 					$box-shadow-boxed, $artboard-inner-shadow;
 
 
 /* main navigation ------------------- */

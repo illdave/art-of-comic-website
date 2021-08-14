@@ -99,14 +99,42 @@ strong, bold {
 
 table, .table {
 	width: 100%;
+	color: $text-color;
+	th, td {
+		border-color: $table-border-color;
+		&:first-child {
+			padding-left: 0;
+		}
+	}
 	th {
 		font-family: $font-family-headers;
-		text-align: left;
+	}
+	&.table-no-padding, 
+	&.no-padding  {
+		th, td {
+			padding: 0;
+		}
 	}
 	caption {
-		text-align: left;
-		padding-left: 0;
 		display: none;
+	}
+	> :not(:last-child) > :last-child > * {
+		border-bottom-color: $table-border-color;
+	}
+	thead {
+		th {
+			border-bottom-width: rem(2px);
+		}
+	}
+	tfoot {
+		th, td {
+			border-bottom: 0;
+			padding: 0;
+			p {
+				margin-bottom: 0;
+			}
+		}
+		
 	}
 }
 

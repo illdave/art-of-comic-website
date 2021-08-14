@@ -59,7 +59,6 @@
 		margin-right: .5rem;
 	}
 }
-
 .back-to-top {
 	padding: .5rem 0;
 	text-align: right;
@@ -93,7 +92,6 @@
 		opacity: 1;
 	}
 }
-
 .list-inline {
 	li {
 		display: inline-block;
@@ -109,12 +107,10 @@
 		}
 	}
 }
-
 .text, .item {
 	padding: 1rem;
 	margin-bottom: 1rem;
 }
-
 .truncated {
 	position: relative;
 	--lh: 1.4rem;
@@ -138,7 +134,6 @@
 	  background: white;
 	}		
 }
-
 @mixin truncated-text {
 	position: relative;
 	--lh: 1.4rem;
@@ -165,22 +160,133 @@
 
 .newspaper-columns {
 	column-count: 2;
-	column-gap: 5%;
+	column-gap: 3rem;
 	column-rule: $border-light;
 	margin-bottom: 2rem;
 }
-
-blockquote {
-	padding: 0;
-	margin: 0;
-	width: 100%;
-	border: 1px solid blue;
+.newspaper-headline {
+	border-bottom: $border-default;
+	padding-bottom: .5rem;
+	margin-bottom: 1rem;
 }
 
 .boxed {
 	background: $white;
-	border: 1px solid #ccc;
-	padding: 1rem;
+	padding: 2rem;
+}
+
+.has-box-shadow {
+	box-shadow: $box-shadow-boxed;
+}
+
+/* art board -------------------------- */
+.artboard {
+	position: relative;
+	border: 0;
+	background: $artboard-background;
+	padding: $artboard-padding;
+	box-shadow: $artboard-combo-shadow;
+	margin-bottom: 2rem;
+	.rule {
+		position: absolute;
+		border: $artboard-border;
+	}
+	.top, .bottom, .left, .right {
+		position: absolute;
+		padding: 0;
+	}
+	.top, .bottom {
+		width: 100%;
+		height: $artboard-spacer;
+		left: 0;
+		.stamp, .book, .issue, .pg, .ticks {
+			position: absolute;
+			top: 0;
+			background: transparent no-repeat 0 1rem;
+			height: 50%;
+		}
+		.stamp {
+			background-image: url("#{$layout-image-path}/artboard-stamp.png");
+			left: 7rem;
+			width: 133px;
+		}
+		.book {
+			background-image: url("#{$layout-image-path}/artboard-book.png");
+			left: 3rem;
+			width: 50px;
+		}
+		.issue {
+			background-image: url("#{$layout-image-path}/artboard-issue.png");
+			left: 36%;
+			width: 60px;
+		}
+		.pg {
+			background-image: url("#{$layout-image-path}/artboard-pg.png");
+			left: 68%;
+			width: 40px;
+		}
+		.ticks {
+			background-image: url("#{$layout-image-path}/artboard-ticks.png");
+			width: 30px;
+			&.left {
+				left: 33%;
+			}
+			&.center {
+				left: 48%;
+			}
+			&.right {
+				right: 33%;
+			}
+		}		
+		.rule {
+			left: 2%;
+			top: 50%;
+			width: 96%;
+		}
+	}
+	.left, .right {
+		width: $artboard-spacer;
+		height: 100%;
+		top: 0;
+		.rule {
+			top: 4%;
+			left: 50%;
+			height: 92%;
+		}
+	}
+	.top {
+		top: 0;
+	}
+	.bottom {
+		bottom: 0;
+		.stamp, .book, .issue, .pg, .ticks {
+			bottom: 0;
+			top: auto;
+		}
+	}
+	.left {
+		left: 0;
+	}
+	.right {
+		right: 0;
+	}
+	
+	&.newspaper-columns {
+		padding: 4rem;
+		.text {
+			padding: 0;
+		}
+	}
+}
+
+.blurb {
+	background: #ccc;
+	.text {
+		padding: 2rem;
+		p {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .learn-more .fas {
@@ -207,7 +313,6 @@ blockquote {
 		}
 	}
 }
-
 
 .twitter {
 	.tweets {
