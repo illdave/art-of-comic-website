@@ -260,7 +260,7 @@ $artboard-border-color: 					lighten($artofcomicbook-cyan, 45%);
 $artboard-border: 							rem(1px solid $artboard-border-color);
 $artboard-spacer: 							5rem;
 $artboard-background: 						$white;
-$artboard-padding: 							4rem 4rem 2rem;
+$artboard-padding: 							4rem;
 
 $artboard-box-shadow: 						$box-shadow-boxed;
 $artboard-inner-shadow: 					inset 0 0 2rem $gray-light-medium;

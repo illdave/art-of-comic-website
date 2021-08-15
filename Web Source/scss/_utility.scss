@@ -158,6 +158,12 @@
 	}		
 }
 
+@mixin unbroken {
+	-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+	page-break-inside: avoid; /* Firefox */
+	break-inside: avoid; /* IE 10+ */	
+}
+
 .newspaper-columns {
 	column-count: 2;
 	column-gap: 3rem;
@@ -165,9 +171,20 @@
 	margin-bottom: 2rem;
 }
 .newspaper-headline {
-	border-bottom: $border-default;
-	padding-bottom: .5rem;
-	margin-bottom: 1rem;
+	border-top: $border-default;
+	padding-top: 1rem;
+	margin: .5rem 0;
+	&:first-child, &:first-of-type {
+  		border-top: 0;
+  		padding-top: 0;
+  		margin-top: 0;
+	}
+}
+
+@mixin newspaper-headline {
+	border-top: $border-default;
+	padding-top: 1rem;
+	margin: .5rem 0;
 }
 
 .boxed {
@@ -178,6 +195,91 @@
 .has-box-shadow {
 	box-shadow: $box-shadow-boxed;
 }
+
+.post-it {
+	background-color: pink;
+	box-shadow: $box-shadow-boxed;
+	
+	&.pink {
+		background-color: #fbacc5;
+	}
+	&.yellow {
+		background-color: #f9efaa;
+	}
+	&.blue {
+		background-color: #bee5e4;
+	}
+	&.green {
+		background-color: #dee9a4;
+	}
+	&.orange {
+		background-color: #fddbb8;
+	}
+	
+	&.sticky-notes-pink {
+		background-color: #ef65a3;
+	}
+	&.sticky-notes-orange {
+		background-color: #ffad64;
+	}
+	&.sticky-notes-yellow {
+		background-color: #fee63b;
+	}
+	&.sticky-notes-green {
+		background-color: #d2de40;
+	}
+	&.sticky-notes-teal {
+		background-color: #37d2d8;
+	}
+
+	&.jaipur-blue {
+		background-color: #1dace6;
+	}
+	&.jaipur-teal {
+		background-color: #35a8a1;
+	}
+	&.jaipur-orange {
+		background-color: #ee5f35;
+	}
+	&.jaipur-pink {
+		background-color: #f37d93;
+	}
+	&.jaipur-yellow {
+		background-color: #ffd938;
+	}
+
+	&.neon-pink {
+		background-color: #ef65a3;
+	}
+	&.neon-orange {
+		background-color: #ffad64;
+	}
+	&.neon-yellow {
+		background-color: #fee63b;
+	}
+	&.neon-green {
+		background-color: #d2de40;
+	}
+	&.neon-teal {
+		background-color: #37d2d8;
+	}
+
+
+
+	dl {
+		dt {
+			font-size: $h4-font-size;
+			margin-bottom: .5rem;
+		}
+	}
+}
+
+.side-nav {
+	&.sticky-top {
+		top: $main-nav-height;
+	}
+}
+
 
 /* art board -------------------------- */
 .artboard {
@@ -249,9 +351,9 @@
 		height: 100%;
 		top: 0;
 		.rule {
-			top: 4%;
+			top: 0;
 			left: 50%;
-			height: 92%;
+			height: 100%;
 		}
 	}
 	.top {
@@ -270,12 +372,22 @@
 	.right {
 		right: 0;
 	}
+		
+	.newspaper-columns {
+		column-gap: 2rem;
+		column-rule: none;
+		margin-bottom: 0;
 	
-	&.newspaper-columns {
-		padding: 4rem;
 		.text {
 			padding: 0;
 		}
+		.item {
+			padding: 0;
+			@include unbroken;
+		}
+	}
+	.newspaper-headline {
+		margin-bottom: 0;
 	}
 }
 
