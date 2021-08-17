@@ -20,6 +20,7 @@ $gray-darker:            					lighten(#000, 13.5%); // #222
 $gray-dark:              					lighten(#000, 20%);   // #333
 $gray:                   					lighten(#000, 33.5%); // #555
 $gray-lightest:             				lighten(#000, 45%);   // #737373
+$gray-medium:             					lighten(#000, 55%);   // #bfbfbf
 $gray-light:             					lighten(#000, 75%);   // #bfbfbf
 $gray-light-medium:     					lighten(#000, 80%);   // #ccc
 $gray-lighter:           					lighten(#000, 93.5%); // #eee
@@ -45,6 +46,9 @@ $text-color:								$gray-darker;
 $link-color:								$theme-color-1;
 $link-hover-color:							lighten($link-color, 20%);
 $link-active-color:							darken($link-color, 20%);
+
+$h2-font-color: 							$theme-color-7;
+$h3-font-color: 							$theme-color-2;
 
 $white-glow: 								0 0 10px white;
 
@@ -225,11 +229,22 @@ $photo-circle-sm: 							14rem;
 $photo-circle-xs: 							10rem;
 $circle-border-radius: 						50%;
 
+$caption-bg: 								transparent;
+$caption-color: 							$gray-medium;
+$caption-headings-color: 					$text-color;
+$caption-padding: 							$spacer-small;
+$caption-line-height: 						$font-size-base;
+
+$picture-caption-bg: 						$caption-bg;
+$picture-caption-color: 					$caption-color;
+$picture-caption-link: 						$link-color;
+$picture-caption-strong:					$theme-color-5;
+
 $intro-bg:  								$theme-color-2;
 
 $box-shadow-boxed: 							0 0.5rem 1.5rem 1rem rgb(0 0 0 / 30%);
 $box-shadow-top: 							0 4rem 4rem -3rem rgb(0 0 0 / 80%) inset;
-	
+$box-shadow-white-bg: 						0 0.5rem 1.25rem 0 rgb(0 0 0 / 20%);
 
 /* home ------------------------------ */
 

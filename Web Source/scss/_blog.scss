@@ -1,0 +1,152 @@
+/* blog ------------------------------ */
+
+.blog {
+
+	.article-intro {
+		font-size: $font-size-large;
+		line-height: $font-size-large;
+		font-family: $font-family-italic;
+		margin-bottom: $spacer-base;
+	}
+	
+	article {
+		margin-bottom: $spacer-base;
+		position: relative;
+		&:last-child {
+			border-bottom: 0;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+    
+		a {
+			&.overlay {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				z-index: 2;
+				top: 0;
+				left: 0;
+			}
+		}
+		
+		.picture-wrapper {
+			&.left {
+				margin-right: 1.5rem;
+			}
+		}
+		
+		figure {
+			margin-bottom: .75rem;
+			border: 0;
+			padding: 0;
+			position: relative;
+			-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+			page-break-inside: avoid; /* Firefox */
+			break-inside: avoid; /* IE 10+ */			
+			
+			a {
+				img {
+					border: $border-default;
+				}
+				&:hover {
+					img {
+						border-color: $link-color;
+					}
+				}
+			}
+			p {
+				position: static;
+				padding: 0;
+				margin-bottom: 0;
+				color: $picture-caption-color;
+				a {
+					color: $picture-caption-link;
+				}
+				strong {
+					color: $picture-caption-strong;
+				}
+			}
+			figcaption {
+				position: relative;
+				.caption-credit {
+					display: flex;
+					-js-display: flex;
+					flex-flow: row wrap;
+					align-items: center;
+					justify-content: flex-end;
+					position: absolute;
+					top: 3px;
+					left: -22px;
+					transform-origin: left top;
+					transform: rotate(-90deg);
+					font-size: 12px;
+					text-transform: none;
+					color: #aaa;
+					font-style: italic;
+					text-align: right;
+					font-weight: 600;
+					&:before {
+						content: "";
+						position: relative;
+						transform: rotate(90deg);
+						background-image: url("");
+						width: 12px;
+						height: 12px;
+						margin-right: 4px;
+					}
+				}
+			}
+		}
+		
+		header {
+			margin-bottom: $spacer-small;
+			border-bottom: none;
+			
+			h1 {
+				font-size: $h1-font-size;
+			}
+			h2 {
+				font-size: $h4-font-size;
+			}
+			h3 {
+				font-size: $h2-font-size;
+				.book-title {
+					font-family: inherit;
+				}
+			}
+			.excerpt {
+			}			
+			.byline {
+				font-size: $font-size-small;
+				text-align: left;
+				margin-bottom: 0;
+				.author {
+					font-family: $font-family-headers;
+					margin-right: $spacer-small;
+				}
+				.date {
+					a {
+						font-family: $font-family-base;
+					}
+					time {
+						&.entry-date {}
+						&.updated {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+		footer {
+			&.blog-footer {
+				display: none;
+				border: 0;
+			}
+		}
+		.content-summary {
+			font-size: $h2-font-size;
+		}
+	}
+	
+
+}

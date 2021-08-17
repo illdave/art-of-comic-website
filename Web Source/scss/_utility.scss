@@ -185,6 +185,13 @@
 	border-top: $border-default;
 	padding-top: 1rem;
 	margin: .5rem 0;
+	&.first {
+		h3 {
+			border-top: 0;
+			padding-top: 0;
+			margin-top: 0;
+		}
+	}
 }
 
 .boxed {
@@ -199,6 +206,10 @@
 .post-it {
 	background-color: pink;
 	box-shadow: $box-shadow-boxed;
+	
+	&.white-bg {
+		box-shadow: $box-shadow-white-bg;
+	}
 	
 	&.pink {
 		background-color: #fbacc5;
@@ -263,20 +274,24 @@
 	&.neon-teal {
 		background-color: #37d2d8;
 	}
-
-
-
+	
 	dl {
 		dt {
 			font-size: $h4-font-size;
 			margin-bottom: .5rem;
 		}
+		dt {
+			color: $h2-font-color;
+		}
+	}
+	h4 {
+		color: $h2-font-color;
 	}
 }
 
 .side-nav {
 	&.sticky-top {
-		top: $main-nav-height;
+		top: $main-nav-height + $spacer-base;		
 	}
 }
 
@@ -437,4 +452,24 @@
 	}
 }
 
-	
+.footnote {
+    border-top: $border-default;
+    padding-top: 1rem;
+    margin-top: 2rem;
+    font-size: 90%;
+	ul {
+		padding: 0;
+		margin: 0;
+		margin-bottom: 1rem;
+			li {
+				margin-bottom: .5rem !important;
+			}
+	} 
+	&.mla {
+		text-indent: -1rem;
+    	padding-left: 1rem;
+    	a {
+    		white-space: nowrap;
+    	}
+    }  
+}

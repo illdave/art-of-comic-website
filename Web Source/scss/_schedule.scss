@@ -58,22 +58,6 @@
 	}
 	
 	.semester-grid {
-		.session-header {
-			h3 {
-				@include newspaper-headline;
-				margin-bottom: 0;
-			}
-			h4 {
-				font-family: $font-family-base;
-				font-size: $font-size-small;
-			}
-			&.first {
-				h3 {
-					border-top: 0;
-					padding-top: 0;
-					margin-top: 0;
-				}
-			}
-		}
+
 	}
 }
