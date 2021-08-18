@@ -2,6 +2,13 @@
 
 .blog {
 
+	&.index {
+		h2 {
+			border: 0;
+			margin-bottom: .5rem;
+		}
+	}
+
 	.article-intro {
 		font-size: $font-size-large;
 		line-height: $font-size-large;
@@ -148,5 +155,39 @@
 		}
 	}
 	
-
+	.blog-nav {
+		line-height: 1.25rem;
+		padding-bottom: 0;
+		dl {
+			border-top: 1px solid lighten($theme-color-7, 20%);
+			padding-top: $spacer-base;
+			margin-bottom: $spacer-base;
+			dt {
+				margin-bottom: $spacer-xs;
+				font-size: $h4-font-size;
+				color: darken($theme-color-7, 20%);
+			}
+			dd {
+				&:last-child {
+				}
+				a {
+					font-family: $font-family-base;
+					color: lighten($theme-color-2, 10%);
+					&:hover {
+						color: $white;
+					}
+					&:active {
+						color: $black;
+					}
+				}
+				&.active {
+					a {
+						font-family: $font-family-italic;
+						color: $white;
+						cursor: default;
+					}
+				}
+			}
+		}
+	}
 }

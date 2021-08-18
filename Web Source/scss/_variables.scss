@@ -244,7 +244,8 @@ $intro-bg:  								$theme-color-2;
 
 $box-shadow-boxed: 							0 0.5rem 1.5rem 1rem rgb(0 0 0 / 30%);
 $box-shadow-top: 							0 4rem 4rem -3rem rgb(0 0 0 / 80%) inset;
-$box-shadow-white-bg: 						0 0.5rem 1.25rem 0 rgb(0 0 0 / 20%);
+$box-shadow-white-bg: 						0 0.5rem 0.75rem 0.15rem rgb(0 0 0 / 20%);
+					
 
 /* home ------------------------------ */
 
@@ -259,6 +260,7 @@ $banner-text-bg: 							transparentize(white, 0.1);
 $banner-text-border: 						rem(2px solid $gray-light);
 $banner-text-border-radius: 				$border-radius-base;
 $banner-text-border-radius-large: 			$border-radius-large;
+
 
 /* footer ---------------------------- */
 
