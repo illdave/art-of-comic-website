@@ -476,3 +476,82 @@
     	}
     }  
 }
+
+.listings {
+	.listing {
+		margin-bottom: 1rem;
+		dt, dd {
+			margin-bottom: 0;
+		}
+		.company-title {
+			width: 70%;
+		}
+		.company-info {
+			margin-top: .5rem;
+		}
+	}
+	&.boxed {
+		padding: 0;
+		h2 {
+			padding-top: 1rem !important; 
+			margin-top: 0 !important;
+		}
+		.listing {
+			background: $white right .5rem top .5rem no-repeat;
+			background-size: 25%;
+			border: $border-default;
+			border-top: rem(3px solid $black);
+			padding: $spacer-base;
+			min-height: 10rem;
+			font-size: 90%;
+			
+			&.bedrock-comics {
+				background-image: url("#{$logos-image-path}/bedrock-comics.png");
+			}
+			&.comicazi {
+				background-image: url("#{$logos-image-path}/comicazi.png");
+			}
+			&.comicopia {
+				background-image: url("#{$logos-image-path}/comicopia.png");
+			}
+			&.hub-comics {
+				background-image: url("#{$logos-image-path}/hub-comics.png");
+			}
+			&.million-year-picnic {
+				background-image: url("#{$logos-image-path}/million-year-picnic.png");
+			}
+			&.new-england-comics {
+				background-image: url("#{$logos-image-path}/new-england-comics.png");
+				dd {width: 75%;}
+			}
+			&.paper-asylum {
+				background-image: url("#{$logos-image-path}/paper-asylum.png");
+			}
+			&.the-comic-stop {
+				background-image: url("#{$logos-image-path}/the-comic-stop.png");
+			}
+			&.silver-moon-comics {
+				background-image: url("#{$logos-image-path}/silver-moon.png");
+			}
+			&.the-outer-limits {
+				background-image: url("#{$logos-image-path}/outer-limits-noir.png");
+			}
+			&.massart {
+				background-image: url("#{$logos-image-path}/massart.jpg");
+				background-size: 33%;
+				background-position-y: 1rem;
+			}
+			&.artist-craftsman {
+				background-image: url("#{$logos-image-path}/artist-craftsman.jpg");
+			}
+			&.dick-blick {
+				background-image: url("#{$logos-image-path}/dick-blick.jpg");
+				background-size: 40%;
+				background-position-y: .5rem;
+			}
+			&.COMIC_BOOK_STORE {
+				background-image: url("#{$logos-image-path}/COMIC_BOOK_STORE.png");
+			}
+		}
+	}
+}

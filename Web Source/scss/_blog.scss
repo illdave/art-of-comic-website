@@ -8,7 +8,6 @@
 			margin-bottom: .5rem;
 		}
 	}
-
 	.article-intro {
 		font-size: $font-size-large;
 		line-height: $font-size-large;
@@ -82,8 +81,8 @@
 					align-items: center;
 					justify-content: flex-end;
 					position: absolute;
-					top: 3px;
-					left: -22px;
+					top: 10px;
+					left: -19px;
 					transform-origin: left top;
 					transform: rotate(-90deg);
 					font-size: 12px;
@@ -153,6 +152,10 @@
 		.content-summary {
 			font-size: $h2-font-size;
 		}
+	}
+	
+	.sticky-top {
+		top: $main-nav-height + 2rem;
 	}
 	
 	.blog-nav {
