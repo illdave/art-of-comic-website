@@ -111,7 +111,7 @@ $font-family-bold-italic:					$proxima-nova-bold-italic;
 $font-size-base:          					1rem;
 $font-size-large:         					ceil(($font-size-base * 1.25));	// ~18px
 $font-size-medium:        					ceil(($font-size-base * 1.12)); // ~16px
-$font-size-small:         					ceil(($font-size-base * 0.85)); // ~12px
+$font-size-small:         					90%; // ~12px
 
 $h1-font-size:                				$font-size-base * 2.0;
 $h2-font-size:                				$font-size-base * 1.6;

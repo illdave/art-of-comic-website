@@ -22,9 +22,11 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
 	font-size: $h1-font-size;
+	line-height: $h1-font-size;
 }
 h2, .h2 {
 	font-size: $h2-font-size;
+	line-height: $h2-font-size;
 	color: $h2-font-color;
 }
 h3, .h3 {

@@ -109,16 +109,11 @@
 			border-bottom: none;
 			
 			h1 {
-				font-size: $h1-font-size;
+				margin-bottom: .25rem;
 			}
 			h2 {
-				font-size: $h4-font-size;
-			}
-			h3 {
-				font-size: $h2-font-size;
-				.book-title {
-					font-family: inherit;
-				}
+				font-size: $h3-font-size;
+				margin-bottom: .5rem;
 			}
 			.excerpt {
 			}			

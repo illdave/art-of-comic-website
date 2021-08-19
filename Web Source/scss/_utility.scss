@@ -304,7 +304,7 @@
 	padding: $artboard-padding;
 	box-shadow: $artboard-combo-shadow;
 	margin-bottom: 2rem;
-	.rule {
+	.rule, .rule-job-tracker {
 		position: absolute;
 		border: $artboard-border;
 	}
@@ -356,9 +356,14 @@
 			}
 		}		
 		.rule {
-			left: 2%;
+			left: 0;
 			top: 50%;
-			width: 96%;
+			width: 100%;
+		}
+		.rule-job-tracker {
+			left: 8%;
+			top: 39%;
+			width: 84%;
 		}
 	}
 	.left, .right {
@@ -371,14 +376,21 @@
 			height: 100%;
 		}
 	}
+	
 	.top {
 		top: 0;
+		.ticks {
+			top: 10%;
+		}
 	}
 	.bottom {
 		bottom: 0;
 		.stamp, .book, .issue, .pg, .ticks {
 			bottom: 0;
 			top: auto;
+		}
+		.ticks {
+			bottom: 14%;
 		}
 	}
 	.left {
@@ -409,15 +421,47 @@
 	}	
 }
 
-.blurb {
+.response {
 	background: #ccc;
-	.text {
-		padding: 2rem;
-		p {
-			margin-bottom: 0;
+	padding: 1rem 2rem .25rem;
+	margin-bottom: 1rem;
+}
+
+.diagram {
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: $border-default;
+	.img {
+		img {
+			border: $border-default;
+			padding: .5rem;
+			margin-bottom: 1rem;
 		}
 	}
 }
+
+.toth {
+	p {
+		font-family: $comic-book-font;
+		font-size: $h5-font-size;
+		line-height: $h5-font-size;
+	}
+	strong {
+		font-family: $comic-book-font-bold-italic;
+	}
+	.response {
+		p {
+			font-family: $font-family-base;
+			font-size: $font-size-base;
+			line-height: $line-height-base;
+		}
+		strong {
+			font-family: $font-family-headers;
+		}
+	}
+}
+
+
 
 .learn-more .fas {
 	font-size: 2rem;
