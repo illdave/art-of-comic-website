@@ -12,6 +12,7 @@ $artofcomicbook-orange:						#df831e; // picked up from 2012 site
 $artofcomicbook-yellow:						#fdda00;
 $artofcomicbook-teal:						#0083a9;
 $artofcomicbook-green:						#6d8d23;
+$artofcomicbook-demo-red:					#e11e25;
 
 
 /* Bootstrap colors ----------------- */
@@ -35,6 +36,9 @@ $theme-color-4:								$artofcomicbook-green;
 $theme-color-5:								$artofcomicbook-yellow;
 $theme-color-6:								$artofcomicbook-teal;
 $theme-color-7:								$artofcomicbook-blue-dark;
+
+$demo-red:									$artofcomicbook-demo-red;
+
 
 $border-default-color: 						$gray-dark;
 $border-default: 							rem(1px solid $border-default-color);

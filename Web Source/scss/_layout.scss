@@ -77,14 +77,14 @@ h1, h2, h3, h4, blockquote {
 .column-list {
 	h2 {
 		@include bordered-header;
-		margin-bottom: 0;
-		
 		&:first-child, &:first-of-type {
 			border-top: 0;
 			padding-top: 0;
 			margin-top: 0;
 		}
-		
+	}
+	h3 + h2 {
+		margin-bottom: 0;
 	}
 }
 

@@ -427,18 +427,121 @@
 	margin-bottom: 1rem;
 }
 
-.diagram {
-	margin-bottom: 1rem;
-	padding-bottom: 1rem;
-	border-bottom: $border-default;
-	.img {
-		img {
-			border: $border-default;
-			padding: .5rem;
-			margin-bottom: 1rem;
+.diagrams {
+	.diagram {
+		margin-bottom: 1rem;
+		padding-bottom: 1rem;
+		border-bottom: $border-default;
+		&.img {
+			text-align: center;
+			.img-wrapper {
+				position: relative; 
+				max-width: 100%;
+				height: auto;			
+				margin: 0 auto;
+				.diagram-label {
+					position: absolute;
+					top: 0;
+					left: 0;
+				}
+			}
 		}
 	}
+	&.ames-terminology {
+		.img-wrapper {
+			width: 30rem;
+			.diagram-label {
+				&.a {
+					top: 41%;
+					left: 66%;
+				}
+				&.b {
+					top: 20%;
+					left: 63%;
+				}
+				&.c {
+					top: 4%;
+					left: 56%;
+				}
+				&.d {
+					top: 75%;
+					left: 29%;
+				}
+				&.e {
+					top: 81%;
+					left: 47%;
+				}
+				&.f {
+					top: 4%;
+					left: 29%;
+				}
+				&.g {
+					top: 20%;
+					left: 76%;
+				}
+				&.h {
+					top: 20%;
+					left: 14%;
+				}
+			}			
+		}
+	}
+	
+	.legend {
+		h2, h3 {
+			position: relative;
+			padding-left: 2.5rem;
+			margin-bottom: 0;
+			.diagram-label {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		p {
+			padding-left: 2.5rem;
+		}
+	}
+	
+	&.img-has-border {
+		.img {
+			img {
+				border: $border-default;
+				padding: .5rem;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+	
+	.diagram-label {
+		display: inline-block;
+		background: $demo-red;
+		color: $white;
+		height: 2rem;
+		width: 2rem;
+		border-radius: 50%;
+		text-align: center;
+		font-size: 1.2rem;
+		line-height: 2.1rem;
+		font-family: $font-family-bold;
+	}
+	
 }
+
+.steps {
+	.step {
+		margin-bottom: 1rem;
+		border-bottom: $border-default;
+		padding-bottom: 2rem;
+	}
+}
+.img-wrapper {
+	text-align: center;
+	img {
+		margin: 0 auto;
+	}
+}
+
 
 .toth {
 	p {
