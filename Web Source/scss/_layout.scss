@@ -89,68 +89,6 @@ h1, h2, h3, h4, blockquote {
 }
 
 
-/* picture-figure text wrapping ------- */
-
-.picture-wrapper {
-	position: relative !important;
-	margin-bottom: $spacer-base-vertical;
-	&.full {
-		img {
-			width: 100%;
-		}
-	}
-	
-	&.left {
-		float: left;
-		margin-right: 2rem;
-	}
-	&.right {
-		float: right;
-		margin-left: 2rem;
-	}
-	&.half {
-		width: 50%;
-	}
-	&.third {
-		width: 33%;
-	}
-	&.quarter {
-		width: 25%;
-	}
-	&.centered {
-		text-align: center;
-	}
-	img {
-		margin-bottom: .5rem;
-	}
-	p {
-		margin-bottom: .5rem;
-		font-family: $font-family-italic;
-		line-height: 1rem;
-		font-size: $font-size-small;
-	}
-	&.has-border {
-		img {
-			border: $border-default;
-		}
-	}
-	&.has-frame {
-		img {
-			border: $border-default;
-			background: white;
-			padding: .5rem;
-		}
-	}	
-}
-@media (max-width: 640px) { 
-	.picture-wrapper {
-		&.half, &.third, &.quarter, img {
-			width: 100%;
-		}
-	}
-}
-
-
 @media (max-width: 800px) { 
 	.schedule-table {
 		.location, .city, .days, .dates, .times, .tuition, .credits, .registration, .course-name  {

@@ -160,11 +160,80 @@ cite {
 	}	
 }
 
-figure {
+
+/* picture-figure text wrapping ------- */
+
+.picture-wrapper, figure {
+	position: relative !important;
+	margin-bottom: $spacer-base-vertical;
+	&.full {
+		img {
+			width: 100%;
+		}
+	}
+	&.left {
+		float: left;
+		margin-right: 2rem;
+	}
+	&.right {
+		float: right;
+		margin-left: 2rem;
+	}
+	&.half {
+		width: 50% !important;
+	}
+	&.third {
+		width: 33% !important;
+	}
+	&.quarter {
+		width: 25% !important;
+	}
+	&.centered {
+		text-align: center;
+		img {
+			margin: 0 auto .5rem;
+		}
+		p {
+			text-align: left;
+		}
+	}
 	img {
-		margin-bottom: $spacer-small;
+		margin-bottom: .5rem;
+	}
+	p {
+		margin-bottom: .5rem;
+		font-family: $font-family-italic;
+		line-height: 1rem;
+		font-size: $font-size-small;
+	}
+	&.has-border {
+		img {
+			border: $border-default;
+		}
+	}
+	&.has-frame {
+		img {
+			border: $border-default;
+			background: white;
+			padding: .5rem;
+		}
+	}	
+}
+@media (max-width: 640px) { 
+	.picture-wrapper {
+		&.half, &.third, &.quarter, img {
+			width: 100%;
+		}
 	}
 }
+
+.img-wrapper {
+	text-align: center;
+	img {
+		margin: 0 auto;
+	}
+}
+
 
 italic, em {
 	font-family: $font-family-italic;

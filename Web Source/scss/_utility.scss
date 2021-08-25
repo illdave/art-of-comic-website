@@ -276,6 +276,7 @@
 	}
 	
 	dl {
+		margin-bottom: 0;
 		dt {
 			font-size: $h4-font-size;
 			margin-bottom: .5rem;
@@ -525,7 +526,6 @@
 		line-height: 2.1rem;
 		font-family: $font-family-bold;
 	}
-	
 }
 
 .steps {
@@ -535,13 +535,6 @@
 		padding-bottom: 2rem;
 	}
 }
-.img-wrapper {
-	text-align: center;
-	img {
-		margin: 0 auto;
-	}
-}
-
 
 .toth {
 	p {

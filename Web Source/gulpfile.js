@@ -16,7 +16,7 @@ const { src, dest } = require("gulp");
 const concat = require("gulp-concat");
 const sass = require("gulp-sass")(require("sass"));
 const sourcemaps = require("gulp-sourcemaps");
-
+const cleanCSS = require('gulp-clean-css');
 
 // browser sync
 function browserSync(done) {
@@ -63,14 +63,21 @@ function css() {
 	return gulp
 	.src("scss/**/*.scss")
 	.pipe(sourcemaps.init()) 
-	
 	.pipe(plumber())
 	.pipe(sass({ outputStyle: 'expanded'}))
-	
 	.pipe(sourcemaps.write())
-	
 	.pipe(gulp.dest("../Web Root/assets/themes/art-of-comic/"))
 	.pipe(browsersync.stream());
+}
+
+// minify css (no rename)
+function minifycss() {
+	return gulp
+	.src("../Web Root/assets/themes/art-of-comic/*.css")
+    .pipe(sourcemaps.init())
+	.pipe(cleanCSS())
+    .pipe(sourcemaps.write())
+	.pipe(gulp.dest("../Web Root/assets/themes/art-of-comic/"));
 }
 
 
@@ -97,6 +104,7 @@ const build = gulp.series(gulp.parallel(css, images));
 // export tasks
 exports.images = images;
 exports.css = css;
+exports.minifycss = minifycss;
 exports.build = build;
 exports.watch = watch;
 exports.default = build;

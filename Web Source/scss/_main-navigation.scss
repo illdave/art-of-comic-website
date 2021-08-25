@@ -1,10 +1,10 @@
 /* main navigation -------------------- */
 
 .main-navigation {
-	border-bottom: 1px solid #ccc;
-	background: #df831e url("#{$layout-image-path}/menu-bg.jpg") repeat-x 0 center;
+	background: $main-navigation-bg;
+	border-bottom: $main-navigation-border;
 	padding: 0 1rem;
-	
+		
 	.navbar-brand-stack {
 		display: flex;
 		flex-flow: column wrap;

@@ -4,7 +4,6 @@
 
 	&.index {
 		h2 {
-			border: 0;
 			margin-bottom: .5rem;
 		}
 	}
@@ -132,7 +131,6 @@
 					time {
 						&.entry-date {}
 						&.updated {
-							display: none;
 						}
 					}
 				}
