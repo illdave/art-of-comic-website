@@ -296,130 +296,19 @@
 	}
 }
 
-
-/* art board -------------------------- */
-.artboard {
-	position: relative;
-	border: 0;
-	background: $artboard-background;
-	padding: $artboard-padding;
-	box-shadow: $artboard-combo-shadow;
-	margin-bottom: 2rem;
-	.rule, .rule-job-tracker {
-		position: absolute;
-		border: $artboard-border;
-	}
-	.top, .bottom, .left, .right {
-		position: absolute;
-		padding: 0;
-	}
-	.top, .bottom {
-		width: 100%;
-		height: $artboard-spacer;
-		left: 0;
-		.stamp, .book, .issue, .pg, .ticks {
-			position: absolute;
-			top: 0;
-			background: transparent no-repeat 0 1rem;
-			height: 50%;
-		}
-		.stamp {
-			background-image: url("#{$layout-image-path}/artboard-stamp.png");
-			left: 7rem;
-			width: 133px;
-		}
-		.book {
-			background-image: url("#{$layout-image-path}/artboard-book.png");
-			left: 3rem;
-			width: 50px;
-		}
-		.issue {
-			background-image: url("#{$layout-image-path}/artboard-issue.png");
-			left: 36%;
-			width: 60px;
-		}
-		.pg {
-			background-image: url("#{$layout-image-path}/artboard-pg.png");
-			left: 68%;
-			width: 40px;
-		}
-		.ticks {
-			background-image: url("#{$layout-image-path}/artboard-ticks.png");
-			width: 30px;
-			&.left {
-				left: 33%;
-			}
-			&.center {
-				left: 48%;
-			}
-			&.right {
-				right: 33%;
-			}
-		}		
-		.rule {
-			left: 0;
-			top: 50%;
-			width: 100%;
-		}
-		.rule-job-tracker {
-			left: 8%;
-			top: 39%;
-			width: 84%;
+.class-nav {
+	.class-nav-toggler {
+		display: inline-block;
+		margin-bottom: .5rem;
+		color: $white;
+		position: relative;	
+		background: transparent no-repeat 0 0;
+		padding-right: 0;
+		&:before {
+			font-family: 'Font Awesome Solid';
+			content: $icon-class-nav;
 		}
 	}
-	.left, .right {
-		width: $artboard-spacer;
-		height: 100%;
-		top: 0;
-		.rule {
-			top: 0;
-			left: 50%;
-			height: 100%;
-		}
-	}
-	
-	.top {
-		top: 0;
-		.ticks {
-			top: 10%;
-		}
-	}
-	.bottom {
-		bottom: 0;
-		.stamp, .book, .issue, .pg, .ticks {
-			bottom: 0;
-			top: auto;
-		}
-		.ticks {
-			bottom: 14%;
-		}
-	}
-	.left {
-		left: 0;
-	}
-	.right {
-		right: 0;
-	}
-		
-	.newspaper-columns {
-		column-gap: 2rem;
-		column-rule: none;
-		margin-bottom: 0;
-	
-		.text {
-			padding: 0;
-		}
-		.item {
-			padding: 0;
-			@include unbroken;
-		}
-	}
-	.newspaper-headline {
-		margin-bottom: 0;
-	}
-	.post-it {
-		box-shadow: $box-shadow-white-bg;
-	}	
 }
 
 .response {

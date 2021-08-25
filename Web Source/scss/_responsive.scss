@@ -53,6 +53,35 @@
 	}
 }
 
+@media (max-width: 576px) {
+	.artboard {
+		padding: 3rem;
+		.left, .right {
+			width: $artboard-spacer-mobile;
+		}
+		.top, .bottom {
+			height: $artboard-spacer-mobile;
+		}
+		.top {
+			.stamp {
+				background-position: 0 0;
+				left: 2rem;
+			}
+			.book, .issue, .pg {
+				display: none;
+			}
+		}
+	}
+	.schedule {
+		.schedule-table {
+			.location, .city, .dates, .semester, .days, .times, .tuition, .credits {
+				width: auto !important;
+				text-align: inherit;
+			}
+		}
+	}
+}
+
 @media (max-width: 768.98px) { }
 
 @media (max-width: 991px) {
@@ -60,5 +89,33 @@
 		column-count: 1;
 		column-gap: 0;
 		column-rule: 0;
+	}
+	
+	.class-nav {
+		dd {
+			display: inline-block;
+			margin-right: .5rem;
+			&:after {
+				padding-left: .5rem;
+				content: "/";
+			}
+			&:last-child {
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+
+@media (min-width: 992px) {
+	.class-nav {
+		.navbar-collapse {
+			display: block !important;
+		}
+		.class-nav-toggler {
+			display: none;
+		}
 	}	
 }

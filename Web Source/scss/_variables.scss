@@ -217,6 +217,8 @@ $icon-github:   							quote($fa-var-code-branch);
 $icon-linkedin:   							quote($fa-var-linkedin);
 $icon-email:   								quote($fa-var-at);
 
+$icon-class-nav:   							quote($fa-var-paint-brush);
+
 
 /* uncategorized --------------------- */
 
@@ -279,6 +281,7 @@ $footer-padding: 							$spacer-base-vertical $spacer-base-horizontal;
 $artboard-border-color: 					lighten($artofcomicbook-cyan, 45%);
 $artboard-border: 							rem(1px solid $artboard-border-color);
 $artboard-spacer: 							5rem;
+$artboard-spacer-mobile:					3rem;
 $artboard-background: 						$white;
 $artboard-padding: 							4rem;
 
