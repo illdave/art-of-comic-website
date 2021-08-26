@@ -296,8 +296,8 @@
 	}
 }
 
-.class-nav {
-	.class-nav-toggler {
+.class-nav, .col-nav {
+	.class-nav-toggler, col-nav-toggler {
 		display: inline-block;
 		margin-bottom: .5rem;
 		color: $white;

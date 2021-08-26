@@ -64,7 +64,8 @@
 		}
 		.top {
 			.stamp {
-				background-position: 0 0;
+				background-position: 0 bottom;
+				background-size: 75%;
 				left: 2rem;
 			}
 			.book, .issue, .pg {
@@ -91,7 +92,7 @@
 		column-rule: 0;
 	}
 	
-	.class-nav {
+	.class-nav, .col-nav {
 		dd {
 			display: inline-block;
 			margin-right: .5rem;
@@ -99,8 +100,22 @@
 				padding-left: .5rem;
 				content: "/";
 			}
-			&:last-child {
+			&:last-child, &:last-of-type {
 				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+	
+	.col-row  {
+		.col-nav {
+			order: -1;
+			.sticky-top {
+				position: static;
+			}
+			.post-it {
+				dt, .active {
 					display: none;
 				}
 			}
@@ -110,11 +125,11 @@
 
 
 @media (min-width: 992px) {
-	.class-nav {
+	.class-nav, .col-nav {
 		.navbar-collapse {
 			display: block !important;
 		}
-		.class-nav-toggler {
+		.class-nav-toggler, .col-nav-toggler {
 			display: none;
 		}
 	}	
