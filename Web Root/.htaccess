@@ -1,4 +1,4 @@
-ErrorDocument 404 https://www.artofthecomicbook.com/404/index.htm
+ErrorDocument 404 https://www.artofthecomicbook.com/404/index.html
 
 Redirect 301 /history/art-reduction.htm https://www.artofthecomicbook.com/blog/art-reduction-act-of-1967.html
 Redirect 301 /history/toth-critiques-rude.htm https://www.artofthecomicbook.com/blog/alex-toth-critiques-steve-rude.html
