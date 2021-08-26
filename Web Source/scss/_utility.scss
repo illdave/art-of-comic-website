@@ -1,5 +1,23 @@
 /* utility classes -------------------- */
 
+
+.page-not-found {
+	section {
+		&.content {
+			background: url("#{$layout-image-path}/404-bg.jpg") no-repeat 0 center;
+			background-size: cover;
+			padding: 0;
+			padding: 5rem 0;
+			h1 {
+				font-size: 20rem;
+				line-height: 20rem;
+				margin-bottom: 0;
+				text-align: center;
+			}
+		}
+	}
+}
+
 .social {
 	li, dd {
 		background: transparent no-repeat 0 0;

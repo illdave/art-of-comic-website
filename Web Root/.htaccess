@@ -1,0 +1,14 @@
+ErrorDocument 404 https://www.artofthecomicbook.com/404/index.htm
+
+Redirect 301 /history/art-reduction.htm https://www.artofthecomicbook.com/blog/art-reduction-act-of-1967.html
+Redirect 301 /history/toth-critiques-rude.htm https://www.artofthecomicbook.com/blog/alex-toth-critiques-steve-rude.html
+Redirect 301 /materials/lettering-amesguide.htm https://www.artofthecomicbook.com/blog/demo-ames-lettering-guide.html
+Redirect 301 /materials/lettering-speedball.htm https://www.artofthecomicbook.com/blog/demo-lettering-comics-by-hand.html
+
+Redirect 301 /materials/art-supplies.htm https://www.artofthecomicbook.com/studio#art-supplies
+Redirect 301 /studio/storytelling.htm https://www.artofthecomicbook.com/studio#storytelling-process
+Redirect 301 /studio/production.htm https://www.artofthecomicbook.com/studio#production
+
+Redirect 301 /studio/assignments.htm https://www.artofthecomicbook.com/studio#assignments
+Redirect 301 /studio/resources.htm https://www.artofthecomicbook.com/blog#resources
+
