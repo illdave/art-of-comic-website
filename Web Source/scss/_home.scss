@@ -57,6 +57,34 @@
 				margin-bottom: 0;
 			}
 		}
+		.img {
+			border: $border-default;
+			min-height: 8rem;
+			margin-bottom: .5rem;
+			background: transparent url("#{$blog-image-path}/foo.jpg") no-repeat center center;
+			background-size: cover;
+		}
+		
+		.comic-art-reduction {
+			.img {
+				background-image: url("#{$blog-image-path}/frank-robbins-desk.jpg");		
+			}
+		}
+		.toth-v-rude {
+			.img {
+				background-image: url("#{$blog-image-path}/toth-v-rude/jonny-quest-panel.jpg");		
+			}
+		}
+		.ames-lettering-guide {
+			.img {
+				background-image: url("#{$blog-image-path}/ames-guide/russell-t-davies.jpg");		
+			}
+		}
+		.hand-lettering {
+			.img {
+				background-image: url("#{$blog-image-path}/hand-lettering/krazy-kat-2.jpg");		
+			}
+		}
 	}	
 	.twitter {
 		.tweets {
