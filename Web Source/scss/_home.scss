@@ -1,7 +1,32 @@
 /* home ------------------------------- */
 
 .home {
+	.main-navigation {
+		background-position: 0 0;
+		border-bottom: $home-intro-border;
+	}
 
+	.intro {
+		background: transparent;
+		border: 0;
+		padding: 1rem 0 2rem;
+		h1 {
+			color: $white;
+			display: none;
+		}		
+		.blurb {
+			p {
+				@include comic-book-font-p;
+				font-size: $h4-font-size;
+				margin-bottom: 1rem;
+			}
+			a {
+				color: $white;
+			}
+		}
+		.whats-new {}
+	}
+	
 	.active-classes {
 		background: white;
 		.cell {

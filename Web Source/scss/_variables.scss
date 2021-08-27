@@ -252,21 +252,6 @@ $box-shadow-top: 							0 4rem 4rem -3rem rgb(0 0 0 / 80%) inset;
 $box-shadow-white-bg: 						0 0.25rem 0.25rem 0.1rem rgb(0 0 0 / 30%);
 					
 
-/* home ------------------------------ */
-
-$latest-work-bg: 							$gray-lighter;
-$latest-work-border: 						rem(1px solid $border-default-color);
-
-$latest-page-color: 						$text-color;
-$latest-page-bg: 							white;
-$latest-page-border: 						rem(1px solid $border-default-color);
-
-$banner-text-bg: 							transparentize(white, 0.1);
-$banner-text-border: 						rem(2px solid $gray-light);
-$banner-text-border-radius: 				$border-radius-base;
-$banner-text-border-radius-large: 			$border-radius-large;
-
-
 /* footer ---------------------------- */
 
 $footer-border: 							rem(1px solid $gray-light);
@@ -294,8 +279,8 @@ $artboard-combo-shadow: 					$box-shadow-boxed, $artboard-inner-shadow;
 
 $main-nav-bg:								#142f56 0 0 no-repeat;
 
-$main-navigation-bg-color:					darken($artofcomicbook-orange, 5%);
-$main-navigation-bg:						$main-navigation-bg-color url("#{$layout-image-path}/menu-bg.jpg") repeat-x 0 center;
+$main-navigation-bg-color:					#f69c25;
+$main-navigation-bg:						$main-navigation-bg-color url("#{$layout-image-path}/menu-bg-space.png") repeat-x 0 0;
 $main-navigation-border-color:				darken($main-navigation-bg-color, 5%);
 $main-navigation-border:					rem(1px solid $main-navigation-border-color);
 
@@ -352,6 +337,24 @@ $main-nav-brand-slogan-margin: 				.5rem;
 $main-nav-padding: 							.5rem;
 $main-nav-height: 							$main-nav-brand-height + 2 * $main-nav-padding + $main-nav-brand-slogan-height + $main-nav-brand-slogan-margin;		
 $main-nav-height-mobile: 					$main-nav-height - 2.5rem;	
+
+
+/* home ------------------------------ */
+
+$home-intro-bg:								$main-navigation-bg-color url("#{$layout-image-path}/menu-bg.jpg") repeat-x 0;
+$home-intro-border:							$main-navigation-border;
+
+$latest-work-bg: 							$gray-lighter;
+$latest-work-border: 						rem(1px solid $border-default-color);
+
+$latest-page-color: 						$text-color;
+$latest-page-bg: 							white;
+$latest-page-border: 						rem(1px solid $border-default-color);
+
+$banner-text-bg: 							transparentize(white, 0.1);
+$banner-text-border: 						rem(2px solid $gray-light);
+$banner-text-border-radius: 				$border-radius-base;
+$banner-text-border-radius-large: 			$border-radius-large;
 
 
 /* FOO ------------------------------- */

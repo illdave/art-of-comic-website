@@ -1,3 +1,5 @@
+/* layout ----------------------------- */
+
 .section {
 	padding: 2rem 0;
 	border-bottom: 1px solid #ccc;
@@ -67,12 +69,6 @@ h1, h2, h3, h4, blockquote {
 
 
 /* column list styles ----------------- */
-
-@mixin bordered-header {
-	border-top: $border-default;
-	padding-top: 1rem;
-	margin: .5rem 0;
-}
 
 .column-list {
 	h2 {

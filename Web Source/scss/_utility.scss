@@ -1,6 +1,10 @@
 /* utility classes -------------------- */
 
 
+.hashtag {
+	color: $white;
+}
+
 .page-not-found {
 	section {
 		&.content {
@@ -152,35 +156,6 @@
 	  background: white;
 	}		
 }
-@mixin truncated-text {
-	position: relative;
-	--lh: 1.4rem;
-	line-height: var(--lh);
-	--max-lines: 3;
-	max-height: calc(var(--lh) * var(--max-lines));
-	overflow: hidden;
-	text-overflow: ellipsis;
-	&::before {
-	  content: "...";
-	  position: absolute;
-	  bottom: 0;
-	  right: 0;
-	}
-	&::after {
-	  content: "";
-	  position: absolute;
-	  right: 0; /* note: not using bottom */
-	  width: 1rem;
-	  height: 1rem;
-	  background: white;
-	}		
-}
-
-@mixin unbroken {
-	-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-	page-break-inside: avoid; /* Firefox */
-	break-inside: avoid; /* IE 10+ */	
-}
 
 .newspaper-columns {
 	column-count: 2;
@@ -196,19 +171,6 @@
   		border-top: 0;
   		padding-top: 0;
   		margin-top: 0;
-	}
-}
-
-@mixin newspaper-headline {
-	border-top: $border-default;
-	padding-top: 1rem;
-	margin: .5rem 0;
-	&.first {
-		h3 {
-			border-top: 0;
-			padding-top: 0;
-			margin-top: 0;
-		}
 	}
 }
 
