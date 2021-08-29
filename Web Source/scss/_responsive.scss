@@ -81,6 +81,10 @@
 			}
 		}
 	}
+	
+	.blog article figure figcaption .caption-credit {
+		display: none;
+	}
 }
 
 @media (max-width: 768.98px) { 
@@ -96,6 +100,13 @@
 				}
 			}
 		}
+	}
+	.footnote {
+		&.mla {
+			a {
+				white-space: normal;
+			}
+		}  
 	}
 }
 
@@ -121,7 +132,6 @@
 			}
 		}
 	}
-	
 	.col-row  {
 		.col-nav {
 			order: -1;
