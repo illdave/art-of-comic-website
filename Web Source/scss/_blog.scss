@@ -41,8 +41,6 @@
 		}
 		
 		figure {
-			margin-bottom: .75rem;
-			border: 0;
 			padding: 0;
 			position: relative;
 			-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
@@ -62,14 +60,6 @@
 			p {
 				position: static;
 				padding: 0;
-				margin-bottom: 0;
-				color: $picture-caption-color;
-				a {
-					color: $picture-caption-link;
-				}
-				strong {
-					color: $picture-caption-strong;
-				}
 			}
 			figcaption {
 				position: relative;

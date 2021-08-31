@@ -169,6 +169,7 @@ cite {
 .picture-wrapper, figure {
 	position: relative !important;
 	margin-bottom: $spacer-base-vertical;
+	border-bottom: $border-default;
 	&.full {
 		img {
 			width: 100%;
@@ -202,6 +203,13 @@ cite {
 	}
 	img {
 		margin-bottom: .5rem;
+	}
+	color: $picture-caption-color;
+	a {
+		color: $picture-caption-link;
+	}
+	strong {
+		color: $picture-caption-strong;
 	}
 	p {
 		margin-bottom: .5rem;
