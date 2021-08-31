@@ -228,6 +228,9 @@ cite {
 			background: white;
 			padding: .5rem;
 		}
+	}
+	&.no-border {
+		border: 0;
 	}	
 }
 @media (max-width: 640px) { 

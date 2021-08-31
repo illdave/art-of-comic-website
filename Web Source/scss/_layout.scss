@@ -73,6 +73,7 @@ h1, h2, h3, h4, blockquote {
 .column-list {
 	h2 {
 		@include bordered-header;
+		border-top: $artboard-hr;
 		&:first-child, &:first-of-type {
 			border-top: 0;
 			padding-top: 0;
@@ -206,7 +207,8 @@ h1, h2, h3, h4, blockquote {
 	}
 	.post-it {
 		box-shadow: $box-shadow-white-bg;
-	}	
+	}
+	
 }
 
 @media (max-width: 800px) { 

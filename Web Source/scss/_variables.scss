@@ -39,10 +39,6 @@ $theme-color-7:								$artofcomicbook-blue-dark;
 
 $demo-red:									$artofcomicbook-demo-red;
 
-
-$border-default-color: 						$gray-dark;
-$border-default: 							rem(1px solid $border-default-color);
-
 $body-bg:									white;
 
 $headings-color: 							$gray-dark;
@@ -265,6 +261,7 @@ $footer-padding: 							$spacer-base-vertical $spacer-base-horizontal;
 
 $artboard-border-color: 					lighten($artofcomicbook-cyan, 45%);
 $artboard-border: 							rem(1px solid $artboard-border-color);
+$artboard-hr: 								rem(2px solid $artboard-border-color);
 $artboard-spacer: 							5rem;
 $artboard-spacer-mobile:					3rem;
 $artboard-background: 						$white;

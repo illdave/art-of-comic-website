@@ -57,7 +57,19 @@
 		}
 	}
 	
-	.semester-grid {
-
+	.sessions {
+		.session {
+			border-bottom: $artboard-hr;
+			margin-bottom: 1rem;
+			padding-bottom: 1rem;
+			&:last-child {
+				border-bottom: 0;
+			}
+			h2 {
+				border-bottom: $artboard-hr;
+				padding-bottom: 1rem;
+			}
+			h3 {}
+		}
 	}
 }

@@ -13,3 +13,4 @@ Redirect 301 /studio/assignments.htm https://www.artofthecomicbook.com/studio#as
 Redirect 301 /studio/resources.htm https://www.artofthecomicbook.com/blog#resources
 
 Redirect 301 /downloads/ https://www.artofthecomicbook.com/assets/downloads/
+Redirect 301 /downloads/graduates/ https://www.artofthecomicbook.com/assets/downloads/graduates/
