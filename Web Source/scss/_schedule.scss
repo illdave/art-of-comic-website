@@ -70,6 +70,26 @@
 				padding-bottom: 1rem;
 			}
 			h3 {}
+			
+			ul {
+				ul {
+					margin-top: .5rem;
+				}
+				.header {
+					font-family: $font-family-bold;
+					li {
+						font-family: $font-family-italic;
+					}
+				}
+			}
+		}
+	}
+	.side-nav {
+		.post-it {
+			padding: 2rem;
+			dt {
+				margin-bottom: 1rem;
+			}
 		}
 	}
 }
