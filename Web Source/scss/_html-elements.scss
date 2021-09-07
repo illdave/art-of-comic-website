@@ -79,7 +79,8 @@ hr {
 	clear: both;
 }
 
-ul {
+ul, ol {
+	padding-left: 1rem;
 }
 
 ul, ol, dl {
