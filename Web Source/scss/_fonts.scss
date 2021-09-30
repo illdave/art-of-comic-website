@@ -1,204 +1,140 @@
 /* fonts ------------------------------ */
 
 @font-face {
-  font-family: 'Proxima Nova';
-  src: url("../../fonts/proxima-nova/proxima-nova-reg.eot");
-  src: url("../../fonts/proxima-nova/proxima-nova-reg.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-reg.woff") format("woff"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-reg.ttf") format("truetype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-reg.svg#proxima_nova_rgregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Proxima Nova';
+	src: url("../../fonts/proxima-nova/proxima-nova-reg.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Proxima Nova Bold';
-  src: url("../../fonts/proxima-nova/proxima-nova-bold.eot");
-  src: url("../../fonts/proxima-nova/proxima-nova-bold.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-bold.woff") format("woff"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-bold.ttf") format("truetype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-bold.svg#proxima_novabold") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Proxima Nova Bold';
+	src: url("../../fonts/proxima-nova/proxima-nova-bold.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Proxima Nova Italic';
-  src: url("../../fonts/proxima-nova/proxima-nova-reg-italic.eot");
-  src: url("../../fonts/proxima-nova/proxima-nova-reg-italic.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-reg-italic.woff") format("woff"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-reg-italic.ttf") format("truetype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-reg-italic.svg#proxima_novaregular_italic") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Proxima Nova Italic';
+	src: url("../../fonts/proxima-nova/proxima-nova-reg-italic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Proxima Nova Bold Italic';
-  src: url("../../fonts/proxima-nova/proxima-nova-bold-italic.eot");
-  src: url("../../fonts/proxima-nova/proxima-nova-bold-italic.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-bold-italic.woff") format("woff"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-bold-italic.ttf") format("truetype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-bold-italic.svg#proxima_novabold_italic") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Proxima Nova Bold Italic';
+	src: url("../../fonts/proxima-nova/proxima-nova-bold-italic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Proxima Nova Alt';
-  src: url("../../fonts/proxima-nova/proxima-nova-alt-regular.eot");
-  src: url("../../fonts/proxima-nova/proxima-nova-alt-regular.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-alt-regular.woff") format("woff"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-alt-regular.ttf") format("truetype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-alt-regular.svg#proxima_nova_alt_rgregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Proxima Nova Alt';
+	src: url("../../fonts/proxima-nova/proxima-nova-alt-regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Proxima Nova Alt Bold';
-  src: url("../../fonts/proxima-nova/proxima-nova-alt-bold.eot");
-  src: url("../../fonts/proxima-nova/proxima-nova-alt-bold.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-alt-bold.woff") format("woff"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-alt-bold.ttf") format("truetype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-alt-bold.svg#proxima_nova_alt_rgbold") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Proxima Nova Alt Bold';
+	src: url("../../fonts/proxima-nova/proxima-nova-alt-bold.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Proxima Nova Alt Condensed Semibold';
-  src: url("../../fonts/proxima-nova/proxima-nova-alt-semibold.eot");
-  src: url("../../fonts/proxima-nova/proxima-nova-alt-semibold.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-alt-semibold.woff") format("woff"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-alt-semibold.ttf") format("truetype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-alt-semibold.svg#proxima_nova_alt_condensedSBd") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Proxima Nova Alt Condensed Semibold';
+	src: url("../../fonts/proxima-nova/proxima-nova-alt-semibold.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Proxima Nova Alt Black';
-  src: url("../../fonts/proxima-nova/proxima-nova-alt-black.eot");
-  src: url("../../fonts/proxima-nova/proxima-nova-alt-black.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-alt-black.woff") format("woff"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-alt-black.ttf") format("truetype"), 
- 	   url("../../fonts/proxima-nova/proxima-nova-alt-black.svg#proxima_nova_altblack") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Spinner Rack Regular';
-  src: url("../../fonts/spinner-rack/spinner-rack-regular.eot");
-  src: url("../../fonts/spinner-rack/spinner-rack-regular.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/spinner-rack/spinner-rack-regular.woff") format("woff"), 
- 	   url("../../fonts/spinner-rack/spinner-rack-regular.ttf") format("truetype"), 
- 	   url("../../fonts/spinner-rack/spinner-rack-regular.svg#spinner-rack/spinner-rack-regular_SVG") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Spinner Rack Italic';
-  src: url("../../fonts/spinner-rack/spinner-rack-italic.eot");
-  src: url("../../fonts/spinner-rack/spinner-rack-italic.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/spinner-rack/spinner-rack-italic.woff") format("woff"), 
- 	   url("../../fonts/spinner-rack/spinner-rack-italic.ttf") format("truetype"), 
- 	   url("../../fonts/spinner-rack/spinner-rack-italic.svg#spinner-rack/spinner-rack-italic_SVG") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Spinner Rack Bold Italic';
-  src: url("../../fonts/spinner-rack/spinner-rack-bold-italic.eot");
-  src: url("../../fonts/spinner-rack/spinner-rack-bold-italic.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/spinner-rack/spinner-rack-bold-italic.woff") format("woff"), 
- 	   url("../../fonts/spinner-rack/spinner-rack-bold-italic.ttf") format("truetype"), 
- 	   url("../../fonts/spinner-rack/spinner-rack-bold-italic.svg#spinner-rack/spinner-rack-bold-italic_SVG") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-@font-face {
-  font-family: 'Roboto Black';
-  src: url("../../fonts/roboto/roboto-black.eot");
-  src: url("../../fonts/roboto/roboto-black.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/roboto/roboto-black.woff") format("woff"), 
- 	   url("../../fonts/roboto/roboto-black.ttf") format("truetype"), 
- 	   url("../../fonts/roboto/roboto-black.svg#robotoblack") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Proxima Nova Alt Black';
+	src: url("../../fonts/proxima-nova/proxima-nova-alt-black.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: 'Roboto Black Italic';
-  src: url("../../fonts/roboto/roboto-black-italic.eot");
-  src: url("../../fonts/roboto/roboto-black-italic.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/roboto/roboto-black-italic.woff") format("woff"), 
- 	   url("../../fonts/roboto/roboto-black-italic.ttf") format("truetype"), 
- 	   url("../../fonts/roboto/roboto-black-italic.svg#robotoblack_italic") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Spinner Rack Regular';
+	src: url("../../fonts/spinner-rack/spinner-rack-regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto Bold';
-  src: url("../../fonts/roboto/roboto-bold.eot");
-  src: url("../../fonts/roboto/roboto-bold.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/roboto/roboto-bold.woff") format("woff"), 
- 	   url("../../fonts/roboto/roboto-bold.ttf") format("truetype"), 
- 	   url("../../fonts/roboto/roboto-bold.svg#robotobold") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Spinner Rack Italic';
+	src: url("../../fonts/spinner-rack/spinner-rack-italic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto Bold Italic';
-  src: url("../../fonts/roboto/roboto-bold-italic.eot");
-  src: url("../../fonts/roboto/roboto-bold-italic.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/roboto/roboto-bold-italic.woff") format("woff"), 
- 	   url("../../fonts/roboto/roboto-bold-italic.ttf") format("truetype"), 
- 	   url("../../fonts/roboto/roboto-bold-italic.svg#robotobold_italic") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Spinner Rack Bold Italic';
+	src: url("../../fonts/spinner-rack/spinner-rack-bold-italic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Black';
+	src: url("../../fonts/roboto/roboto-black.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 @font-face {
-  font-family: 'Roboto Italic';
-  src: url("../../fonts/roboto/roboto-italic.eot");
-  src: url("../../fonts/roboto/roboto-italic.eot?#iefix") format("embedded-opentype"), 
- 	   url("../../fonts/roboto/roboto-italic.woff") format("woff"), 
- 	   url("../../fonts/roboto/roboto-italic.ttf") format("truetype"), 
- 	   url("../../fonts/roboto/roboto-italic.svg#robotoitalic") format("svg");
-  font-weight: normal;
-  font-style: normal;
+	font-family: 'Roboto Black Italic';
+	src: url("../../fonts/roboto/roboto-black-italic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Roboto Bold';
+	src: url("../../fonts/roboto/roboto-bold.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Roboto Bold Italic';
+	src: url("../../fonts/roboto/roboto-bold-italic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Roboto Italic';
+	src: url("../../fonts/roboto/roboto-italic.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
 	font-family: 'Font Awesome Solid';
-	src: url("../../fonts/font-awesome/fa-solid-900.eot");
-	src: url("../../fonts/font-awesome/fa-solid-900.eot?#iefix") format("embedded-opentype"),
-		url("../../fonts/font-awesome/fa-solid-900.woff") format("woff"), 
-		url("../../fonts/font-awesome/fa-solid-900.woff2") format("woff2"), 
-		url("../../fonts/font-awesome/fa-solid-900.ttf") format("truetype"), 
-		url("../../fonts/font-awesome/fa-solid-900.svg#fontawesome-free") format("svg");
+	src: url("../../fonts/font-awesome/fa-solid-900.woff2") format("woff2"); 
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Font Awesome Brands';
-	src: url("../../fonts/font-awesome/fa-brands-400.eot");
-	src: url("../../fonts/font-awesome/fa-brands-400.eot?#iefix") format("embedded-opentype"),
-		url("../../fonts/font-awesome/fa-brands-400.woff") format("woff"), 
-		url("../../fonts/font-awesome/fa-brands-400.woff2") format("woff2"), 
-		url("../../fonts/font-awesome/fa-brands-400.ttf") format("truetype"), 
-		url("../../fonts/font-awesome/fa-brands-400.svg#fontawesome-free") format("svg");
+	src: url("../../fonts/font-awesome/fa-brands-400.woff2") format("woff2"); 
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 @font-face {
 	font-family: 'Font Awesome Regular';
-	src: url("../../fonts/font-awesome/fa-regular-400.eot");
-	src: url("../../fonts/font-awesome/fa-regular-400.eot?#iefix") format("embedded-opentype"),
-		url("../../fonts/font-awesome/fa-regular-400.woff") format("woff"), 
-		url("../../fonts/font-awesome/fa-regular-400.woff2") format("woff2"), 
-		url("../../fonts/font-awesome/fa-regular-400.ttf") format("truetype"), 
-		url("../../fonts/font-awesome/fa-regular-400.svg#fontawesome-free") format("svg");
+	src: url("../../fonts/font-awesome/fa-regular-400.woff2") format("woff2"); 
 	font-weight: normal;
 	font-style: normal;
+  	font-display: swap;
 }
 
 .fas {
@@ -213,4 +149,3 @@
 	font-family: 'Font Awesome Regular';
 	font-weight: 400;
 }
-

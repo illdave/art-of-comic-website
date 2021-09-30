@@ -1,5 +1,7 @@
 ErrorDocument 404 https://www.artofthecomicbook.com/404/index.html
 
+Header set Cache-Control "max-age= 31536000, public" 
+
 Redirect 301 /history/art-reduction.htm https://www.artofthecomicbook.com/blog/art-reduction-act-of-1967.html
 Redirect 301 /history/toth-critiques-rude.htm https://www.artofthecomicbook.com/blog/alex-toth-critiques-steve-rude.html
 Redirect 301 /materials/lettering-amesguide.htm https://www.artofthecomicbook.com/blog/demo-ames-lettering-guide.html
