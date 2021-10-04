@@ -10,10 +10,11 @@
 		background: transparent;
 		border: 0;
 		padding: 1rem 0 2rem;
-		h1 {
+		h1:not(:focus):not(:active) {
 			color: $white;
-			display: none;
-		}		
+			@include visually-hidden;
+		}
+		
 		.blurb {
 			p {
 				@include comic-book-font-p;
