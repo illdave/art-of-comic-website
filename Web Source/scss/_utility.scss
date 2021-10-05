@@ -419,6 +419,11 @@
 	strong {
 		font-family: $comic-book-font-bold-italic;
 	}
+	.signature {
+		font-family: $comic-book-font-italic;
+		text-align: right;
+		margin-top: -1rem;
+	}
 	.response {
 		p {
 			font-family: $font-family-base;
