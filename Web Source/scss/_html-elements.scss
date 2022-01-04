@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6,
 	font-weight: normal;
 	color: $headings-color;
 	font-family: $font-family-headers;
+	margin-bottom: .25rem;
 }
 
 h1, .h1 {
@@ -84,7 +85,6 @@ ul, ol {
 }
 
 ul, ol, dl {
-    line-height: $line-height-small;
 	margin-bottom: $spacer-base;
 }
 
