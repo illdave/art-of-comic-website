@@ -241,20 +241,24 @@ h1, h2, h3, h4, blockquote {
 	.table td {
 		display: block;
 		padding: 5px;
-		text-align: auto;
+		text-align: left;
+	}
+	.table td:last-child {
+		border: 0;
+		margin-bottom: 1rem;
 	}
 	.table td::before {
 		content: attr(data-header);
-		font-weight: bold;
+		font-family: "Proxima Nova Bold";
 		display: inline-block;
 		width: 50%;
-		text-align: right;
+		text-align: left;
 		padding-right: 1rem;
 	}
 	.table th {
 		text-align: left;
 		background-color: #eee;
-		padding: 5px;
+		padding: 5px !important;
 	}
 	.table th[scope="col"] {
 		display: none;
