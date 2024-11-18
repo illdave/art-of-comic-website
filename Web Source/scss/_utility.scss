@@ -1,6 +1,5 @@
 /* utility classes -------------------- */
 
-
 .hashtag {
 	color: $white;
 }
@@ -22,64 +21,63 @@
 	}
 }
 
+.feature-content-card {
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
+	img {
+		margin-bottom: 1rem;
+	}
+	.text {
+		padding: 0;
+
+		h3 {}
+		p {}
+	}
+	.cta {
+	}
+}
+
 .social {
+	display: flex !important;
+	flex-direction: row;
+	align-items: center;
+	flex-basis: auto;
 	li, dd {
 		background: transparent no-repeat 0 0;
-		padding-left: 1.25rem;
-		padding-right: 0;
-		position: relative;
+		&:not(:last-child) {margin-right: 0;}
 		a {
-			&:before {
-				position: absolute;
-				top: 0;
-				left: 0;
-				font-family: 'Font Awesome Brands';
-				color: $icon-link-color;
-			}
+			text-decoration: none;
+			color: $icon-link-color;
+			display: inline-block;
+			height: 1rem;
+			width: 1rem;
+			line-height: 1rem;
 		}
 		&:hover a {
-			&:before {
-				color: $icon-link-color-hover;
-			}
+			fill: $icon-link-color-hover;
+			filter: invert(50%) sepia(100%) saturate(2%) hue-rotate(90deg) brightness(103%) contrast(100%);
 		}
 		&:active a {
-			&:before {
-				color: $icon-link-color-active;
-			}
-		}
-	}
-	
-	.email a {
-		&:before {
-			font-family: 'Font Awesome Solid';
-			content: $icon-email;
+			color: $icon-link-color-active;
 		}
 	}
 	.facebook a {
-		&:before {
-			content: $icon-facebook;
-		}
+		background: $icon-facebook;
 	}
-	.twitter a {
-		&:before {
-			content: $icon-twitter;
-		}
+	.bluesky a {
+		background: $icon-bluesky;
+	}
+	.email a {
+		background: $icon-email;
 	}
 	.linkedin a {
-		&:before {
-			content: $icon-linkedin;
-		}
+		background: $icon-linkedin;
 	}
 	.youtube a {
-		&:before {
-			content: $icon-youtube;
-		}
+		background: $icon-youtube;
 	}
 	.github a {
-		&:before {
-			font-family: 'Font Awesome Solid';
-			content: $icon-github;
-		}
+		background: $icon-github;
 	}
 	.follow-me {
 		padding-left: 0;
@@ -113,6 +111,7 @@
 		margin-bottom: .5rem;
 	}
 }
+
 .btn-row {
 	margin-bottom: 1rem;
 }
@@ -129,6 +128,17 @@
 		opacity: 1;
 	}
 }
+
+.video {
+	width: 100%;
+	&.embed-16x9 {
+		aspect-ratio: 16 / 9;
+	}
+	&.embed-4x3 {
+		aspect-ratio: 4 / 3;
+	}
+}
+
 .list-inline {
 	li {
 		display: inline-block;

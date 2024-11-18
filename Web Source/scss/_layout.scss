@@ -12,6 +12,7 @@
 		background: $section-intro-default;
 		h2 {
 			color: $white;
+			margin-bottom: $spacer-small;
 		}
 		.default-content {
 			h2 {
@@ -68,6 +69,27 @@ h1, h2, h3, h4, blockquote {
 }
 .break {
 	display: block;
+}
+
+.dark-background {
+	h3 {
+		color: $dark-background-h3-font-color;
+	}
+	p {
+		color: $dark-background-text-color;
+	}
+	a {
+		color: $dark-background-link-color;
+		&:hover {
+			color: $dark-background-link-hover-color;
+		}
+		&:active {
+			color: $dark-background-link-active-color;
+		}
+	}
+	img {
+		border: $border-light;
+	}
 }
 
 

@@ -21,12 +21,15 @@ h1, h2, h3, h4, h5, h6,
 	font-weight: normal;
 	color: $headings-color;
 	font-family: $font-family-headers;
-	margin-bottom: .25rem;
+	margin-bottom: $spacer-small;
 }
 
 h1, .h1 {
+	font-family: $comic-book-headers;
 	font-size: $h1-font-size;
 	line-height: $h1-font-size;
+	margin-bottom: $spacer-base;
+	color: $h1-color;
 }
 h2, .h2 {
 	font-size: $h2-font-size;

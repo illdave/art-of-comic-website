@@ -8,6 +8,7 @@
 $artofcomicbook-blue:						#007bff; // stolen from Bootstrap branding
 $artofcomicbook-blue-dark:					#38568b; // picked up from 2012 site
 $artofcomicbook-cyan:						#00a0e3; 
+$artofcomicbook-red:						#ed1c24;//  cmyk 0 100 100 0
 $artofcomicbook-orange:						#df831e; // picked up from 2012 site
 $artofcomicbook-yellow:						#fdda00;
 $artofcomicbook-teal:						#0083a9;
@@ -36,11 +37,17 @@ $theme-color-4:								$artofcomicbook-green;
 $theme-color-5:								$artofcomicbook-yellow;
 $theme-color-6:								$artofcomicbook-teal;
 $theme-color-7:								$artofcomicbook-blue-dark;
+$theme-color-8:								$artofcomicbook-red;
+
+$section-intro-default: 					$theme-color-7;
+$section-intro-home: 						$theme-color-2;
+$section-intro-comics: 						$theme-color-5;
+$section-intro-about: 						lighten($theme-color-6, 60%);
 
 $demo-red:									$artofcomicbook-demo-red;
+$body-bg:									$white;
 
-$body-bg:									white;
-
+$h1-color: 									$artofcomicbook-blue-dark;
 $headings-color: 							$gray-dark;
 $text-color:								$gray-darker;
 $link-color:								$theme-color-1;
@@ -50,21 +57,23 @@ $link-active-color:							darken($link-color, 20%);
 $h2-font-color: 							$theme-color-7;
 $h3-font-color: 							$theme-color-2;
 
+$dark-background-headings-color: 			$headings-color;
+$dark-background-h2-font-color: 			$h3-font-color;
+$dark-background-h3-font-color: 			$h3-font-color;
+$dark-background-text-color:				lighten($section-intro-default, 40%);
+$dark-background-link-color:				$white;
+$dark-background-link-hover-color:			lighten($link-color, 20%);
+$dark-background-link-active-color:			darken($link-color, 20%);
+
 $white-glow: 								0 0 10px white;
 
 $border-default-color: 						$gray-light;
 $border-default: 							rem(1px solid $border-default-color);
 $border-light: 								rem(1px solid $gray-light-medium);
+$border-white: 								rem(1px solid $white);
 
 $table-border-color:						$border-default-color;
 
-
-/* section intro colors -------------- */
-
-$section-intro-default: 					$theme-color-7;
-$section-intro-home: 						$theme-color-2;
-$section-intro-comics: 						$theme-color-5;
-$section-intro-about: 						lighten($theme-color-6, 60%);
 
 
 /* typography ------------------------ */
@@ -93,6 +102,11 @@ $opensans-italic:							"Open Sans Italic";
 $opensans-bold-italic:						"Open Sans Bold Italic";
 $opensans-semibold-italic:					"Open Sans Semibold";
 
+$comicraft-biffbamboom:						"Comicraft BiffBamBoom";
+$comicraft-foom:							"Comicraft Foom";
+
+$comic-book-headers: 						$comicraft-foom;
+
 $comic-book-font: 							"Spinner Rack Regular";
 $comic-book-font-italic: 					"Spinner Rack Italic";
 $comic-book-font-bold-italic: 				"Spinner Rack Bold Italic";
@@ -112,7 +126,7 @@ $font-size-large:         					ceil(($font-size-base * 1.25));	// ~18px
 $font-size-medium:        					ceil(($font-size-base * 1.12)); // ~16px
 $font-size-small:         					90%; // ~12px
 
-$h1-font-size:                				$font-size-base * 2.0;
+$h1-font-size:                				$font-size-base * 2.6;
 $h2-font-size:                				$font-size-base * 1.6;
 $h3-font-size:                				$font-size-base * 1.4;
 $h4-font-size:                				$font-size-base * 1.2;
@@ -151,6 +165,7 @@ $pictures-image-path:						$image-path/pictures;
 $dsm-image-path:							$image-path/dsm;
 $speaker-image-path:						$image-path/speaker;
 $logos-image-path:							$image-path/logos;
+$icons-image-path:							$image-path/icons;
 
 
 /* spacing --------------------------- */
@@ -207,12 +222,19 @@ $navbar-toggler-icon:   					quote($fa-var-bars);
 
 $icon-back-to-top:   						quote($fa-var-chevron-up);
 $icon-learn-more:   						quote($fa-var-caret-right);
-$icon-facebook:   							quote($fa-var-facebook);
-$icon-twitter:   							quote($fa-var-twitter);
-$icon-github:   							quote($fa-var-code-branch);
-$icon-linkedin:   							quote($fa-var-linkedin);
-$icon-youtube:   							quote($fa-var-youtube);
-$icon-email:   								quote($fa-var-at);
+$icon-facebook-fa:   						quote($fa-var-facebook);
+$icon-twitter-fa:   						quote($fa-var-twitter);
+$icon-github-fa:   							quote($fa-var-code-branch);
+$icon-linkedin-fa:   						quote($fa-var-linkedin);
+$icon-youtube-fa:   						quote($fa-var-youtube);
+$icon-email-fa:   							quote($fa-var-at);
+
+$icon-facebook:   							url("#{$icons-image-path}/facebook.svg");
+$icon-github:   							url("#{$icons-image-path}/github.svg");
+$icon-linkedin:   							url("#{$icons-image-path}/linkedin.svg");
+$icon-youtube:   							url("#{$icons-image-path}/youtube.svg");
+$icon-email:   								url("#{$icons-image-path}/envelope.svg");
+$icon-bluesky:   							url("#{$icons-image-path}/bluesky.svg");
 
 $icon-class-nav:   							quote($fa-var-paint-brush);
 
