@@ -39,6 +39,9 @@ $theme-color-6:								$artofcomicbook-teal;
 $theme-color-7:								$artofcomicbook-blue-dark;
 $theme-color-8:								$artofcomicbook-red;
 
+$artboard-border-color: 					lighten($artofcomicbook-cyan, 45%);
+$artboard-hr-color: 						darken($artboard-border-color, 2%);
+
 $section-intro-default: 					$theme-color-7;
 $section-intro-home: 						$theme-color-2;
 $section-intro-comics: 						$theme-color-5;
@@ -47,15 +50,22 @@ $section-intro-about: 						lighten($theme-color-6, 60%);
 $demo-red:									$artofcomicbook-demo-red;
 $body-bg:									$white;
 
-$h1-color: 									$artofcomicbook-blue-dark;
 $headings-color: 							$gray-dark;
+$headings-color-alt: 						darken($artofcomicbook-blue, 10%);
 $text-color:								$gray-darker;
+$ul-bullet-color: 							$artofcomicbook-cyan;
+
 $link-color:								$theme-color-1;
 $link-hover-color:							lighten($link-color, 20%);
 $link-active-color:							darken($link-color, 20%);
 
-$h2-font-color: 							$theme-color-7;
-$h3-font-color: 							$theme-color-2;
+$h1-color: 									$artofcomicbook-blue-dark;
+$h2-font-color: 							$headings-color-alt;
+$h3-font-color: 							$text-color;
+
+$cta-link-color: 							$link-color;
+$cta-link-hover-color: 						$text-color;
+$cta-link-active-color: 					darken($cta-link-color, 70%);
 
 $dark-background-headings-color: 			$headings-color;
 $dark-background-h2-font-color: 			$h3-font-color;
@@ -68,12 +78,15 @@ $dark-background-link-active-color:			darken($link-color, 20%);
 $white-glow: 								0 0 10px white;
 
 $border-default-color: 						$gray-light;
+$border-transparent-black-color:			rgba(#000, 0.2);
 $border-default: 							rem(1px solid $border-default-color);
+$border-transparent-black: 					rem(1px solid $border-transparent-black-color);
 $border-light: 								rem(1px solid $gray-light-medium);
 $border-white: 								rem(1px solid $white);
+$border-artboard: 							rem(2px solid $artboard-border-color);
 
-$table-border-color:						$border-default-color;
-
+$table-border-color:						$artboard-hr-color;
+$item-bg:									$gray-lighter;
 
 
 /* typography ------------------------ */
@@ -127,7 +140,7 @@ $font-size-medium:        					ceil(($font-size-base * 1.12)); // ~16px
 $font-size-small:         					90%; // ~12px
 
 $h1-font-size:                				$font-size-base * 2.6;
-$h2-font-size:                				$font-size-base * 1.6;
+$h2-font-size:                				$font-size-base * 1.9;
 $h3-font-size:                				$font-size-base * 1.4;
 $h4-font-size:                				$font-size-base * 1.2;
 $h5-font-size:                				$font-size-base;
@@ -135,6 +148,11 @@ $h6-font-size:                				$font-size-base;
 
 $line-height-base:							$font-size-base * 1.4;
 $line-height-small: 						1.2rem;
+
+$h1-line-height:                			$h1-font-size * 1;
+$h2-line-height:                			$h2-font-size * 1;
+$h3-line-height:                			$h3-font-size * 1.1;
+$h4-line-height:                			$h4-font-size * 1.1;
 
 $link-hover-decoration:						none;
 $text-indent-for-image:  					-9999px;
@@ -219,7 +237,7 @@ $icon-link-color-hover: 					$theme-color-1;
 $icon-link-color-active: 					black;
 
 $navbar-toggler-icon:   					quote($fa-var-bars);
-
+$icon-learn-cta:   							quote($fa-var-chevron-right);
 $icon-back-to-top:   						quote($fa-var-chevron-up);
 $icon-learn-more:   						quote($fa-var-caret-right);
 $icon-facebook-fa:   						quote($fa-var-facebook);
@@ -237,11 +255,12 @@ $icon-email:   								url("#{$icons-image-path}/envelope.svg");
 $icon-bluesky:   							url("#{$icons-image-path}/bluesky.svg");
 
 $icon-class-nav:   							quote($fa-var-paint-brush);
+$icon-list-link: 							quote($fa-var-chevron-right);
 
 
 /* uncategorized --------------------- */
 
-$hr-margin: 								$spacer*0.5;
+$hr-margin: 								$spacer-base;
 
 $jumbotron-padding: 						$spacer-large $spacer-base;
 $jumbotron-bg: 								$gray-lighter;
@@ -282,13 +301,14 @@ $footer-padding: 							$spacer-base-vertical $spacer-base-horizontal;
 
 /* artboard -------------------------- */
 
-$artboard-border-color: 					lighten($artofcomicbook-cyan, 45%);
 $artboard-border: 							rem(1px solid $artboard-border-color);
-$artboard-hr: 								rem(2px solid $artboard-border-color);
+$artboard-hr: 								rem(2px solid $artboard-hr-color);
+$artboard-list-header-border: 				rem(1px solid $artboard-hr-color);
+
 $artboard-spacer: 							5rem;
 $artboard-spacer-mobile:					3rem;
 $artboard-background: 						$white;
-$artboard-padding: 							4rem 4rem 5rem;
+$artboard-padding: 							5rem;
 
 $artboard-box-shadow: 						$box-shadow-boxed;
 $artboard-inner-shadow: 					inset 0 0 2rem $gray-light-medium;
@@ -358,6 +378,8 @@ $main-nav-padding: 							.5rem;
 $main-nav-height: 							$main-nav-brand-height + 2 * $main-nav-padding + $main-nav-brand-slogan-height + $main-nav-brand-slogan-margin;		
 $main-nav-height-mobile: 					$main-nav-height - 2.5rem;	
 
+$nav-box-shadow:							$box-shadow-white-bg;
+
 
 /* home ------------------------------ */
 
@@ -377,4 +399,25 @@ $banner-text-border-radius: 				$border-radius-base;
 $banner-text-border-radius-large: 			$border-radius-large;
 
 
+/* components ----------------------- */
+
+$tile-card-bg: 								$gray-lighter;
+$tile-card-hover-bg: 						lighten($tile-card-bg, 2%);
+$tile-card-icon: 							5rem;
+
+$multilink-circle: 							5rem;
+$multilink-icon: 							3rem;
+
+$multilink-bg-yellow: 						lighten($artofcomicbook-yellow, 10%);
+$multilink-bg-orange: 						lighten($artofcomicbook-orange, 10%);
+
+$multilink-bg-blue: 						lighten($artofcomicbook-blue, 40%);
+$multilink-bg-blue-dark: 					lighten($artofcomicbook-blue-dark, 10%);
+$multilink-bg-cyan: 						lighten($artofcomicbook-cyan, 10%);
+$multilink-bg-green: 						lighten($artofcomicbook-green, 10%);
+
+$multilink-bg: 								$multilink-bg-blue;
+
+
 /* FOO ------------------------------- */
+

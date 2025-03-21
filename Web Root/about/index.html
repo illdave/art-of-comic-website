@@ -12,23 +12,23 @@
 		<meta name="description" content="Art of the Comic Book is a college-level studio workshop for making comics with traditional ink-on-paper media.">
 		<meta name="keywords" content="comic books, comic book art, david marshall, marshall art studio, art of the comic book">
 		
-		<link rel="preload" href="../assets/fonts/proxima-nova/proxima-nova-reg.woff" as="font" type="font/woff" crossorigin>		
-		<link rel="preload" href="../assets/fonts/proxima-nova/proxima-nova-bold.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="../assets/fonts/proxima-nova/proxima-nova-reg-italic.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="../assets/fonts/proxima-nova/proxima-nova-bold-italic.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="../assets/fonts/proxima-nova/proxima-nova-reg.woff" as="font" type="font/woff">		
+		<link rel="preload" href="../assets/fonts/proxima-nova/proxima-nova-bold.woff" as="font" type="font/woff">
+		<link rel="preload" href="../assets/fonts/proxima-nova/proxima-nova-reg-italic.woff" as="font" type="font/woff">
+		<link rel="preload" href="../assets/fonts/proxima-nova/proxima-nova-bold-italic.woff" as="font" type="font/woff">
 		
-		<link rel="preload" href="../assets/fonts/spinner-rack/spinner-rack-regular.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="../assets/fonts/spinner-rack/spinner-rack-italic.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="../assets/fonts/spinner-rack/spinner-rack-bold-italic.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="../assets/fonts/spinner-rack/spinner-rack-regular.woff" as="font" type="font/woff">
+		<link rel="preload" href="../assets/fonts/spinner-rack/spinner-rack-italic.woff" as="font" type="font/woff">
+		<link rel="preload" href="../assets/fonts/spinner-rack/spinner-rack-bold-italic.woff" as="font" type="font/woff">
 		
-		<link rel="preload" href="../assets/fonts/roboto/roboto-black.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="../assets/fonts/roboto/roboto-bold.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="../assets/fonts/roboto/roboto-bold-italic.woff" as="font" type="font/woff" crossorigin>
-		<link rel="preload" href="../assets/fonts/roboto/roboto-italic.woff" as="font" type="font/woff" crossorigin>
+		<link rel="preload" href="../assets/fonts/roboto/roboto-black.woff" as="font" type="font/woff">
+		<link rel="preload" href="../assets/fonts/roboto/roboto-bold.woff" as="font" type="font/woff">
+		<link rel="preload" href="../assets/fonts/roboto/roboto-bold-italic.woff" as="font" type="font/woff">
+		<link rel="preload" href="../assets/fonts/roboto/roboto-italic.woff" as="font" type="font/woff">
 
-		<link rel="preload" href="../assets/fonts/font-awesome/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="../assets/fonts/font-awesome/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="../assets/fonts/font-awesome/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="../assets/fonts/font-awesome/fa-solid-900.woff2" as="font" type="font/woff2">
+		<link rel="preload" href="../assets/fonts/font-awesome/fa-brands-400.woff2" as="font" type="font/woff2">
+		<link rel="preload" href="../assets/fonts/font-awesome/fa-regular-400.woff2" as="font" type="font/woff2">
 
 		<link href="../assets/themes/art-of-comic/art-of-comic.css" type="text/css" rel="stylesheet">	
 		<script src="../assets/themes/art-of-comic/art-of-comic.js" type="text/javascript"></script>
@@ -43,10 +43,11 @@
 	<body>
 		<div class="art-of-comic-2">
 			<header class="fixed-top main-navigation" role="banner">
-				<a href="#main-content" class="skip-link sr-only sr-only-focusable">Skip Content</a>
+				<div class="container">
+					<a href="#main-content" class="skip-link sr-only sr-only-focusable">Skip Content</a>
 				<nav class="navbar navbar-expand-lg">
 					<div class="navbar-brand-stack">
-						<a class="navbar-brand" href="../index.html" rel="home" aria-label="Art of the Comic Book">Art of the Comic Book</a>
+						<a class="navbar-brand" href="/" rel="home" aria-label="Art of the Comic Book">Art of the Comic Book</a>
 						<span class="slogan"><span class="hashtag">#MakeComics</span> with Traditional Media</span>
 					</div>
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,16 +62,24 @@
 							<li class="nav-item about is-active" role="menuitem">
 								<a href="../about/index.html" aria-label="about instructor David Marshall">About</a>
 							</li>
-							<li class="nav-item studio" role="menuitem">
-								<a href="../studio/index.html" aria-label="studio requirements">Studio</a>
+							<li class="nav-item studio dropdown" role="menuitem">
+								<a href="#" class="dropdown-toggle" aria-label="studio requirements" role="button" data-bs-toggle="dropdown" aria-expanded="false">Studio</a>
+									<ul class="dropdown-menu post-it yellow">
+										<li><a class="dropdown-item" href="/studio/">Resources</a></li>
+										<li><a class="dropdown-item" href="/assignments/">Assignments</a></li>
+									<li><a class="dropdown-item" href="/production/">Production</a></li>
+									<li><a class="dropdown-item" href="/process/">Creative process</a></li>
+									<li><a class="dropdown-item" href="/art-supplies/">Art supplies</a></li>
+								</ul>
 							</li>
 							<li class="nav-item blogs" role="menuitem">
-								<a href="../blog/index.html" aria-label="blog">Blog</a>
+								<a href="/blog/index.html" aria-label="blog">Blog</a>
 							</li>
 						</ul>
 						<!-- placeholder for Search -->
 					</div>
-				</nav>
+					</nav>
+				</div>
 			</header>
 			<main id="main-content" class="main-content about" role="main">	
 				<section class="section content intro">
@@ -104,43 +113,87 @@
 										<span class="rule"></span>
 									</div>
 	
-<h2>Your goals</h2>
-<p>When you have completed this course you should be able to do the following:</p>
-<div class="row">
-	<div class="col-md-6">
-		<ul>
-			<li>Have a historically-based vocabulary and techniques of comics story-telling</li>
-			<li>Understand how these techniques should be used</li>
-			<li>Use basic media techniques and materials</li>
-			<li>Understand fundamentals of sequential storytelling</li>
-			<li>Apply anatomy, drafting, perspective, page layout, composition, panel arrangement</li>
-			<li>Tell a variety of stories in a clear and interesting manner</li>
-		</ul>
-	</div>
-	<div class="col-md-6">
-		<ul>
-			<li>Develop creative solutions to unanticipated problems</li>
-			<li>Draw on solutions by historical and contemporary artists</li>
-			<li>Work in solo and collaborative projects</li>
-			<li>Objectively critique your work, as well as the work of others</li>
-			<li>Use currrent digital and traditional production techniques</li>
-			<li>Be aware of professional opportunities and presenting your work</li>		
-		</ul>
-	</div>
-</div>
-				
+									<h2>Your goals</h2>
+									<p>When you have completed this course you should be able to do the following:</p>
+									<div class="row">
+										<div class="col-md-6">
+											<ul>
+												<li>Have a historically-based vocabulary and techniques of comics story-telling</li>
+												<li>Understand how these techniques should be used</li>
+												<li>Use basic media techniques and materials</li>
+												<li>Understand fundamentals of sequential storytelling</li>
+												<li>Apply anatomy, drafting, perspective, page layout, composition, panel arrangement</li>
+												<li>Tell a variety of stories in a clear and interesting manner</li>
+											</ul>
+										</div>
+										<div class="col-md-6">
+											<ul>
+												<li>Develop creative solutions to unanticipated problems</li>
+												<li>Draw on solutions by historical and contemporary artists</li>
+												<li>Work in solo and collaborative projects</li>
+												<li>Objectively critique your work, as well as the work of others</li>
+												<li>Use currrent digital and traditional production techniques</li>
+												<li>Be aware of professional opportunities and presenting your work</li>		
+											</ul>
+										</div>
+									</div>
+									
+									<h2>Policies & procedures</h2>
 
-<div class="picture-wrapper left quarter has-frame">
-	<img src="../assets/img/pictures/dave-drawing-2.jpg" alt="David Marshall drawing a comic book">
-</div>
+									<table class="table nowrap left-two" id="grading-policy" summary="">
+										<caption>Grading policy for <em>Art of the Comic Book</em></caption>
+										<thead>
+											<tr>
+												<th scope="col" role="columnheader">Grade</th><th scope="col" role="columnheader">Range</th><th scope="col" role="columnheader">Description</th>
+											</tr>
+										</thead>
+										<tfoot>
+											<tr>
+												<td colspan="3"></td>
+											</tr>
+										</tfoot>
+										<tbody>
+											<tr>
+												<th scope="row" role="rowheader" >A to A-</th>
+												<td data-header="Range: ">100-90</td>
+												<td data-header="Description: ">Excellent to Very Good; comprehensive knowledge and understanding of subject matter; marked perception and/or originality</td>
+											</tr>
+											<tr>
+												<th scope="row" role="rowheader" data-header="Grade: ">B+ to B-</th>
+												<td data-header="Range: ">89-75</td>
+												<td data-header="Description: ">Good; moderately broad knowledge and understanding of subject matter; noticeable perception and/or originality</td>
+											</tr>
+											<tr>
+												<th scope="row" role="rowheader" data-header="Grade: ">C+ to C-</th>
+												<td data-header="Range: ">76-70</td>
+												<td data-header="Description: ">Satisfactory; reasonable knowledge and understanding of subject matter; some perception and/or originality</td>
+											</tr>
+											<tr>
+												<th scope="row" role="rowheader" data-header="Grade: ">D</th>
+												<td data-header="Range: ">69-60</td>
+												<td data-header="Description: ">Marginal; minimum of knowledge and understanding of subject matter; limited perception and/or originality</td>
+											</tr>
+											<tr>
+												<th scope="row" role="rowheader" data-header="Grade: ">F</th>
+												<td data-header="Range: ">&lt; 60</td>
+												<td data-header="Description: ">Failing; unacceptable low level of knowledge and understanding of subject matter; severely limited perception and/or originality; absences in excess of allowable limit</td>
+											</tr>
+										</tbody>
+									</table>
 
-<h2>Your instructor</h2>
-<p>Marshall was published by <cite><a href="http://en.wikipedia.org/wiki/Fantagraphics_Books" title="Fantagraphics Books - Wikipedia" target="_blank" rel="noopener noreferrer">Fantagraphics Books</a></cite>, <cite><a href="http://en.wikipedia.org/wiki/Taboo_(comic)" title="SpiderBaby Graphix (Taboo) - Wikipedia" target="_blank" rel="noopener noreferrer">SpiderBaby Graphix</a></cite> and <cite><a href="http://en.wikipedia.org/wiki/Fantaco" title="FantaCo Enterprises - Wikipedia" target="_blank" rel="noopener noreferrer">FantaCo Enterprises</a></cite>. He is also a multiple participant of <cite><a href="http://www.illdave.com/comicbooks/24hour/" title="David Marshall: 24-Hour Comics Day" target="_blank" rel="noopener noreferrer">24-Hour Comics Day</a></cite>. Through his one-man creative services company <cite><a href="http://www.illdave.com/" title="Marshall Art Studio" target="_blank" rel="noopener noreferrer">Marshall Art Studio</a></cite>, David provides web design + development, print design, illustration and overall content beautification.</p>
-<p>David Marshall's formal teaching career began in 1995. In this capacity, his primary emphasis is clear content presentation, regardless of artistic media. Exercises for <em>Art of the Comic Book</em> leverage Mr. Marshall's vast knowledge of both traditional and digital tools for creating comic books. Classwork combines creative fundamentals (research, anatomy, perspective, composition, storytelling, etc.) with current production methods and business environment.</p>
-	
+									<h2 id="instructor">Your instructor</h2>
+									<figure class="float-start col-md-6 no-border">
+										<picture>
+											<img src="../assets/img/pictures/dave-drawing-11.jpg" alt="David Marshall drawing a comic book">
+										</picture>								
+									</figure>							
+									
+									<p>Marshall was published by <cite><a href="http://en.wikipedia.org/wiki/Fantagraphics_Books" title="Fantagraphics Books - Wikipedia" target="_blank" rel="noopener noreferrer">Fantagraphics Books</a></cite>, <cite><a href="http://en.wikipedia.org/wiki/Taboo_(comic)" title="SpiderBaby Graphix (Taboo) - Wikipedia" target="_blank" rel="noopener noreferrer">SpiderBaby Graphix</a></cite> and <cite><a href="http://en.wikipedia.org/wiki/Fantaco" title="FantaCo Enterprises - Wikipedia" target="_blank" rel="noopener noreferrer">FantaCo Enterprises</a></cite>. He is also a multiple participant of <cite><a href="http://www.illdave.com/comicbooks/24hour/" title="David Marshall: 24-Hour Comics Day" target="_blank" rel="noopener noreferrer">24-Hour Comics Day</a></cite>. Through his one-man creative services company <cite><a href="http://www.illdave.com/" title="Marshall Art Studio" target="_blank" rel="noopener noreferrer">Marshall Art Studio</a></cite>, David provides web design + development, print design, illustration and overall content beautification.</p>
+									<p>David Marshall's formal teaching career began in 1995. In this capacity, his primary emphasis is clear content presentation, regardless of artistic media. Exercises for <em>Art of the Comic Book</em> leverage Mr. Marshall's vast knowledge of both traditional and digital tools for creating comic books. Classwork combines creative fundamentals (research, anatomy, perspective, composition, storytelling, etc.) with current production methods and business environment.</p>
 								</div>							
 							</div>
-							<div class="col-md-4 col-lg-3">	
+							<div class="col-md-4 col-lg-3 right-rail">	
+								<h2>Outside resources</h2>
 								<div class="item post-it yellow">
 									<dl>
 										<dt>My Comics</dt>

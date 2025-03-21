@@ -146,14 +146,14 @@
 		padding-bottom: 0;
 		dl {
 			dt {
-				margin-bottom: $spacer-xs;
-				font-size: $h4-font-size;
+				margin-bottom: $spacer-small;
 			}
 			dd {
 				&.active {
 					a {
 						cursor: default;
-						color: lighten($theme-color-2, 10%);
+						color: lighten($text-color, 30%);
+						font-weight: bold;
 					}
 				}
 			}
