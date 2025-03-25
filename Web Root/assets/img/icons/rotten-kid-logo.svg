@@ -3,7 +3,7 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #939598;
+        fill: inherit;
       }
 
       .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {

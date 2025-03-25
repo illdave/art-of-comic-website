@@ -40,7 +40,7 @@
 				padding: 0;
 				justify-content: center;
 				.navbar-brand {
-					width: 20rem;
+					width: 17rem;
 					height: 3rem;			
 					margin-right: 0;
 					background-position: center center;
@@ -54,6 +54,15 @@
 }
 
 @media (max-width: 576px) {
+
+	.navbar-nav {
+		.dropdown-menu {
+			position: absolute;
+			top: 3rem;
+			right: 0;
+		}
+	}
+
 	.artboard {
 		padding: 3rem;
 		.left, .right {
@@ -72,6 +81,10 @@
 				display: none;
 			}
 		}
+	}
+	
+	h1, .h1 {
+		margin-bottom: .5rem;
 	}
 	
 	table, .table {
@@ -128,7 +141,6 @@
 	}
 	.story-group-blade {
 		.feature-story-card {
-			margin-bottom: 0;
 		}
 		.story-group-row.tile-cards {
 			flex-wrap: wrap;
@@ -149,6 +161,7 @@
 			display: none;
 		}
 		.text {
+			padding: 0;
 			ul {
 				margin-top: 1rem;
 				li {
@@ -160,6 +173,25 @@
 			}
 		}
 	}
+	
+	.link-list {
+		&.two-column, 
+		&.three-column,
+		&.four-column {
+			ul {
+				column-count: 1;
+			}
+		}
+	}
+	
+	ul, ol {
+		&.two-column,
+		&.three-column,
+		&.four-column {
+			column-count: 1;
+		}	
+	}
+	
 	
 	.picture-wrapper, figure {
 		&.left, &.float-start {

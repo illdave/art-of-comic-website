@@ -23,6 +23,9 @@
 	
 	&.intro {
  		background: $white;
+ 		h1 {
+ 			margin-bottom: $spacer-small;
+ 		}
  		h2 {
  		}
  		p {

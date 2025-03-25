@@ -50,7 +50,7 @@
 
 .list-header {
 	padding-bottom: $spacer-small;
-	margin-bottom: $spacer-base;				
+	margin-bottom: $spacer-small;				
 	border-bottom: $artboard-list-header-border;
 	.list-name {
 		font-family: $font-family-headers;
@@ -149,6 +149,13 @@
 			font-family: 'Font Awesome Solid';
 			content: $icon-learn-cta;
 		}
+	}
+	&:after {
+		font-family: 'Font Awesome Solid';
+		font-size: .75rem;
+		content: $icon-list-link;			
+		color: $link-color;
+		margin-left: .25rem;
 	}
 	&:hover {
 		color: $cta-link-hover-color;
@@ -334,14 +341,11 @@
 	&.neon-teal {
 		background-color: #37d2d8;
 	}
-	
 	dl {
-		margin-bottom: $spacer-base;
+		margin-bottom: 0;
 		dt {
 			color: $h2-font-color;
 			border-bottom: $border-transparent-black;
-		}
-		dt {
 		}
 	}
 	h4 {

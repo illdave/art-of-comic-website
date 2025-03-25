@@ -41,7 +41,6 @@ h3, .h3 {
 	font-size: $h3-font-size;
 	color: $h3-font-color;
 	line-height: $h3-line-height;
-	margin-bottom: 0;
 }
 h4, .h4 {
 	font-size: $h4-font-size;
@@ -120,9 +119,7 @@ li, dd {
 
 dl {
 	dt {
-		font-family: $font-family-headers;
-		font-weight: normal;
-		margin-bottom: $spacer-small;
+		@include list-header;
 	}
 	&.text-list {
 		dt {

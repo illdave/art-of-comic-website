@@ -401,8 +401,13 @@ $banner-text-border-radius-large: 			$border-radius-large;
 
 /* components ----------------------- */
 
-$tile-card-bg: 								$gray-lighter;
-$tile-card-hover-bg: 						lighten($tile-card-bg, 2%);
+$tile-card-bg: 								lighten($artofcomicbook-yellow, 20%) url("#{$layout-image-path}/tile-card-bg.png") no-repeat right 0;
+$tile-card-border-color: 					darken($artofcomicbook-orange, 2%);
+$tile-card-border: 							rem(1px solid $tile-card-border-color);
+$tile-card-hover-bg: 						lighten($artofcomicbook-yellow, 40%);
+$tile-card-hover-border: 					rem(1px solid $link-color);
+$tile-card-blade-hover-bg: 					lighten($artofcomicbook-yellow, 20%);
+$tile-card-blade-hover-border: 				rem(1px solid $link-color);
 $tile-card-icon: 							5rem;
 
 $multilink-circle: 							5rem;
