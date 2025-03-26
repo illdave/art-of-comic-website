@@ -401,12 +401,13 @@ $banner-text-border-radius-large: 			$border-radius-large;
 
 /* components ----------------------- */
 
-$tile-card-bg: 								lighten($artofcomicbook-yellow, 20%) url("#{$layout-image-path}/tile-card-bg.png") no-repeat right 0;
-$tile-card-border-color: 					darken($artofcomicbook-orange, 2%);
+$tile-card-bg-color:						lighten($gray-lighter, 15%);
+$tile-card-border-color: 					darken($tile-card-bg-color, 20%);
+$tile-card-bg: 								$tile-card-bg-color url("#{$layout-image-path}/tile-card-bg.png") no-repeat right 0;
 $tile-card-border: 							rem(1px solid $tile-card-border-color);
-$tile-card-hover-bg: 						lighten($artofcomicbook-yellow, 40%);
+$tile-card-hover-bg: 						lighten($tile-card-bg-color, 50%);
 $tile-card-hover-border: 					rem(1px solid $link-color);
-$tile-card-blade-hover-bg: 					lighten($artofcomicbook-yellow, 20%);
+$tile-card-blade-hover-bg: 					lighten($tile-card-bg-color, 10%);
 $tile-card-blade-hover-border: 				rem(1px solid $link-color);
 $tile-card-icon: 							5rem;
 
@@ -420,7 +421,6 @@ $multilink-bg-blue: 						lighten($artofcomicbook-blue, 40%);
 $multilink-bg-blue-dark: 					lighten($artofcomicbook-blue-dark, 10%);
 $multilink-bg-cyan: 						lighten($artofcomicbook-cyan, 10%);
 $multilink-bg-green: 						lighten($artofcomicbook-green, 10%);
-
 $multilink-bg: 								$multilink-bg-blue;
 
 
