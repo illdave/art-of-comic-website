@@ -577,15 +577,15 @@
 
 .listings {
 	.listing {
-		margin-bottom: 1rem;
-		dt, dd {
+		margin-bottom: $spacer-base;
+		dd {
 			margin-bottom: 0;
 		}
-		.company-title {
+		dt, .company-title {
 			width: 70%;
 		}
 		.company-info {
-			margin-top: .5rem;
+			margin-top: $spacer-small;
 		}
 	}
 	&.boxed {
@@ -595,7 +595,7 @@
 			margin-top: 0 !important;
 		}
 		.listing {
-			background: $white right .5rem top .5rem no-repeat;
+			background: $white right $spacer-small top .5rem no-repeat;
 			background-size: 25%;
 			border: $border-default;
 			border-top: rem(3px solid $black);
@@ -620,7 +620,6 @@
 			}
 			&.new-england-comics {
 				background-image: url("#{$logos-image-path}/new-england-comics.png");
-				dd {width: 75%;}
 			}
 			&.paper-asylum {
 				background-image: url("#{$logos-image-path}/paper-asylum.png");
@@ -638,6 +637,7 @@
 				background-image: url("#{$logos-image-path}/massart.jpg");
 				background-size: 33%;
 				background-position-y: 1rem;
+				dt {width: 60%;}
 			}
 			&.artist-craftsman {
 				background-image: url("#{$logos-image-path}/artist-craftsman.jpg");
@@ -646,6 +646,7 @@
 				background-image: url("#{$logos-image-path}/dick-blick.jpg");
 				background-size: 40%;
 				background-position-y: .5rem;
+				dt {width: 60%;}
 			}
 			&.COMIC_BOOK_STORE {
 				background-image: url("#{$logos-image-path}/COMIC_BOOK_STORE.png");
