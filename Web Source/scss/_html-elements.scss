@@ -25,17 +25,23 @@ h1, h2, h3, h4, h5, h6,
 }
 
 h1, .h1 {
-	font-family: $comic-book-headers;
+	font-family: $h1-font-family;
 	font-size: $h1-font-size;
 	line-height: $h1-line-height;
 	color: $h1-color;
 	margin-bottom: $spacer-large;
+	word-spacing: -0.5rem;
+	.big {
+		font-size: $h1-font-size * 1.3;
+		color: $h2-font-color;
+	}
 }
 h2, .h2 {
 	font-family: $comic-book-headers;
 	font-size: $h2-font-size;
 	line-height: $h2-line-height;
 	color: $h2-font-color;
+	text-transform: uppercase;
 }
 h3, .h3 {
 	font-size: $h3-font-size;
@@ -283,7 +289,7 @@ cite {
 		line-height: 1rem;
 		font-size: $font-size-small;
 	}
-	&.has-border {
+	&.has-border, &.images-have-border {
 		img {
 			border: $border-default;
 		}

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <style>
+      .b {
+        fill: #e31f26;
+      }
+
+      .c {
+        fill: none;
+        stroke: #6dcff6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .c, .d, .e, .f, .g {
+        stroke-width: .66px;
+      }
+
+      .d {
+        fill: #fff;
+        stroke: #939598;
+      }
+
+      .d, .e, .f, .g {
+        stroke-miterlimit: 10;
+      }
+
+      .e {
+        fill: #fbc8b4;
+      }
+
+      .e, .f, .g {
+        stroke: #231f20;
+      }
+
+      .f {
+        fill: #c0e2ca;
+      }
+
+      .g {
+        fill: #bbb8dc;
+      }
+    </style>
+  </defs>
+  <rect class="d" x="407.39" y="90.79" width="146.31" height="218.14"/>
+  <rect class="d" x="46.4" y="18.96" width="297.94" height="361.79"/>
+  <g>
+    <line class="c" x1="80.75" y1="40.33" x2="316.33" y2="40.33"/>
+    <line class="c" x1="76.47" y1="258.13" x2="312.06" y2="258.13"/>
+    <line class="c" x1="80.21" y1="265.07" x2="315.8" y2="265.07"/>
+    <line class="c" x1="76.8" y1="359.72" x2="312.39" y2="359.72"/>
+    <line class="c" x1="88.92" y1="32.18" x2="88.92" y2="370.45"/>
+    <line class="c" x1="301.66" y1="32.83" x2="301.66" y2="366.51"/>
+    <line class="c" x1="169.78" y1="260.55" x2="169.78" y2="370.13"/>
+    <line class="c" x1="162.83" y1="262.69" x2="162.83" y2="372.26"/>
+  </g>
+  <rect class="f" x="416.72" y="101.79" width="127.13" height="134.81"/>
+  <rect class="e" x="416.72" y="241.13" width="48.83" height="51.75"/>
+  <rect class="g" x="471.3" y="241.13" width="72.56" height="51.75"/>
+  <polygon class="b" points="427.74 199.86 400.49 172.61 400.49 186.72 328.67 186.72 328.67 212.99 400.49 212.99 400.49 227.1 427.74 199.86"/>
+</svg>

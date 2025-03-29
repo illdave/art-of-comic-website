@@ -23,9 +23,9 @@
 		.header {
 			font-family: $comic-book-headers;
 			font-size: $h2-font-size;
-			line-height: $h2-line-height;
-			color: $headings-color-alt !important;
-			margin-bottom: $spacer-base;
+			line-height: $h2-line-height * 1.5;
+			color: $text-color !important;
+			margin-bottom: $spacer-small;
 			&.header-3 {
 				font-size: $h2-font-size;
 				line-height: $line-height-base;
@@ -176,6 +176,11 @@
 		}
 		iframe {
 			width: 100%;
+		}
+		&.image-has-border {
+			img {
+				border: $border-artboard;
+			}
 		}
 		.text {
 			flex-grow: 1;

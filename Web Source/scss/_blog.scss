@@ -98,11 +98,11 @@
 			border-bottom: none;
 			
 			h1 {
-				margin-bottom: .25rem;
+				margin-bottom: $spacer-small;
 			}
 			h2 {
 				font-size: $h3-font-size;
-				margin-bottom: .5rem;
+				margin-bottom: $spacer-small;
 			}
 			.excerpt {
 			}			
@@ -152,8 +152,10 @@
 				&.active {
 					a {
 						cursor: default;
-						color: lighten($text-color, 30%);
-						font-weight: bold;
+						color: $artofcomicbook-orange;
+						&:after {
+							display: none;
+						}
 					}
 				}
 			}
