@@ -1,6 +1,23 @@
 /* home ------------------------------- */
 
 .home {
+	.home-header {
+		h1 {
+			font-size: $h1-font-size / 1.15;
+			margin-bottom: $spacer-base;
+			.brand-name {
+				display: inline-block;
+				width: 100%;
+				text-align: right;
+				margin-top: $spacer-small;
+				.big {
+					font-size: $h1-font-size * 1.4;
+					color: $h2-font-color;
+				}
+			}
+		}
+	}
+ 
 	.main-navigation {
 		background-position: 0 0;
 		border-bottom: $home-intro-border;

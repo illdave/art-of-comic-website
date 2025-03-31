@@ -38,13 +38,12 @@
 }
 
 .page-header {
-	border-bottom: 1px solid #666;
-	padding-bottom: 1rem;
-	margin-bottom: 1rem;
+	border-bottom: $artboard-hr;
+	padding-bottom: $spacer-base;
+	margin-bottom: $spacer-large;
 	h1 {
-		margin: 0;
+		margin-bottom: $spacer-base;
 	}
-	h2 {}
 	p {
 		margin-bottom: 0;
 		.author {}

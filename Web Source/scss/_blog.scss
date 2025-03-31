@@ -70,61 +70,43 @@
 					align-items: center;
 					justify-content: flex-end;
 					position: absolute;
-					top: 10px;
-					left: -19px;
+					top: 0.75rem;
+					left: -1.5rem;
 					transform-origin: left top;
 					transform: rotate(-90deg);
-					font-size: 12px;
+					font-size: $font-size-small;
 					text-transform: none;
-					color: #aaa;
+					color: $picture-caption-color;
 					font-style: italic;
 					text-align: right;
-					font-weight: 600;
 					&:before {
 						content: "";
 						position: relative;
 						transform: rotate(90deg);
 						background-image: url("");
-						width: 12px;
-						height: 12px;
-						margin-right: 4px;
+						width: $spacer-base;
+						height: $spacer-base;
+						margin-right: $spacer-xs;
 					}
 				}
 			}
 		}
 		
+		
 		header {
-			margin-bottom: $spacer-small;
-			border-bottom: none;
+			margin-bottom: $spacer-base;
+			padding-bottom: $spacer-base;
+			border-bottom: $artboard-hr;
 			
 			h1 {
 				margin-bottom: $spacer-small;
 			}
 			h2 {
 				font-size: $h3-font-size;
-				margin-bottom: $spacer-small;
+				margin-bottom: $spacer-small !important;
 			}
 			.excerpt {
 			}			
-			.byline {
-				font-size: $font-size-small;
-				text-align: left;
-				margin-bottom: 0;
-				.author {
-					font-family: $font-family-headers;
-					margin-right: $spacer-small;
-				}
-				.date {
-					a {
-						font-family: $font-family-base;
-					}
-					time {
-						&.entry-date {}
-						&.updated {
-						}
-					}
-				}
-			}
 		}
 		footer {
 			&.blog-footer {

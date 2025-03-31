@@ -4,6 +4,26 @@
 	color: $white;
 }
 
+.byline, .timestamp {
+	font-size: $font-size-small;
+	text-align: left;
+	margin-bottom: 0;
+	.author {
+		font-family: $font-family-headers;
+		margin-right: $spacer-small;
+	}
+	.date {
+		a {
+			font-family: $font-family-base;
+		}
+		time {
+			&.entry-date {}
+			&.updated {
+			}
+		}
+	}
+}
+
 .page-not-found {
 	section {
 		&.content {
@@ -16,6 +36,39 @@
 				line-height: 20rem;
 				margin-bottom: 0;
 				text-align: center;
+			}
+		}
+	}
+}
+
+.lightbox {
+	.lb-outerContainer {
+		.lb-container {
+			.lb-image {}
+			.lb-nav {
+				.lb-prev {}
+				.lb-next {}
+			}
+			.lb-loader {
+				.lb-cancel {}
+			}
+		
+		}
+	}
+	.lb-dataContainer {
+		.lb-data {
+			.lb-details {
+				.lb-caption {
+					font-size: $font-size-small;
+					font-weight: normal;
+				}
+				.lb-number {
+					font-size: $font-size-small;
+					font-weight: normal;
+				}
+			}
+			.lb-closeContainer {
+				.lb-close {}
 			}
 		}
 	}
