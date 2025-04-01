@@ -16,15 +16,14 @@
 		}
 		.default-content {
 			h2 {
-				color: $h2-font-color;
+				color: $text-color;
 			}
 		}
 	}
-	
 	&.intro {
  		background: $white;
  		h1 {
- 			margin-bottom: $spacer-small;
+ 			margin-bottom: $spacer-base;
  		}
  		h2 {
  		}

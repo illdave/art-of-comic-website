@@ -29,8 +29,10 @@ h1, .h1 {
 	font-size: $h1-font-size;
 	line-height: $h1-line-height;
 	color: $h1-color;
+	text-transform: uppercase;
 	margin-bottom: $spacer-large;
-	word-spacing: -0.5rem;
+	word-spacing: -0.15rem;
+	letter-spacing: -0.15rem;
 }
 h2, .h2 {
 	font-family: $comic-book-headers;
@@ -115,13 +117,14 @@ ul, ol, dl {
 }
 
 li, dd {
-	margin-bottom: $spacer-small;
+	margin-bottom: $spacer-base;
 	break-inside: avoid;
 }
 
 dl {
 	dt {
 		@include list-header;
+		font-size: $h4-font-size;
 	}
 	&.text-list {
 		dt {

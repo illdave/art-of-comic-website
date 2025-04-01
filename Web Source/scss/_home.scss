@@ -3,17 +3,16 @@
 .home {
 	.home-header {
 		h1 {
-			font-size: $h1-font-size / 1.15;
+			font-size: $h1-font-size / 1.5;
 			margin-bottom: $spacer-base;
+			line-height: $h1-font-size / 1.2;
+			color: $text-color;
 			.brand-name {
-				display: inline-block;
-				width: 100%;
+				margin-left: $spacer-xs;
+				white-space: nowrap;
+				font-size: $h1-font-size / 1.15;
+				color: $h2-font-color;
 				text-align: right;
-				margin-top: $spacer-small;
-				.big {
-					font-size: $h1-font-size * 1.4;
-					color: $h2-font-color;
-				}
 			}
 		}
 	}

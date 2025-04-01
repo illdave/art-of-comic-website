@@ -6,6 +6,7 @@
 
 .byline, .timestamp {
 	font-size: $font-size-small;
+	color: $caption-color;
 	text-align: left;
 	margin-bottom: 0;
 	.author {
@@ -189,10 +190,8 @@
 }
 
 .cta {
-	display: flex;
-	align-items: flex-start;
 	font-family: $font-family-bold;
-	font-size: $font-size-base;
+	font-size: $h4-font-size;
 	line-height: 1.1rem;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -205,10 +204,10 @@
 	}
 	&:after {
 		font-family: 'Font Awesome Solid';
-		font-size: .75rem;
+		font-size: $font-size-base;
 		content: $icon-list-link;			
 		color: $link-color;
-		margin-left: .25rem;
+		margin-left: $spacer-small;
 	}
 	&:hover {
 		color: $cta-link-hover-color;
@@ -404,6 +403,9 @@
 	h4 {
 		color: $h2-font-color;
 	}
+	.cta {
+		font-size: $font-size-base;
+	}	
 }
 
 .side-nav {

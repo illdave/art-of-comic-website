@@ -197,6 +197,7 @@
 				font-size: $h4-font-size;
 				color: $headings-color;
 				margin-bottom: $spacer-small;
+				text-transform: uppercase;
 				a {
 					text-transform: uppercase;
 					text-decoration: none;
@@ -209,7 +210,6 @@
 					}
 				}
 			}
-			
 			.description {
 				color: $text-color;
 				font-size: $font-size-small;
@@ -220,11 +220,7 @@
 		}
 		.cta {
 			&:after {
-				font-family: 'Font Awesome Solid';
-				font-size: .75rem;
-				content: $icon-list-link;			
-				color: $link-color;
-				margin-left: .25rem;
+				@include cta-arrow;
 			}
 		}
 		&.video {
@@ -302,27 +298,22 @@
 .link-list {
 	margin-bottom: 2rem;
 	.header {
-		padding-bottom: $spacer-small;
-		margin-bottom: $spacer-base;				
-		border-bottom: $border-artboard;
-		.list-name {
-			font-family: $font-family-headers;
-			font-weight: normal;
-			text-transform: uppercase;
-			color: $headings-color;
-			line-height: 1.1rem;
-		}
+		@include list-header-border;
+		@include list-header-name;
 		.list-description {
 			font-family: $font-family-base;
 			text-transform: none;
 			color: $text-color;
+			margin-top: $spacer-small;
+			margin-bottom: $spacer-xs;
+			font-size: $font-family-base;
 		}
 	}
 	
 	dt {
 		span {
 			display: block;
-			margin-top: .25rem;
+			margin-top: .5rem;
 			font-family: $font-family-base;
 			text-transform: none;
 			color: $text-color;
@@ -333,7 +324,7 @@
 		list-style-type: none;
 		padding-left: 0;
 		li {
-			line-height: 1.1rem;
+			line-height: 1.4rem;
 			break-inside: avoid;
 		}
 	}
@@ -363,11 +354,7 @@
 			color: $link-color;
 		}
 		&:after {
-			font-family: 'Font Awesome Solid';
-			font-size: .75rem;
-			content: $icon-list-link;			
-			color: $link-color;
-			margin-left: .25rem;
+			@include cta-arrow;
 		}
 	}
 	.cta a {

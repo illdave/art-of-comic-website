@@ -24,12 +24,33 @@
 	}		
 }
 
+@mixin cta-arrow {
+	font-family: 'Font Awesome Solid';
+	font-size: $font-size-base;
+	content: $icon-list-link;			
+	color: $link-color;
+	margin-left: $spacer-small;
+	&:hover {
+		color: $cta-link-hover-color;
+	}
+	&:active {
+		color: $cta-link-active-color;
+	}
+}
+
 @mixin list-header {
+	@include list-header-name;
+	@include list-header-border;
+}
+@mixin list-header-name {
 	font-family: $font-family-headers;
 	font-weight: normal;
+	font-size: $h4-font-size;
 	text-transform: uppercase;
 	color: $headings-color;
 	line-height: 1.1rem;
+}
+@mixin list-header-border {
 	padding-bottom: $spacer-small;
 	margin-bottom: $spacer-small;				
 	border-bottom: $border-artboard;

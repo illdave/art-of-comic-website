@@ -50,8 +50,8 @@ $section-intro-about: 						lighten($theme-color-6, 60%);
 $demo-red:									$artofcomicbook-demo-red;
 $body-bg:									$white;
 
-$headings-color: 							$gray-dark;
-$headings-color-alt: 						darken($artofcomicbook-blue, 10%);
+$headings-color: 							darken($artofcomicbook-blue, 20%);
+$headings-color-alt: 						$headings-color;
 $text-color:								$gray-darker;
 $ul-bullet-color: 							$artofcomicbook-cyan;
 
@@ -59,7 +59,7 @@ $link-color:								$theme-color-1;
 $link-hover-color:							lighten($link-color, 20%);
 $link-active-color:							darken($link-color, 20%);
 
-$h1-color: 									$text-color;
+$h1-color: 									$headings-color-alt;
 $h2-font-color: 							$headings-color-alt;
 $h3-font-color: 							$text-color;
 
@@ -145,7 +145,6 @@ $piekos-fx-basic-thin-italic: 				"Piekos FX Basic Thin Italic";
 $avengeance-mightiest-avenger: 				"Avengeance Mightiest Avenger";
 
 $comicraft-debug: 							$piekos-fx-rough-brush;
-$h1-font-family: 							$piekos-fx-basic-italic;
 $comic-book-headers: 						$comicraft-speeding-bullet;
 
 $comic-book-font: 							$spinner-rack;
@@ -155,19 +154,20 @@ $comic-book-font-bold-italic: 				$spinner-rack-bold-italic;
 $font-family-sans-serif: 					$proxima-nova,"helvetica neue", helvetica, arial, sans-serif;
 $font-family-serif:       					georgia, "times new roman", times, serif;
 $font-family-monospace:      				SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-base:        					$font-family-sans-serif;
-$font-family-headers:						$proxima-nova-bold;
 
-$font-family-italic:						$proxima-nova-italic;
-$font-family-bold:							$proxima-nova-bold;
-$font-family-bold-italic:					$proxima-nova-bold-italic;
+$font-family-base:        					$comicraft-legendary;
+$font-family-italic:						$comicraft-legendary-italic;
+$font-family-bold:							$comicraft-legendary-bold;
+$font-family-bold-italic:					$comicraft-legendary-bold-italic;
+$font-family-headers:						$font-family-bold;
 
 $font-size-base:          					1rem;
 $font-size-large:         					ceil(($font-size-base * 1.25));	// ~18px
 $font-size-medium:        					ceil(($font-size-base * 1.12)); // ~16px
 $font-size-small:         					90%; // ~12px
 
-$h1-font-size:                				$font-size-base * 4.0;
+$h1-font-family: 							$font-family-bold;
+$h1-font-size:                				$font-size-base * 3.0;
 $h2-font-size:                				$font-size-base * 2.0;
 $h3-font-size:                				$font-size-base * 1.4;
 $h4-font-size:                				$font-size-base * 1.2;
@@ -177,7 +177,7 @@ $h6-font-size:                				$font-size-base;
 $line-height-base:							$font-size-base * 1.4;
 $line-height-small: 						1.2rem;
 
-$h1-line-height:                			$h1-font-size / 1.4;
+$h1-line-height:                			$h1-font-size * 1.0;
 $h2-line-height:                			$h2-font-size / 1.1;
 $h3-line-height:                			$h3-font-size * 1.1;
 $h4-line-height:                			$h4-font-size * 1.1;
