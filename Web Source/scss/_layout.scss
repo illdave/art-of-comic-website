@@ -28,7 +28,8 @@
  		h1 {
  			margin-bottom: $spacer-base;
  		}
- 		h2 {
+ 		h1 + h2 {
+ 			color: $text-color;
  		}
  		p {
  			margin-bottom: 0;

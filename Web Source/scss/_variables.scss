@@ -55,7 +55,7 @@ $headings-color-alt: 						$headings-color;
 $text-color:								$gray-darker;
 $ul-bullet-color: 							$artofcomicbook-cyan;
 
-$link-color:								$theme-color-1;
+$link-color:								darken($theme-color-1, 5%);
 $link-hover-color:							lighten($link-color, 20%);
 $link-active-color:							darken($link-color, 20%);
 

@@ -3,7 +3,6 @@
 	<head>
 		<!-- Copyright 1990-2025 Art of the Comic Book by Marshall Art Studio -->
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Art of the Comic Book: Component template</title>
 		<meta name="application-name" content="Art of the Comic Book: Component template">
@@ -42,7 +41,7 @@
 	</head>
 	<body>
 		<div class="art-of-comic-2">
-			<header class="fixed-top main-navigation" role="banner">
+			<header class="fixed-top main-navigation">
 				<div class="container">
 					<a href="#main-content" class="skip-link sr-only sr-only-focusable">Skip Content</a>
 					<nav class="navbar navbar-expand-lg">
@@ -53,7 +52,6 @@
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation" aria-controls="main-navigation" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
 						</button>
-						
 						<div class="collapse navbar-collapse justify-content-end" id="main-navigation">
 							<ul class="navbar-nav bd-navbar-nav d-flex" role="menu">
 								<li class="nav-item schedule" role="menuitem">
@@ -80,7 +78,7 @@
 					</nav>
 				</div>
 			</header>
-			<main id="main-content" class="main-content FOO" role="main">	
+			<main id="main-content" class="main-content FOO">	
 				<section class="section content default has-box-shadow-top">
 					<div class="container">
 						<div class="artboard default-content">
@@ -112,14 +110,14 @@
 							
 							<section class="components">
 								<h2>Feature Story Card component</h2>
-								<p>Following our "visual, headline, description, call-to-action link" format. The visual can be an image or video. The image-text can be divided in halfs, thirds, or quarters.</p>
+								<p>Following our "visual, headline, description, call-to-action link" format. The visual can be an image or video. The row can be divided in halfs, thirds, or quarters.</p>
 								<div class="feature-story-card">
 									<div class="row">
 										<div class="col-lg-6 image">
 											<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
 										</div>
 										<div class="col-lg-6 text">
-											<div class="header">Feature Story Card: Half</div>
+											<div class="header">Feature Story Card: Halfs</div>
 											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
 											<p class="cta">
 												<a href="#" rel="noopener noreferrer" target="_blank" aria-label="">CTA</a>
@@ -133,7 +131,7 @@
 											<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
 										</div>
 										<div class="col-lg-8 text">
-											<div class="header">Feature Story Card: Third</div>
+											<div class="header">Feature Story Card: Thirds</div>
 											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
 											<p class="cta">
 												<a href="#" rel="noopener noreferrer" target="_blank" aria-label="">CTA</a>
@@ -147,7 +145,7 @@
 											<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
 										</div>
 										<div class="col-lg-9 text">
-											<div class="header">Feature Story Card: Quarter</div>
+											<div class="header">Feature Story Card: Quarters</div>
 											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
 											<p class="cta">
 												<a href="#" rel="noopener noreferrer" target="_blank" aria-label="">CTA</a>
@@ -158,7 +156,7 @@
 								
 								<hr>
 								<h2>Story Group Blade component</h2>
-								<p>This organizes stories in groups, with a lead story followed by second-level stories. It has an optional group call-to-action.</p>
+								<p>This organizes stories in groups, with a lead story followed by second-level stories. It has an optional group call-to-action.</p><br>
 								
 								<h2 class="has-right-link">
 								Group of related stories
@@ -206,7 +204,7 @@
 								<hr>
 								<h2>Tile Card component</h2>
 								<h3>Basic variant</h3>
-								<p>Bare minimum elements: headline and call-to-action</p>
+								<p>Bare minimum elements: headline and call-to-action.</p>
 								<div class="row tile-cards">
 									<div class="col-lg-4">
 										<a class="tile-card" href="#">
@@ -229,7 +227,7 @@
 								</div>
 								
 								<h3>Icon variant</h3>
-								<p>Visually distinctive cards for readers skimming on mobile devices</p>
+								<p>Visually distinctive cards for readers skimming on mobile devices.</p>
 								<div class="row tile-cards icon-tiles">
 									<div class="col-lg-4">
 										<a class="tile-card" href="#">
@@ -263,7 +261,7 @@
 								<hr>
 								<h2>Feature card component</h2>
 								<h3>Link in headline variant</h3>
-								<p>Directly written headlines avoid the burden of CTA wording</p>
+								<p>Directly written headlines avoid the burden of CTA wording.</p>
 								<div class="row feature-cards">
 									<div class="col-lg-4">
 										<div class="feature-card">
@@ -301,7 +299,7 @@
 								</div>
 
 								<h3>Link in call-to-action variant</h3>
-								<p>Follows the "visual, headline, description, call-to-action" format of other components</p>
+								<p>Follows the "visual, headline, description, call-to-action" format of other components.</p>
 								<div class="row feature-cards">
 									<div class="col-lg-4">
 										<div class="feature-card">
@@ -342,7 +340,7 @@
 								</div>
 								
 								<h3>Background variant</h3>
-								<p>This extra element might be needed on certain page layouts</p>
+								<p>This extra element might be needed on certain page layouts.</p>
 								<div class="row feature-cards with-background">
 									<div class="col-lg-4">
 										<div class="feature-card">
@@ -542,7 +540,7 @@
 										</figure>							
 									</div>
 								</div>
-								
+								<br>
 								<h3>Images with text wraparounds</h3>
 								<p>This variant uses Bootstrap controls for responsive widths while retaining our custom image styling.</p>
 								<figure class="images-have-border float-start col-md-3 no-border">
@@ -556,7 +554,7 @@
 
 								<hr>
 								<h2>Link Lists</h2>
-								<p>Categorized groupings of links that would otherwise seem random and intimidating to the user. Variations include optional list descriptions and CTAs.</p>
+								<p>Categorized groupings of links that would otherwise seem random and intimidating to the user. Variations include optional list descriptions and CTAs.</p><br>
 								<div class="row">
 									<div class="col-lg-4">
 										<dl class="link-list">
@@ -656,7 +654,7 @@
 								
 								<hr>
 								<h2>Unordered lists</h2>
-								<p>Leveraging styles from the link lists for content without single-line hyperlinks</p>
+								<p>Leveraging styles from the link lists for content without single-line hyperlinks.</p><br>
 								<div class="list-header">
 									<div class="list-name">Two-column unordered list</div>
 								</div>
