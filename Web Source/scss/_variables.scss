@@ -451,6 +451,12 @@ $multilink-bg-cyan: 						lighten($artofcomicbook-cyan, 10%);
 $multilink-bg-green: 						lighten($artofcomicbook-green, 10%);
 $multilink-bg: 								$multilink-bg-blue;
 
+$component-header-font-size: 				$h3-font-size;
+$component-header-line-height: 				$h3-line-height;
+
+$cta-font-size: 							$h4-font-size;
+$cta-line-height: 							$cta-font-size / 1;
+
 
 /* FOO ------------------------------- */
 

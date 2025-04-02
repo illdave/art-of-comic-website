@@ -111,14 +111,43 @@
 							</div>
 							
 							<section class="components">
-								<h2>Feature Story Card</h2>
+								<h2>Feature Story Card component</h2>
+								<p>Following our "visual, headline, description, call-to-action link" format. The visual can be an image or video. The image-text can be divided in halfs, thirds, or quarters.</p>
 								<div class="feature-story-card">
 									<div class="row">
 										<div class="col-lg-6 image">
 											<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
 										</div>
 										<div class="col-lg-6 text">
-											<div class="header">Feature Story Card</div>
+											<div class="header">Feature Story Card: Half</div>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+											<p class="cta">
+												<a href="#" rel="noopener noreferrer" target="_blank" aria-label="">CTA</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="feature-story-card">
+									<div class="row">
+										<div class="col-lg-4 image">
+											<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
+										</div>
+										<div class="col-lg-8 text">
+											<div class="header">Feature Story Card: Third</div>
+											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
+											<p class="cta">
+												<a href="#" rel="noopener noreferrer" target="_blank" aria-label="">CTA</a>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="feature-story-card">
+									<div class="row">
+										<div class="col-lg-3 image">
+											<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
+										</div>
+										<div class="col-lg-9 text">
+											<div class="header">Feature Story Card: Quarter</div>
 											<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper.</p>
 											<p class="cta">
 												<a href="#" rel="noopener noreferrer" target="_blank" aria-label="">CTA</a>
@@ -128,8 +157,11 @@
 								</div>
 								
 								<hr>
+								<h2>Story Group Blade component</h2>
+								<p>This organizes stories in groups, with a lead story followed by second-level stories. It has an optional group call-to-action.</p>
+								
 								<h2 class="has-right-link">
-								Story Group Blade
+								Group of related stories
 								<a href="comics/index.html" aria-label="FOO">Optional CTA <i class="fas"></i></a>
 								</h2>									
 								<div class="row story-group-blade">
@@ -140,7 +172,7 @@
 													<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
 												</div>
 												<div class="col-lg-6 text">
-													<div class="header">Title</div>
+													<div class="header">Lead story</div>
 													<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
 													<p class="cta">
 														<a href="#" rel="noopener noreferrer" target="_blank" aria-label="">CTA</a>
@@ -169,24 +201,26 @@
 											</a>
 										</div>
 									</div>	
-								</div>								
+								</div>
+																
 								<hr>
-								<h2>Tile Cards</h2>
-								<p>Basic</p>
+								<h2>Tile Card component</h2>
+								<h3>Basic variant</h3>
+								<p>Bare minimum elements: headline and call-to-action</p>
 								<div class="row tile-cards">
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<a class="tile-card" href="#">
 											<span class="header">HEADLINE Duis autem vel eum iriure dolore</span>
 											<span class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.</span>
 										</a>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<a class="tile-card" href="#">
 											<span class="header">HEADLINE Duis autem vel eum iriure dolore</span>
 											<span class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.</span>
 										</a>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<a class="tile-card" href="#">
 											<span class="header">HEADLINE Duis autem vel eum iriure dolore</span>
 											<span class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.</span>
@@ -194,9 +228,10 @@
 									</div>
 								</div>
 								
-								<p>Icon variant</p>
+								<h3>Icon variant</h3>
+								<p>Visually distinctive cards for readers skimming on mobile devices</p>
 								<div class="row tile-cards icon-tiles">
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<a class="tile-card" href="#">
 											<span class="icon">
 												<img src="../assets/img/icons/rotten-kid-logo.svg" alt="">
@@ -205,7 +240,7 @@
 											<span class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.</span>
 										</a>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<a class="tile-card" href="#">
 											<span class="icon">
 												<img src="../assets/img/icons/rotten-kid-logo.svg" alt="">
@@ -214,7 +249,7 @@
 											<span class="description">Lorem ipsum dolor sit amet consectetuer adipiscing elit sed diam nonummy.</span>
 										</a>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<a class="tile-card" href="#">
 											<span class="icon">
 												<img src="../assets/img/icons/rotten-kid-logo.svg" alt="">
@@ -226,10 +261,11 @@
 								</div>
 								
 								<hr>
-								<h2>Feature cards</h2>
-								<p>Link in header</p>
+								<h2>Feature card component</h2>
+								<h3>Link in headline variant</h3>
+								<p>Directly written headlines avoid the burden of CTA wording</p>
 								<div class="row feature-cards">
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card">
 											<div class="image">
 												<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
@@ -240,7 +276,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card">
 											<div class="image">
 												<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
@@ -251,7 +287,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card">
 											<div class="image">
 												<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
@@ -263,10 +299,11 @@
 										</div>
 									</div>
 								</div>
-								
-								<p>Link in CTA</p>
+
+								<h3>Link in call-to-action variant</h3>
+								<p>Follows the "visual, headline, description, call-to-action" format of other components</p>
 								<div class="row feature-cards">
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card">
 											<div class="image">
 												<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
@@ -278,7 +315,7 @@
 											<div class="button-row"><a href="#" class="cta">CTA</a></div>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card">
 											<div class="image">
 												<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
@@ -290,7 +327,7 @@
 											<div class="button-row"><a href="#" class="cta">CTA</a></div>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card">
 											<div class="image">
 												<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
@@ -304,9 +341,10 @@
 									</div>
 								</div>
 								
-								<h2>Feature cards with optional background</h2>
+								<h3>Background variant</h3>
+								<p>This extra element might be needed on certain page layouts</p>
 								<div class="row feature-cards with-background">
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card">
 											<div class="image">
 												<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
@@ -318,7 +356,7 @@
 											<div class="button-row"><a href="#" class="cta">CTA</a></div>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card">
 											<div class="image">
 												<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
@@ -330,7 +368,7 @@
 											<div class="button-row"><a href="#" class="cta">CTA</a></div>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card">
 											<div class="image">
 												<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
@@ -345,9 +383,10 @@
 								</div>								
 								
 								<hr>
-								<h2>Feature cards with videos at default 16:9 aspect ratio</h2>
-									<div class="row feature-cards">
-									<div class="col-md-4">
+								<h2>Video component</h2>
+								<p>Based on the feature cards. This is the default 16:9 aspect ratio for modern videos.</p>
+								<div class="row feature-cards">
+									<div class="col-lg-4">
 										<div class="feature-card video">
 											<iframe 
 												src="https://www.youtube.com/embed/stnemarYqkg" 
@@ -364,7 +403,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card video">
 											<iframe 
 												src="https://www.youtube.com/embed/n8C8ehploOI" 
@@ -381,7 +420,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card video">
 											<iframe 
 												src="https://www.youtube.com/embed/3rQLviT1O00" 
@@ -400,9 +439,10 @@
 									</div>
 								</div>
 								
-								<h2>Feature cards with videos at custom 4:3 aspect ratio</h2>
+								<h3>Custom 4:3 aspect ratio</h3>
+								<p>This variant renders older videos as they were meant to be displayed.</p>
 								<div class="row feature-cards">
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card video embed-4x3">
 											<iframe 
 												src="https://www.youtube.com/embed/stnemarYqkg" 
@@ -419,7 +459,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card video embed-4x3">
 											<iframe 
 												src="https://www.youtube.com/embed/n8C8ehploOI" 
@@ -436,7 +476,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<div class="feature-card video embed-4x3">
 											<iframe 
 												src="https://www.youtube.com/embed/3rQLviT1O00" 
@@ -456,8 +496,8 @@
 								</div>														
 								
 								<hr>
-								<h2>Multi Link Card</h2>
-								<p>Optional description</p>
+								<h2>Multi Link Card component</h2>
+								<p>This adds multiple links to our established "visual, headline, description" format.</p>
 								<div class="multi-link">
 								<div class="icon">
 									<img src="../assets/img/icons/rotten-kid-logo.svg" alt="">
@@ -474,9 +514,10 @@
 								</div>
 								
 								<hr>
-								<h2>Images</h2>
+								<h2>Image component</h2>
+								<p>Variations with and without borders on image and bottom of component. The optional caption is in a single font style, the text of which can be hyperlinked. </p>
 								<div class="row">
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<figure class="images-have-border">
 											<picture>
 												<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
@@ -484,7 +525,7 @@
 											<figcaption class="figure-caption">Border on image and under caption </figcaption>
 										</figure>							
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<figure class="no-border">
 											<picture>
 												<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
@@ -492,7 +533,7 @@
 											<figcaption class="figure-caption">Image and caption without border</figcaption>
 										</figure>							
 									</div>
-									<div class="col-md-4">
+									<div class="col-lg-4">
 										<figure class="no-border images-have-border">
 											<picture>
 												<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
@@ -503,57 +544,83 @@
 								</div>
 								
 								<h3>Images with text wraparounds</h3>
-								
-								<figure class="images-have-border float-start col-md-4 no-border">
+								<p>This variant uses Bootstrap controls for responsive widths while retaining our custom image styling.</p>
+								<figure class="images-have-border float-start col-md-3 no-border">
 									<picture>
 										<img src="../assets/img/studio/foo.jpg" alt="placeholder" />
 									</picture>								
 									<figcaption class="figure-caption">Border on image and under caption </figcaption>
 								</figure>							
 								<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, and vel illum.</p>
-								<p>Born and raised in Springfield Massachusetts, Dave made his artistic debut at four creating Superman from a lump of children's clay, getting frustrated to the point of toddler rage trying to the diamond-shape logo right twice (front chest and back of cape). In later years he discovered Marvel comics from the Silver and Bronze ages. As he grow older, analyzing the mechanics of artists (Jack Kirby, Steve Ditko, Wally Wood, John Buscema, Marie Severin, Joe Sinnott, Frank Giacoia), writers (Stan Lee, Roy Thomas, Steve Englehart, Steve Gerber) and letterers (Artie Simek, Sam Rosen, and Tom Orzechowski) made him think he could be a professional comics artist.</p>
-								<p>By age 16 in 1978, operating under the influence of Pop-Tarts and How to Draw Comics the Marvel Way, Dave began making comic book art with professional tools in hopes of breaking into Marvel. Sadly the original art was lost in a series of self-made bonfires, but the process led to getting into Massachusetts College of Art. Studying comics art & technology history for his Senior Degree Project exposed Dave to the work of George Herriman, Alex Toth, Trina Robbins, and more. This energized my personal discoveries of Los Bros. Hernandez, June Tarpe Mills, Gladys Parker, and R. Crumb.</p>								
-								
+								<p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
 								<hr>
-								<h2>Multicolumn Link Lists</h2>
-								<dl class="link-list">
-									<dt>
-										One-column definition link list
-										<span>Optional description</span>
-									</dt>
-									<dd><a href="#" target="_blank" rel="noopener noreferrer">First item: Duis autem vel eum iriure dolor in hendrerit</a></dd>
-									<dd><a href="#">Second item: Sin vulputate velit esse molestie</a></dd>
-									<dd><a href="#">Third item: Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
-									<dd><a href="#">Fourth item: Duis autem vel eum iriure dolor in hendrerit</a></dd>
-									<dd><a href="#">Fifth item: Sin vulputate velit esse molestie</a></dd>
-									<dd><a href="#">Sixth item: Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
-									<dd><a href="#">Seventh item: Duis autem vel eum iriure dolor in hendrerit</a></dd>
-									<dd><a href="#">Eighth item: Sin vulputate velit esse molestie</a></dd>
-									<dd><a href="#">Ninth item: Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
-									<dd><a href="#">Tenth item: Duis autem vel eum iriure dolor in hendrerit</a></dd>
-									<dd><a href="#">Eleventh item: Sin vulputate velit esse molestie</a></dd>
-									<dd><a href="#">Twelfth item: Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
-								</dl>
+								<h2>Link Lists</h2>
+								<p>Categorized groupings of links that would otherwise seem random and intimidating to the user. Variations include optional list descriptions and CTAs.</p>
+								<div class="row">
+									<div class="col-lg-4">
+										<dl class="link-list">
+											<dt>Link list</dt>
+											<dd><a href="#">Duis autem vel eum iriure dolor in hendrerit</a></dd>
+											<dd><a href="#">Sin vulputate velit esse molestie</a></dd>
+											<dd><a href="#">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
+											<dd><a href="#">Duis autem vel eum iriure dolor in hendrerit</a></dd>
+											<dd><a href="#">Sin vulputate velit esse molestie</a></dd>
+											<dd><a href="#">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
+										</dl>
+									</div>
+									<div class="col-lg-4">
+										<dl class="link-list">
+											<dt>
+												Link list
+												<span>with optional list description</span>
+											</dt>
+											<dd><a href="#">Duis autem vel eum iriure dolor in hendrerit</a></dd>
+											<dd><a href="#">Sin vulputate velit esse molestie</a></dd>
+											<dd><a href="#">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
+											<dd><a href="#">Duis autem vel eum iriure dolor in hendrerit</a></dd>
+											<dd><a href="#">Sin vulputate velit esse molestie</a></dd>
+											<dd><a href="#">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
+										</dl>
+									</div>
+									<div class="col-lg-4">
+										<dl class="link-list has-cta">
+											<dt>
+												Link list
+												<span>with optional call-to-action</span>
+											</dt>
+											<dd><a href="#">Duis autem vel eum iriure dolor in hendrerit</a></dd>
+											<dd><a href="#">Sin vulputate velit esse molestie</a></dd>
+											<dd><a href="#">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
+											<dd><a href="#">Duis autem vel eum iriure dolor in hendrerit</a></dd>
+											<dd><a href="#">Sin vulputate velit esse molestie</a></dd>
+											<dd><a href="#">Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></dd>
+										</dl>
+										<p><a href="#" class="cta">View all</a></p>
+									</div>
+								</div>
 								
+								<h3>Multicolumn variants</h3>
+								<p>Splitting a single-category list into multiple columns avoids awkward white space.</p>
 								<div class="link-list two-column">
 									<div class="header">
-										<div class="list-name">LINK_LIST_TITLE</div>
-										<div class="list-description">OPTIONAL_DESCRIPTION</div>
+										<div class="list-name">Two-column link list</div>
+										<div class="list-description">Optional list description</div>
 									</div>
 									<ul>
-										<li><a href="#" target="_blank" rel="noopener noreferrer">LINK_LIST_ITEM</a></li>
-										<li><a href="#">LINK_LIST_ITEM</a></li>
-										<li><a href="#">LINK_LIST_ITEM</a></li>
-										<li><a href="#">LINK_LIST_ITEM</a></li>
+										<li><a href="#">First item: Duis autem vel eum iriure dolor in hendrerit</a></li>
+										<li><a href="#">Second item: Sin vulputate velit esse molestie</a></li>
+										<li><a href="#">Third item: Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></li>
+										<li><a href="#">Fourth item: Duis autem vel eum iriure dolor in hendrerit</a></li>
 									</ul>
 								</div>
 								
 								<div class="link-list three-column">
 									<div class="header">
-										<div class="list-name">Three-column unordered link list with custom header</div>
+										<div class="list-name">Three-column link list</div>
 									</div>
 									<ul>
-										<li><a href="#" target="_blank" rel="noopener noreferrer">First item: Duis autem vel eum iriure dolor in hendrerit</a></li>
+										<li><a href="#">First item: Duis autem vel eum iriure dolor in hendrerit</a></li>
 										<li><a href="#">Second item: Sin vulputate velit esse molestie</a></li>
 										<li><a href="#">Third item: Vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan</a></li>
 										<li><a href="#">Fourth item: Duis autem vel eum iriure dolor in hendrerit</a></li>
@@ -569,7 +636,7 @@
 								</div>
 								<div class="link-list four-column">
 									<div class="header">
-										<div class="list-name">Four-column unordered link list with custom header</div>
+										<div class="list-name">Four-column link list</div>
 									</div>
 									<ul>
 										<li><a href="#" >First item: Duis autem vel eum iriure dolor in hendrerit</a></li>
@@ -587,8 +654,11 @@
 									</ul>
 								</div>
 								
+								<hr>
+								<h2>Unordered lists</h2>
+								<p>Leveraging styles from the link lists for content without single-line hyperlinks</p>
 								<div class="list-header">
-									<div class="list-name">Two-column unordered list with custom header</div>
+									<div class="list-name">Two-column unordered list</div>
 								</div>
 								<ul class="two-column">
 									<li>First item: Duis autem vel eum iriure dolor in hendrerit</li>
@@ -606,7 +676,7 @@
 								</ul>									
 								
 								<div class="list-header">
-									<div class="list-name">Three-column unordered list with custom header</div>
+									<div class="list-name">Three-column unordered list</div>
 								</div>
 								<ul class="three-column">
 									<li>First item: Duis autem vel eum iriure dolor in hendrerit</li>
@@ -624,7 +694,7 @@
 								</ul>									
 
 								<div class="list-header">
-									<div class="list-name">Four-column unordered list with custom header</div>
+									<div class="list-name">Four-column unordered list</div>
 								</div>
 								<ul class="four-column">
 									<li>First item: Duis autem vel eum iriure dolor in hendrerit</li>

@@ -23,9 +23,10 @@
 		.header {
 			font-family: $comic-book-headers;
 			font-size: $h2-font-size;
-			line-height: $h2-line-height * 1.5;
+			line-height: $h2-line-height * 1.1;
 			color: $text-color !important;
-			margin-bottom: $spacer-small;
+			margin-bottom: $spacer-base;
+			text-transform: uppercase;
 			&.header-3 {
 				font-size: $h2-font-size;
 				line-height: $line-height-base;
@@ -59,11 +60,11 @@
 		}
 	}
 	.text {
+		padding: 0;
 		h2 {
 			margin-bottom: .5rem;
 		}
 		p {
-			margin-bottom: .5rem;
 		}
 		ul {
 			padding-left: 0;
@@ -79,6 +80,7 @@
 				  color: $gray-lightest;
 				  margin-left: $spacer-small;
 				  margin-right: $spacer-small;
+				  font-family: $font-family-sans-serif;
 				}
 				&:last-child {
 					&::after {
@@ -176,6 +178,7 @@
 		}
 		iframe {
 			width: 100%;
+			margin-bottom: $spacer-small;
 		}
 		&.image-has-border {
 			img {
@@ -185,7 +188,7 @@
 		.text {
 			flex-grow: 1;
 			padding: 0;
-			margin-bottom: 0;
+			margin-bottom: -$spacer-xs;
 			.header, .description {
 				display: flex;
 				text-decoration: none;
@@ -194,7 +197,8 @@
 			}
 			.header {
 				font-family: $font-family-headers;
-				font-size: $h4-font-size;
+				font-size: $component-header-font-size;
+				line-height: $component-header-line-height;
 				color: $headings-color;
 				margin-bottom: $spacer-small;
 				text-transform: uppercase;
@@ -255,7 +259,7 @@
 				margin-bottom: 0;
 				padding-bottom: 0;
 				.header {
-					font-family: $font-family-headers;
+					margin-bottom: $spacer-small;
 				}
 				.cta {
 					margin-bottom: 0;
@@ -296,7 +300,10 @@
 }
 
 .link-list {
-	margin-bottom: 2rem;
+	margin-bottom: $spacer-large;
+	&.has-cta {
+		margin-bottom: $spacer-base;
+	}
 	.header {
 		@include list-header-border;
 		@include list-header-name;
@@ -306,7 +313,7 @@
 			color: $text-color;
 			margin-top: $spacer-small;
 			margin-bottom: $spacer-xs;
-			font-size: $font-family-base;
+			font-size: $font-size-base;
 		}
 	}
 	
@@ -317,6 +324,7 @@
 			font-family: $font-family-base;
 			text-transform: none;
 			color: $text-color;
+			font-size: $font-size-base;
 		}
 	}
 	

@@ -16,6 +16,9 @@
 		}
 		.default-content {
 			h2 {
+				color: $headings-color;
+			}
+			h1 + h2 {
 				color: $text-color;
 			}
 		}

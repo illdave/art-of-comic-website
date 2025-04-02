@@ -103,16 +103,8 @@
 }
 
 .list-header {
-	padding-bottom: $spacer-small;
-	margin-bottom: $spacer-small;				
-	border-bottom: $artboard-list-header-border;
-	.list-name {
-		font-family: $font-family-headers;
-		font-weight: normal;
-		text-transform: uppercase;
-		color: $headings-color;
-		line-height: 1.1rem;
-	}
+	@include list-header-border;
+	@include list-header-name;
 	.list-description {
 		font-family: $font-family-base;
 		text-transform: none;
@@ -191,11 +183,12 @@
 
 .cta {
 	font-family: $font-family-bold;
-	font-size: $h4-font-size;
-	line-height: 1.1rem;
+	font-size: $cta-font-size;
+	line-height: $cta-line-height;
+	color: $cta-link-color;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: $cta-link-color;
+	letter-spacing: -0.05rem;
 	.fas, .fa-solid {
 		&:before {
 			font-family: 'Font Awesome Solid';
