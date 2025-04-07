@@ -316,7 +316,21 @@ $intro-bg:  								$theme-color-2;
 $box-shadow-boxed: 							0 0.5rem 1.5rem 1rem rgb(0 0 0 / 30%);
 $box-shadow-top: 							0 4rem 4rem -3rem rgb(0 0 0 / 80%) inset;
 $box-shadow-white-bg: 						0 0.25rem 0.25rem 0.1rem rgb(0 0 0 / 30%);
-					
+
+$pullquote-padding: 						$spacer-large;
+$pullquote-margin: 							$spacer-base;
+
+$pullquote-quote-font-family: 				$font-family-base;
+$pullquote-quote-font-family-bold: 			$font-family-bold-italic;
+$pullquote-quote-font-size: 				$h2-font-size;
+$pullquote-quote-line-height: 				$pullquote-quote-font-size * 1.1;
+$pullquote-quote-color: 					$gray-lightest;
+
+$pullquote-speaker-font-family: 			$font-family-italic;
+$pullquote-speaker-font-size: 				$h3-font-size;
+$pullquote-speaker-line-height: 			$pullquote-speaker-font-size * 1.2;
+$pullquote-speaker-color: 					$text-color;
+
 
 /* footer ---------------------------- */
 

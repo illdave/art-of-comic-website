@@ -134,6 +134,35 @@ dl {
 			margin-bottom: 1rem;
 		}
 	}
+	&.pullquote {
+		padding: $pullquote-padding;
+		margin-bottom: $pullquote-margin;
+		dt {
+			font-family: $pullquote-quote-font-family;
+			font-size: $pullquote-quote-font-size;
+			line-height: $pullquote-quote-line-height;
+			color: $pullquote-quote-color;
+			text-transform: none;
+			border: 0;
+			padding: 0;
+			margin-bottom: $spacer-base;
+			strong {
+				font-family: $pullquote-quote-font-family-bold;
+				color: $text-color;
+			}
+		}
+		dd {
+			font-family: $pullquote-speaker-font-family;
+			font-size: $pullquote-speaker-font-size;
+			color: $pullquote-speaker-color;
+			line-height:$pullquote-speaker-line-height;
+		}
+	}
+	&.compact {
+		dd {
+			margin-bottom: 0;
+		}
+	}	
 }
 
 strong, bold {
