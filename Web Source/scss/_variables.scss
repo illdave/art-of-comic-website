@@ -59,9 +59,9 @@ $link-color:								darken($theme-color-1, 5%);
 $link-hover-color:							lighten($link-color, 20%);
 $link-active-color:							darken($link-color, 20%);
 
-$h1-color: 									$headings-color-alt;
-$h2-font-color: 							$headings-color-alt;
-$h3-font-color: 							$text-color;
+$h1-color: 									$headings-color;
+$h2-font-color: 							$headings-color;
+$h3-font-color: 							$headings-color;
 
 $cta-link-color: 							$link-color;
 $cta-link-hover-color: 						$text-color;
@@ -470,6 +470,12 @@ $component-header-line-height: 				$h3-line-height;
 
 $cta-font-size: 							$h4-font-size;
 $cta-line-height: 							$cta-font-size / 1;
+
+$response-bg-color:							lighten($artofcomicbook-blue, 45%);
+$response-border-color: 					darken($response-bg-color, 20%);
+$response-bg: 								$response-bg-color url("#{$layout-image-path}/tile-card-bg.png") no-repeat right 0;
+$response-border: 							rem(1px solid $response-border-color);
+
 
 
 /* FOO ------------------------------- */

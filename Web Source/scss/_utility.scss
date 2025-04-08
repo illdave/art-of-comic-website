@@ -124,9 +124,9 @@
 			text-decoration: none;
 			color: $icon-link-color;
 			display: inline-block;
-			height: 1rem;
-			width: 1rem;
-			line-height: 1rem;
+			height: $spacer-base;
+			width: $spacer-base;
+			line-height: $spacer-base;
 		}
 		&:hover a {
 			fill: $icon-link-color-hover;
@@ -159,6 +159,7 @@
 		margin-right: .5rem;
 	}
 }
+
 .back-to-top {
 	padding: .5rem 0;
 	text-align: right;
@@ -211,7 +212,7 @@
 }
 
 .btn-row {
-	margin-bottom: 1rem;
+	margin-bottom: $spacer-base;
 }
 
 .button-backtotop {
@@ -261,8 +262,8 @@
 	}
 }
 .text, .item {
-	padding: 1rem;
-	margin-bottom: 1rem;
+	padding: $spacer-base;
+	margin-bottom: $spacer-base;
 }
 .truncated {
 	position: relative;
@@ -282,8 +283,8 @@
 	  content: "";
 	  position: absolute;
 	  right: 0; /* note: not using bottom */
-	  width: 1rem;
-	  height: 1rem;
+	  width: $spacer-base;
+	  height: $spacer-base;
 	  background: white;
 	}		
 }
@@ -296,7 +297,7 @@
 }
 .newspaper-headline {
 	border-top: $border-default;
-	padding-top: 1rem;
+	padding-top: $spacer-base;
 	margin: .5rem 0;
 	&:first-child, &:first-of-type {
   		border-top: 0;
@@ -423,16 +424,35 @@
 }
 
 .response {
-	background: #ccc;
-	padding: 1rem 2rem .25rem;
-	margin-bottom: 1rem;
+	background: $response-bg;
+	background-size: cover;
+	border: $response-border;
+	padding: $spacer-base 2rem .25rem;
+	margin: $spacer-large 0 $spacer-base;
+	p {
+		font-family: $font-family-base;
+		font-size: $font-size-base;
+		line-height: $line-height-base;
+	}
+	strong {
+		font-family: $font-family-headers;
+	}
+	.name {
+		font-family: $font-family-bold-italic;
+		text-transform: uppercase;
+	}	
 }
 
 .diagrams {
-	.diagram {
+	h3 {
+		margin-top: $spacer-base;
+		padding-top: $spacer-base;
+		border-top: $artboard-hr;
+		text-transform: uppercase;
+		font-size: $h4-font-size;
 		margin-bottom: 1rem;
-		padding-bottom: 1rem;
-		border-bottom: $artboard-hr;
+	}
+	.diagram {
 		&.img {
 			text-align: center;
 			.img-wrapper {
@@ -446,6 +466,9 @@
 					left: 0;
 				}
 			}
+		}
+		&:last-child {
+			margin-bottom: $spacer-large;
 		}
 	}
 	&.ames-terminology {
@@ -509,7 +532,7 @@
 			img {
 				border: $border-default;
 				padding: .5rem;
-				margin-bottom: 1rem;
+				margin-bottom: $spacer-base;
 			}
 		}
 	}
@@ -523,14 +546,14 @@
 		border-radius: 50%;
 		text-align: center;
 		font-size: 1.2rem;
-		line-height: 2.1rem;
+		line-height: 2rem;
 		font-family: $font-family-bold;
 	}
 }
 
 .steps {
 	.step {
-		margin-bottom: 1rem;
+		margin-bottom: $spacer-base;
 		border-bottom: $border-default;
 		padding-bottom: 2rem;
 	}
@@ -539,8 +562,8 @@
 .toth {
 	p {
 		font-family: $comic-book-font;
-		font-size: $h5-font-size;
-		line-height: $h5-font-size;
+		font-size: $h4-font-size;
+		line-height: $h4-font-size;
 	}
 	strong {
 		font-family: $comic-book-font-bold-italic;
@@ -548,23 +571,13 @@
 	.signature {
 		font-family: $comic-book-font-italic;
 		text-align: right;
-		margin-top: -1rem;
-	}
-	.response {
-		p {
-			font-family: $font-family-base;
-			font-size: $font-size-base;
-			line-height: $line-height-base;
-		}
-		strong {
-			font-family: $font-family-headers;
-		}
+		margin-top: -$spacer-base;
 	}
 }
 
 .learn-more .fas {
 	font-size: 2rem;
-	margin-left: 1rem;
+	margin-left: $spacer-base;
 	&:before {
 		content: $icon-learn-more;
 	}
@@ -581,7 +594,7 @@
 			content: $icon-learn-more;
 			position: absolute;
 			top: 0;
-			right: -1rem;
+			right: -$spacer-base;
 			
 		}
 	}
@@ -591,7 +604,7 @@
 	.tweets {
 		.twitter-tweet {
 			margin-top: 0! important;
-			margin-bottom: 1rem !important;
+			margin-bottom: $spacer-base !important;
 			width: auto! important;
 			max-width: none !important;
 			.r-1q9bdsx {
@@ -603,20 +616,20 @@
 
 .footnote {
     border-top: $border-default;
-    padding-top: 1rem;
+    padding-top: $spacer-base;
     margin-top: 2rem;
     font-size: 90%;
 	ul {
 		padding: 0;
 		margin: 0;
-		margin-bottom: 1rem;
+		margin-bottom: $spacer-base;
 			li {
 				margin-bottom: .5rem !important;
 			}
 	} 
 	&.mla {
-		text-indent: -1rem;
-    	padding-left: 1rem;
+		text-indent: -$spacer-base;
+    	padding-left: $spacer-base;
     	a {
     		white-space: nowrap;
     	}
@@ -639,7 +652,7 @@
 	&.boxed {
 		padding: 0;
 		h2 {
-			padding-top: 1rem !important; 
+			padding-top: $spacer-base !important; 
 			margin-top: 0 !important;
 		}
 		.listing {
@@ -648,7 +661,7 @@
 			border: $border-default;
 			border-top: rem(3px solid $black);
 			padding: $spacer-base;
-			min-height: 10rem;
+			min-height: 1$spacer-base;
 			font-size: 90%;
 			
 			&.bedrock-comics {
@@ -684,7 +697,7 @@
 			&.massart {
 				background-image: url("#{$logos-image-path}/massart.jpg");
 				background-size: 33%;
-				background-position-y: 1rem;
+				background-position-y: $spacer-base;
 				dt {width: 60%;}
 			}
 			&.artist-craftsman {
