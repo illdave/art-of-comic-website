@@ -70,6 +70,19 @@ a {
 	&:active {
 		color: $link-active-color;
 	}
+	img {
+		border: $border-link;
+	}
+	&:hover {
+		img {
+			border: $border-link-hover;
+		}
+	}
+	&:active {
+		img {
+			border: $border-link-active;
+		}
+	}
 }
 
 img {
@@ -283,15 +296,6 @@ cite {
 		margin-left: 2rem;
 	}
 	
-	&.half {
-		width: 50% !important;
-	}
-	&.third {
-		width: 33% !important;
-	}
-	&.quarter {
-		width: 25% !important;
-	}
 	&.centered {
 		text-align: center;
 		img {

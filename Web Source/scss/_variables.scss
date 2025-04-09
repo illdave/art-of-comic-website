@@ -84,9 +84,12 @@ $border-transparent-black: 					rem(1px solid $border-transparent-black-color);
 $border-light: 								rem(1px solid $gray-light-medium);
 $border-white: 								rem(1px solid $white);
 $border-artboard: 							rem(2px solid $artboard-border-color);
-
+$border-link: 								rem(1px solid $border-default-color);
+$border-link-hover: 						rem(1px solid $link-hover-color);
+$border-link-active: 						rem(1px solid $link-active-color);
 $table-border-color:						$artboard-hr-color;
 $item-bg:									$gray-lighter;
+
 
 
 /* typography ------------------------ */
