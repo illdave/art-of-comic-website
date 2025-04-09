@@ -115,6 +115,7 @@
 					width: $tile-card-icon;
 					margin: .25rem auto 0;
 					filter: hue-rotate(0deg);
+					border: 0;
 				}
 			}
 		}
@@ -207,10 +208,9 @@
 					text-decoration: none;
 					&:after {
 						font-family: 'Font Awesome Solid';
-						font-size: .75rem;
 						content: $icon-list-link;			
 						color: $link-color;
-						margin-left: .25rem;
+						margin-left: .5rem;
 					}
 				}
 			}
