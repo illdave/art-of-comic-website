@@ -14,6 +14,19 @@
 		margin-bottom: $spacer-base;
 	}
 	
+	.diagrams {
+		&.ames-terminology {
+			h3 {
+				margin-top: 0;
+				padding-top: 0;
+				border: 0;
+			}
+			p {
+				break-inside: avoid;
+			}
+		}
+	}
+	
 	article {
 		margin-bottom: $spacer-base;
 		position: relative;
