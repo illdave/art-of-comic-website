@@ -680,6 +680,7 @@
 		}
 		dt, .company-title {
 			width: 70%;
+			font-size: $font-size-base;
 		}
 		.company-info {
 			margin-top: $spacer-small;
@@ -697,7 +698,7 @@
 			border: $border-default;
 			border-top: rem(3px solid $black);
 			padding: $spacer-base;
-			min-height: 1$spacer-base;
+			min-height: 11rem;
 			font-size: 90%;
 			
 			&.bedrock-comics {

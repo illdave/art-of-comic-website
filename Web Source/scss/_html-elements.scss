@@ -284,6 +284,12 @@ cite {
 	position: relative !important;
 	margin-bottom: $spacer-base-vertical;
 	border-bottom: $border-default;
+	
+	picture {}
+	figcaption {
+		margin-bottom: $spacer-small;
+	}
+
 	&.full {
 		img {
 			width: 100%;
@@ -362,5 +368,7 @@ bold, strong {
 	font-family: $font-family-bold;
 	font-weight: normal;
 }
+
+
 
 
