@@ -109,6 +109,9 @@
 		font-family: $font-family-base;
 		text-transform: none;
 		color: $text-color;
+			margin-top: $spacer-small;
+			margin-bottom: $spacer-xs;
+			font-size: $font-size-base;
 	}
 }
 
