@@ -3,7 +3,6 @@
 .schedule {
 	.content {
 		h3 {
-			margin-bottom: 0;
 		}
 	}
 	.schedule-table {
@@ -53,6 +52,24 @@
 			}
 			.credits {
 				width: 5%;
+			}
+		}
+	}
+	
+	.section {
+		.session-header {
+			margin-bottom: $spacer-large;
+			
+			h2 {
+				margin-bottom: $spacer-small;
+			}
+		}
+		
+		&.no-class {
+			margin-top: -$spacer-base;
+			padding: $spacer-base 0;
+			h4 {
+				margin-bottom: 0;
 			}
 		}
 	}

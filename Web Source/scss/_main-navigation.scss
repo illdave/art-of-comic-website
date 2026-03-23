@@ -10,7 +10,11 @@
 		flex-flow: column wrap;
 		height: 100%;
 		justify-content: center;
+		h1 {
+			margin: 0;
+		}
 		.navbar-brand {
+			display: block;
 			line-height: 0;
 			font-size: $h1-font-size;
 			width: $main-nav-brand-width;
@@ -18,6 +22,8 @@
 			text-indent: $text-indent-for-image;
 			background: url("#{$layout-image-path}/menu-logo.png") no-repeat 0 center;
 			background-size: contain;
+			padding: $navbar-brand-padding-y;
+			margin: 0;
 		}
 		.slogan {
 			display: block;

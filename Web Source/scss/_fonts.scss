@@ -90,7 +90,31 @@
 	font-style: normal;
 }
 
-/* CC OTS fonts not working, TTF does -- */
+@font-face {
+	font-family: 'Comicraft Marian Churchland';
+	src: url("../../fonts/comicraft-marianchurchland/comicraft-marianchurchland.woff2") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Comicraft Marian Churchland Italic';
+	src: url("../../fonts/comicraft-marianchurchland/comicraft-marianchurchland-italic.woff2") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Comicraft Marian Churchland Bold';
+	src: url("../../fonts/comicraft-marianchurchland/comicraft-marianchurchland-bold.woff2") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Comicraft Marian Churchland Bold Italic';
+	src: url("../../fonts/comicraft-marianchurchland/comicraft-marianchurchland-bold-italic.woff2") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
 @font-face {
 	font-family: 'Comicraft Speeding Bullet';
 	src: url("../../fonts/comicraft-speeding-bullet/comicraft-speeding-bullet.woff2") format("woff");
@@ -140,8 +164,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-/* END CC fonts not working -- */
-
 
 @font-face {
 	font-family: 'Piekos FX Rough';

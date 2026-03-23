@@ -32,8 +32,8 @@ h1, .h1 {
 	color: $h1-color;
 	text-transform: uppercase;
 	margin-bottom: $spacer-large;
-	word-spacing: -0.15rem;
-	letter-spacing: -0.15rem;
+	word-spacing: -0.05rem;
+	letter-spacing: -0.05rem;
 }
 h2, .h2 {
 	font-family: $comic-book-headers;
@@ -50,7 +50,7 @@ h3, .h3 {
 h4, .h4 {
 	font-size: $h4-font-size;
 	line-height: $h4-line-height;
-	margin-bottom: 0;
+	margin-bottom: $spacer-xs;
 }
 h5, .h5 {
 	font-size: $h5-font-size;
@@ -102,7 +102,8 @@ hr {
 }
 
 ul, ol {
-	padding-left: 1rem;
+	padding-left: $spacer-base;
+	margin-left: $spacer-small;
 	&.two-column {
 		column-count: 2;
 		column-gap: 3rem;
@@ -125,13 +126,27 @@ ul {
 		}
 	}
 }
+ol {
+	margin-left: 0.75rem;
+	li {
+		&::marker {
+			color: $ol-number-color;
+		}
+	}
+}
 
 ul, ol, dl {
 	margin-bottom: $spacer-base;
+	&.compact {
+		li, dd {
+			padding-bottom: $spacer-small;
+		}
+	}	
 }
 
 li, dd {
-	margin-bottom: $spacer-base;
+	padding-bottom: $spacer-small;
+	margin-bottom: 0;
 	break-inside: avoid;
 }
 
@@ -145,9 +160,10 @@ dl {
 			margin-bottom: 0;
 		}
 		dd {
-			margin-bottom: 1rem;
+			padding-bottom: $spacer-base;
 		}
 	}
+	
 	&.pullquote {
 		padding: $pullquote-padding;
 		margin-bottom: $pullquote-margin;
@@ -170,13 +186,16 @@ dl {
 			font-size: $pullquote-speaker-font-size;
 			color: $pullquote-speaker-color;
 			line-height:$pullquote-speaker-line-height;
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+		& + p {
 		}
 	}
-	&.compact {
-		dd {
-			margin-bottom: 0;
-		}
-	}	
+}
+
+p + .pullquote {
+	margin-top: -$font-size-base;
 }
 
 strong, bold {
@@ -206,7 +225,18 @@ table, .table {
 		}
 	}
 	caption {
-		display: none;
+		caption-side: top;
+		font-family: $font-family-headers;
+		font-size: $h3-font-size;
+		letter-spacing: -.05rem;
+		text-transform: uppercase;
+		color: $headings-color;
+		padding: 0;
+		margin: 0;
+		margin-bottom: $spacer-small / 2;
+		em, italic {
+			font-family: $font-family-headers-italic;
+		}
 	}
 	> :not(:last-child) > :last-child > * {
 		border-bottom-color: $table-border-color;
@@ -284,6 +314,24 @@ cite {
 	position: relative !important;
 	margin-bottom: $spacer-base-vertical;
 	border-bottom: $border-default;
+	&.grid-paper {
+		--grid-size: #{$grid-paper-size-small};
+		&.img-has-padding {
+			img {
+				padding: $spacer-base;
+				border: $border-artboard;
+				margin-bottom: 0;
+			}
+		}
+		figcaption {
+			background: $white;
+			padding: $spacer-small 0;
+			margin-bottom: 0;
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
 	
 	picture {}
 	figcaption {
@@ -367,6 +415,7 @@ italic, em {
 bold, strong {
 	font-family: $font-family-bold;
 	font-weight: normal;
+	text-transform: uppercase;
 }
 
 

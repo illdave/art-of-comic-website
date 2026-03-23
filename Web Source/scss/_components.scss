@@ -1,6 +1,19 @@
 /* components ------------------------ */
 
-.feature-story-card {
+.hero {
+	h1, .h1 {
+		font-size: $hero-h1;
+		line-height: $hero-h1-line-height;
+		margin-bottom: $spacer-base;
+	}
+	p {
+		font-size: $hero-p;
+		line-height: $hero-p-line-height;
+	}
+	img {}
+}
+
+.feature-story-card, .lead-story {
 	margin-bottom: $spacer-base;
 	&.has-bottom-border {
 		margin-bottom: $spacer-base;
@@ -10,9 +23,46 @@
 	&.small-bottom-margin {
 		margin-bottom: $spacer-small !important; 
 	}
+	&.multi {
+		.text {
+			ul {
+				padding-left: 0;
+				margin-bottom: 0;
+				li {
+					display: inline-block;
+					font-family: $font-family-bold;
+					font-size: $cta-font-size;
+					line-height: $cta-line-height;
+					color: $cta-link-color;
+					text-decoration: none;
+					text-transform: uppercase;
+					letter-spacing: -0.05rem;
+					margin-bottom: 0;
+					&:not(:last-child) {
+						margin-right: 0;
+					}
+					&::after {
+					  content: "|";
+					  color: $gray-lightest;
+					  margin-left: $spacer-small;
+					  margin-right: $spacer-small;
+					  font-family: $font-family-sans-serif;
+					}
+					&:last-child {
+						&::after {
+							content: "";
+						}
+					}
+					a {
+						text-decoration: none;
+					}
+				}
+			}			
+		}
+	}
 	.image {
 		img {
-			margin-bottom: $spacer-base;
+			margin-bottom: 0;
 			border: $border-default;
 		}
 	}
@@ -36,6 +86,8 @@
 		.cta a {
 			text-decoration: none;
 		}
+		
+	
 	}
 }
 
@@ -68,9 +120,12 @@
 		}
 		ul {
 			padding-left: 0;
+			margin-bottom: 0;
 			li {
 				display: inline-block;
-				line-height: 1rem;
+				font-size: $cta-font-size;
+				line-height: $cta-line-height;
+				text-transform: $cta-font-case;
 				margin-bottom: 0;
 				&:not(:last-child) {
 					margin-right: 0;
@@ -130,7 +185,7 @@
 		border: $tile-card-border;
 		text-decoration: none;
 						
-		.header, .description {
+		.header, .description, .time-estimate {
 			display: block;
 			text-decoration: none;
 			line-height: 1.2rem;
@@ -147,10 +202,16 @@
 				margin-left: .25rem;
 			}
 		}
-		.description {
+		.description, .time-estimate {
 			color: $text-color;
 			font-size: $font-size-small;
 			margin-bottom: .5rem;
+		}
+		.time-estimate {
+			font-family: $font-family-italic;
+			&::before {
+  				content: "Time estimate: ";
+			}
 		}
 		&:hover {
 			background-color: $tile-card-hover-bg;
@@ -160,8 +221,48 @@
 			}
 		}
 	}
-}
+	
+	&.button-tiles {
+		display: flex;
+		flex-direction: column;
+		gap: 0 $spacer-base;
+	
+		.tile-card {
+			align-content: flex-start;
+			flex-direction: row;
+			gap: 0 $spacer-small;
+			text-align: left;
+			.icon {
+				flex-shrink: 0;
+				margin-bottom: $spacer-small;
+				margin-right: $spacer-small;
+				img {
+					width: $tile-card-icon-small;
+					height: $tile-card-icon-small;
+					margin: .25rem auto 0;
+					border: 0;
 
+				}
+			}
+			.text {
+				padding: 0 !important;
+				margin: 0;
+				.description {
+					margin: 0 !important;
+				}
+			}
+			.image {
+				flex-shrink: 0;
+				margin-bottom: $spacer-small;
+				img {
+					width: $photo-circle-xs;
+					height: $photo-circle-xs;
+					border-radius: $circle-border-radius;
+				}
+			}
+		}
+	}
+}
 
 .feature-cards {
 	display: flex;
@@ -248,6 +349,39 @@
 	}
 }
 
+.story-group-tiles {
+	.lead-story {
+		margin-bottom: $spacer-small;
+	}
+	&.merged {
+		.row.tile-cards {
+			position: relative;
+			margin-left: 0;
+			margin-right: 0;
+			display: flex;
+			background: $tile-card-bg;	
+			.item {
+				position: relative;
+				flex: 1 0 0%;
+				margin-bottom: 0;
+				.tile-card {
+					background: none;
+				}
+				&:not(:first-child):before {
+					content: "";
+					position: absolute;
+					left: 0;
+					top: 1rem;
+					bottom: 1rem;
+					width: 1px;
+					background: $border-default-color;
+					display: none;
+				}
+			}
+		}
+	}
+}
+
 .story-group-blade {
 	margin-bottom: $spacer-base;
 	&:last-child {
@@ -325,6 +459,7 @@
 			text-transform: none;
 			color: $text-color;
 			font-size: $font-size-base;
+			line-height: $line-height-base;
 		}
 	}
 	
@@ -332,8 +467,10 @@
 		list-style-type: none;
 		padding-left: 0;
 		li {
-			line-height: 1.4rem;
+			line-height: $line-height-small;
 			break-inside: avoid;
+			margin-bottom: 0;
+			padding-bottom: $spacer-small;
 		}
 	}
 	&.two-column {
@@ -354,6 +491,33 @@
 
 	dd {
 		line-height: 1.1rem;
+		&.intro {
+			margin-top: $spacer-small;
+			font-family: $font-family-base;
+			color: $text-color;
+			font-size: $font-size-base;
+			line-height: $line-height-base;
+			padding: 0;
+			padding-bottom: $spacer-small;
+		}
+		&.headline, .headline {
+			font-family: $font-family-bold;
+			display: block;
+			color: $headings-color;
+			margin-bottom: $spacer-small / 2;
+		}
+		dl {
+			dt {
+				font-family: $font-family-bold;
+				font-size: $font-size-base;
+				display: block;
+				color: $headings-color;
+				margin-bottom: $spacer-small / 2 !important;
+				padding-bottom: 0;
+				border: 0;
+			}
+			dd {}
+		}
 	}
 	a {
 		text-decoration: none;
@@ -373,3 +537,55 @@
 	}
 }
 
+.accordion {
+	margin-bottom: $spacer-base;
+	&.has-large-bottom-margin {
+		margin-bottom: $spacer-large;
+	}
+	.accordion-item {
+		border-color: $accordion-border-color;
+		border-width: $accordion-border-width;
+		.accordion-header {
+			.accordion-button {
+				font-family: $font-family-headers;
+				font-size: $h4-font-size;
+				text-transform: uppercase;
+				color: $link-color;
+				background: $accordion-button-bg;
+				box-shadow: none;
+				flex-flow: row nowrap;
+				&::after {
+					@include accordion-button;
+					width: auto;
+					height: auto;
+					background-image: none;
+					text-decoration: none;
+					align-self: flex-end;
+					flex-grow: 2;
+					transform: rotate(180deg);
+				}
+				&:not(.collapsed) {
+					&::after {
+						content: quote($fa-var-chevron-down);
+						color: $accordion-button-icon-open-color;
+					}
+				}
+			}
+		}
+		.accordion-collapse {
+			.accordion-body {
+				color: $accordion-body-color;
+				background: $accordion-body-bg;
+				h3 {
+					border-top: none !important;
+					margin-top: 0 !important;
+					padding-top: 0 !important;
+					margin-bottom: $spacer-small;
+				}
+				strong {
+					color: $text-color;
+				}
+			}
+		}
+	}
+}

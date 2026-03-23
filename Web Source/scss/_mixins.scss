@@ -42,6 +42,19 @@
 	}
 }
 
+@mixin accordion-button {
+	font-family: 'Font Awesome Solid';
+	font-size: $font-size-base;
+	content: $icon-chevron-up;			
+	margin-left: $spacer-small;
+	&:hover {
+		color: $cta-link-hover-color;
+	}
+	&:active {
+		color: $cta-link-active-color;
+	}
+}
+
 @mixin list-header {
 	@include list-header-name;
 	@include list-header-border;

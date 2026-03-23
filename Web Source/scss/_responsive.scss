@@ -1,6 +1,6 @@
 /* responsive ------------------------- */
 
-@media (max-width: 360px) {
+@media (max-width: 440px) {
 	body {
 		padding-top: $main-nav-height-mobile; 
 	}
@@ -25,7 +25,17 @@
 			}			
 		}
 	}
+	
+	.feature-story-card, .lead-story {
+	
+		.image {
+			img {
+				margin-bottom: $spacer-base;
+			}
+		}
+	}
 }
+
 
 @media (min-width: 361px) and (max-width: 576px) {
 	body {
@@ -54,6 +64,19 @@
 }
 
 @media (max-width: 576px) {
+	.hero {
+		h1 {
+			font-size: $h1-font-size / 1.2;
+			line-height: $h1-line-height / 1.2;
+			margin-bottom: $spacer-xs !important;
+		}
+		p {
+			font-size: $font-size-base;
+			line-height: $line-height-base;
+			margin-bottom: $spacer-small !important;
+		}
+		img {}
+	}
 	.navbar-nav {
 		.dropdown-menu {
 			position: absolute;
@@ -82,18 +105,21 @@
 	}
 	
 	h1, .h1 {
-		font-size: $h1-font-size / 1.4;
-		line-height: $h1-line-height / 1.5;
-		margin-bottom: $spacer-xs;
+		font-size: $h1-font-size / 1.2;
+		line-height: $h1-line-height / 1.2;
+		margin-bottom: $spacer-xs !important;
 	}
 	h2, .h2 {
 		font-size: $h2-font-size / 1.3;
-		line-height: $h2-line-height / 1;
+		line-height: $h2-line-height / 1.3;
+	}
+	h3, .h3 {
+		font-size: $h3-font-size / 1.3;
+		line-height: $h3-line-height / 1.3;
 	}
 	.home {
 		.section.default .default-content h2, 
 		.section.default .default-content .h2 {
-			display: none;
 		}
 		.home-header {
 			h1 {

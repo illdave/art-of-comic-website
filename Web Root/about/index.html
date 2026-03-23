@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en-US">
 	<head>
-		<!-- Copyright 1990-2025 Art of the Comic Book by Marshall Art Studio -->
+		<!-- Copyright 1990-2026 Art of the Comic Book by Marshall Art Studio -->
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Art of the Comic Book: About</title>
 		<meta name="application-name" content="Art of the Comic Book: Welcome">
 		<meta name="author" content="David Marshall">
-		<meta name="copyright" content="copyright 1990-2025 Art of the Comic Book">
-		<meta name="description" content="Art of the Comic Book is a college-level studio workshop for making comics with traditional ink-on-paper media.">
+		<meta name="copyright" content="Copyright 1990-2026 Art of the Comic Book">
+		<meta name="description" content="TEASER_DESCRIPTION">
 		<meta name="keywords" content="comic books, comic book art, david marshall, marshall art studio, art of the comic book">
 		
 		<link rel="preload" href="../assets/fonts/proxima-nova/proxima-nova-reg.woff" as="font" type="font/woff">		
@@ -36,14 +36,14 @@
 		<meta property="og:title"        content="About this Art of the Comic Book">
 		<meta property="og:type"         content="website">
 		<meta property="og:description"  content="Art of the Comic Book is a college-level studio workshop for making comics with traditional ink-on-paper media, led by an experienced instructor.">
-		<meta property="og:url"          content="http://www.artofthecomicbook.com/about">
+		<meta property="og:url"          content="http://www.artofthecomicbook.com/about/index.html">
 		<meta property="og:image"        content="http://www.artofthecomicbook.com/assets/img/open-graph/og-about.png">
 	</head>
 	<body>
 		<div class="art-of-comic-2">
 			<header class="fixed-top main-navigation">
 				<div class="container">
-					<a href="#main-content" class="skip-link sr-only sr-only-focusable">Skip Content</a>
+					<a href="#main-content" class="skip-link visually-hidden visually-hidden-focusable">Skip Content</a>
 					<nav class="navbar navbar-expand-lg">
 						<div class="navbar-brand-stack">
 							<a class="navbar-brand" href="/" rel="home" aria-label="Art of the Comic Book">Art of the Comic Book</a>
@@ -55,13 +55,17 @@
 						<div class="collapse navbar-collapse justify-content-end" id="main-navigation">
 							<ul class="navbar-nav bd-navbar-nav d-flex" role="menu">
 								<li class="nav-item schedule" role="menuitem">
-									<a href="../schedule/index.html" aria-label="schedule of comic book courses">Schedule</a>
+									<a href="/schedule/index.html" aria-label="schedule of comic book courses">Schedule</a>
 								</li>
-								<li class="nav-item about is-active" role="menuitem">
-									<a href="../about/index.html" aria-label="about instructor David Marshall">About</a>
-								</li>
+								<li class="nav-item about is-active dropdown" role="menuitem">
+									<a href="" class="dropdown-toggle" aria-label="about instructor David Marshall" data-bs-toggle="dropdown">About</a>
+									<ul class="dropdown-menu post-it white">
+										<li><a class="dropdown-item active" href="../about/index.html" aria-current="page">About this course</a></li>
+										<li><a class="dropdown-item" href="../about/graduates.html">Student work</a></li>
+									</ul>
+								</li>								
 								<li class="nav-item studio" role="menuitem">
-									<a href="/studio/" aria-label="studio requirements">Studio</a>
+									<a href="/studio/index.html" aria-label="studio requirements">Studio</a>
 								</li>
 								<li class="nav-item blogs" role="menuitem">
 									<a href="/blog/index.html" aria-label="blog">Blog</a>
@@ -72,13 +76,7 @@
 					</nav>
 				</div>
 			</header>
-			<main id="main-content" class="main-content about">	
-				<section class="section content intro">
-					<div class="container">
-						<h1>About this course</h1>
-						<p><strong>Art of the Comic Book</strong> is a goal-orientated, college-level studio workshop for making comics with traditional ink-on-paper media. Exercises are based on real-world assignments. Fundamental comic book media techniques include storytelling, character design, working with scripts, hand lettering, inking with brushes and dip pens, figure drawing, sketchbook practice and group critiques. Technical elements include ruling pens and perspective drawing. Study the comic book industry's current production methods, business environment and history.</p>
-					</div>
-				</section>
+			<main id="main-content" class="main-content text-page about">	
 				<section class="section semester-grid default has-box-shadow-top">
 					<div class="container">
 						<div class="row">
@@ -103,83 +101,153 @@
 										<span class="ticks right"></span>
 										<span class="rule"></span>
 									</div>
-	
-									<h2>Your goals</h2>
-									<p>When you have completed this course you should be able to do the following:</p>
-									<div class="row">
-										<div class="col-md-6">
-											<ul>
-												<li>Have a historically-based vocabulary and techniques of comics story-telling</li>
-												<li>Understand how these techniques should be used</li>
-												<li>Use basic media techniques and materials</li>
-												<li>Understand fundamentals of sequential storytelling</li>
-												<li>Apply anatomy, drafting, perspective, page layout, composition, panel arrangement</li>
-												<li>Tell a variety of stories in a clear and interesting manner</li>
-											</ul>
-										</div>
-										<div class="col-md-6">
-											<ul>
-												<li>Develop creative solutions to unanticipated problems</li>
-												<li>Draw on solutions by historical and contemporary artists</li>
-												<li>Work in solo and collaborative projects</li>
-												<li>Objectively critique your work, as well as the work of others</li>
-												<li>Use currrent digital and traditional production techniques</li>
-												<li>Be aware of professional opportunities and presenting your work</li>		
-											</ul>
+									<div class="intro">
+										<h1>About Art of the Comic Book</h1>
+										<p>Art of the Comic Book is a college-level studio workshop focused on traditional ink-on-paper comic creation. You'll work from real scripts, use professional tools, and learn production workflows used by the industry.</p>
+										<p>This isn't about copying your favorite characters. It's about understanding fundamental craft that makes sequential storytelling work—whether you're creating superhero adventures, literary graphic novels, or experimental art comics.</p>
+									</div>
+
+									<div class="section" id="what-youll-learn">
+										<h2>What You'll Learn</h2>	
+										<h3>Core Skills</h3>
+										<ul>
+										  <li><strong>Sequential storytelling</strong> — Transform scripts into compelling visual narratives through panel composition and pacing</li>
+										  <li><strong>Traditional inking</strong> — Master brushes, dip pens, and crow quills with line weight control and spot blacks</li>
+										  <li><strong>Character design</strong> — Create consistent, expressive characters across multiple panels and pages</li>
+										  <li><strong>Professional production</strong> — Understand dimensions, scanning, corrections, and print preparation</li>
+										</ul>
+										
+										<h3>Process Over Product</h3>
+										<p>No single "correct" way to make comics. Study approaches from Harvey Kurtzman, Alex Toth, Will Eisner, and contemporary independent artists to help you discover your own creative process.</p>
+										<p class="cta"><a href="/assignments/">View class assignments</a></p>
+									</div>
+									
+									<div class="section" id="instructor">
+										<h2 id="instructor">Your instructor</h2>
+										<div class="row">
+											<div class="col-md-4">
+												<figure class="no-border">
+													<picture>
+														<img src="../assets/img/pictures/dave-drawing-11.jpg" alt="Dave Marshall at work">
+													</picture>
+													<figcaption class="figure-caption">Dave Marshall at work</figcaption>
+												</figure>							
+											</div>
+											<div class="col-md-8">
+												<p><strong>David Marshall</strong> has been teaching comic book art since 1995, most recently at Massachusetts College of Art and Design. His work has been published by <a href="http://en.wikipedia.org/wiki/Fantagraphics_Books">Fantagraphics Books</a>, <a href="http://en.wikipedia.org/wiki/Taboo_(comic)">SpiderBaby Graphix</a>, and <a href="http://en.wikipedia.org/wiki/Fantaco">FantaCo Enterprises</a>.</p>
+												<p>Through Marshall Art Studio, David provides web design, print design, and illustration while maintaining an active comics practice. He's a multiple participant in <a href="http://www.illdave.com/comicbooks/24hour/">24-Hour Comics Day</a> and continues creating his ongoing webcomic series <a href="https://www.inkystories.com">Inky Stories</a>.</p>
+												<p>His teaching emphasizes clear content presentation and hands-on studio practice. Classes combine creative fundamentals (anatomy, perspective, composition) with current production methods and industry context.</p>
+												<p><strong>Teaching philosophy:</strong> Master the tools first, then break the rules intelligently.</p>
+												<p><strong>For working adults:</strong> "You're here to learn, not to already know." Classes include ages 18-65 with all skill levels welcome.</p>
+												<p><strong>For portfolio builders:</strong> Assignments create presentation-ready work. David provides industry-standard feedback—the same critiques editors give professionals.</p>		
+											</div>
 										</div>
 									</div>
-									<hr>
-									<h2>Policies & procedures</h2>
-									<table class="table nowrap left-two" id="grading-policy" summary="">
-										<caption>Grading policy for <em>Art of the Comic Book</em></caption>
-										<thead>
-											<tr>
-												<th scope="col" role="columnheader">Grade</th><th scope="col" role="columnheader">Range</th><th scope="col" role="columnheader">Description</th>
-											</tr>
-										</thead>
-										<tfoot>
-											<tr>
-												<td colspan="3"></td>
-											</tr>
-										</tfoot>
-										<tbody>
-											<tr>
-												<th scope="row" role="rowheader" >A to A-</th>
-												<td data-header="Range: ">100-90</td>
-												<td data-header="Description: ">Excellent to very good; comprehensive knowledge and understanding of subject matter; marked perception and/or originality</td>
-											</tr>
-											<tr>
-												<th scope="row" role="rowheader" data-header="Grade: ">B+ to B-</th>
-												<td data-header="Range: ">89-75</td>
-												<td data-header="Description: ">Good; moderately broad knowledge and understanding of subject matter; noticeable perception and/or originality</td>
-											</tr>
-											<tr>
-												<th scope="row" role="rowheader" data-header="Grade: ">C+ to C-</th>
-												<td data-header="Range: ">76-70</td>
-												<td data-header="Description: ">Satisfactory; reasonable knowledge and understanding of subject matter; some perception and/or originality</td>
-											</tr>
-											<tr>
-												<th scope="row" role="rowheader" data-header="Grade: ">D</th>
-												<td data-header="Range: ">69-60</td>
-												<td data-header="Description: ">Marginal; minimum of knowledge and understanding of subject matter; limited perception and/or originality</td>
-											</tr>
-											<tr>
-												<th scope="row" role="rowheader" data-header="Grade: ">F</th>
-												<td data-header="Range: ">&lt; 60</td>
-												<td data-header="Description: ">Failing; unacceptable low level of knowledge and understanding of subject matter; severely limited perception and/or originality; absences in excess of allowable limit</td>
-											</tr>
-										</tbody>
-									</table>
-
-									<h2 id="instructor">Your instructor</h2>
-									<figure class="float-start col-md-6 no-border">
-										<picture>
-											<img src="../assets/img/pictures/dave-drawing-11.jpg" alt="Dave Marshall drawing a comic book">
-										</picture>								
-									</figure>							
 									
-									<p>Marshall was published by <cite><a href="http://en.wikipedia.org/wiki/Fantagraphics_Books" target="_blank" rel="noopener noreferrer">Fantagraphics Books</a></cite>, <cite><a href="http://en.wikipedia.org/wiki/Taboo_(comic)" target="_blank" rel="noopener noreferrer">SpiderBaby Graphix</a></cite> and <cite><a href="http://en.wikipedia.org/wiki/Fantaco" target="_blank" rel="noopener noreferrer">FantaCo Enterprises</a></cite>. He is also a multiple participant of <cite><a href="http://www.illdave.com/comicbooks/24hour/" target="_blank" rel="noopener noreferrer">24-Hour Comics Day</a></cite>. Through his one-man creative services company <cite><a href="http://www.illdave.com/" target="_blank" rel="noopener noreferrer">Marshall Art Studio</a></cite>, David provides web design + development, print design, illustration and overall content beautification.</p>
-									<p>David Marshall's formal teaching career began in 1995. In this capacity, his primary emphasis is clear content presentation, regardless of artistic media. Exercises for <em>Art of the Comic Book</em> leverage Mr. Marshall's vast knowledge of both traditional and digital tools for creating comic books. Classwork combines creative fundamentals (research, anatomy, perspective, composition, storytelling, etc.) with current production methods and business environment.</p>
+									<div class="section" id="course-outcomes">
+										<h2>Course Outcomes</h2>
+										<p>After completing this workshop, you'll be able to:</p>
+										<div class="row">
+											<div class="col-md-6">
+												<dl>
+													<dt>Creative Skills</dt>
+													<dd>Tell stories visually using professional comics techniques</dd>
+													<dd>Apply anatomy, perspective, and composition to sequential art</dd>
+													<dd>Develop solutions by studying historical and contemporary artists</dd>
+													<dd>Work independently and collaboratively on visual narrative projects</dd>
+												</dl>
+											</div>
+											<div class="col-md-6">
+												<dl>
+													<dt>Technical Skills</dt>
+													<dd>Use traditional media (brushes, pens, inks) with confidence</dd>
+													<dd>Prepare artwork using current production workflows</dd>
+													<dd>Critique your own work and others constructively</dd>
+													<dd>Present portfolio work professionally</dd>
+												</dl>
+											
+											</div>
+										</div>
+										<dl>
+											<dt>Industry Knowledge</dt>
+											<dd>Understand comic book production methods and business environment</dd>
+											<dd>Recognize professional opportunities in the field</dd>
+											<dd>Navigate the relationship between artistic vision and commercial requirements</dd>
+										</dl>	
+									</div>
+									
+									<div class="section" id="how-it-works">
+										<h2>How It Works</h2>
+										<div class="row">
+											<div class="col-lg-6">
+												<h3 class="h4">Studio Workshop Format</h3> 
+												<p>Small class sizes (12-15 students) with individual attention. Work on assignments during class time while receiving real-time feedback and guidance.</p>
+											</div>
+											<div class="col-lg-6">
+												<h3 class="h4">Real-World Assignments</h3> 
+												<p>Every exercise mirrors actual professional work—adapting scripts, creating sequential pages, inking finished artwork, and assembling portfolio-quality pieces.</p>
+												<p class="cta"><a href="/assignments/">View all nine assignments</a></p>
+											</div>
+										</div>
+										<h3 class="h4">Master the Process</h3> 
+										<p>Study how Harvey Kurtzman, Alex Toth, Will Eisner, and contemporary artists approached their work. Understand different creative processes and find your own path.</p>
+										<p class="cta"><a href="/process/">Explore creative processes</a></p>
+									</div>
+									
+									<div class="section" id="course-policies">
+										<h2>Course Policies</h2>
+										<h3>Attendance</h3>
+										<p>Regular attendance essential. Missing more than three classes may affect your final grade.</p>
+										
+										<h3>Assignments</h3>
+										<p>Due at beginning of class. Late work accepted within one week for half credit.</p>
+										
+										<h3>Studio Behavior</h3>
+										<p>Respect for everyone required. No food/beverages near artwork. Phones off during class.</p>
+										
+										<table class="table nowrap left-two" id="grading-policy" summary="">
+											<caption>Grading</caption>
+											<thead>
+												<tr>
+													<th scope="col" role="columnheader">Grade</th>
+													<th scope="col" role="columnheader">Range</th>
+													<th scope="col" role="columnheader">Description</th>
+												</tr>
+											</thead>
+											<tfoot>
+												<tr>
+													<td colspan="3"></td>
+												</tr>
+											</tfoot>
+											<tbody>
+												<tr>
+													<th scope="row" role="rowheader" >A to A-</th>
+													<td data-header="Range: ">90-100</td>
+													<td data-header="Description: ">Excellent work showing comprehensive understanding</td>
+												</tr>
+												<tr>
+													<th scope="row" role="rowheader" data-header="Grade: ">B+ to B-</th>
+													<td data-header="Range: ">75-89</td>
+													<td data-header="Description: ">Good work with noticeable perception/originality</td>
+												</tr>
+												<tr>
+													<th scope="row" role="rowheader" data-header="Grade: ">C+ to C-</th>
+													<td data-header="Range: ">70-76</td>
+													<td data-header="Description: ">Satisfactory with reasonable understanding</td>
+												</tr>
+												<tr>
+													<th scope="row" role="rowheader" data-header="Grade: ">D</th>
+													<td data-header="Range: ">60-69</td>
+													<td data-header="Description: ">Marginal with limited perception</td>
+												</tr>
+												<tr>
+													<th scope="row" role="rowheader" data-header="Grade: ">F</th>
+													<td data-header="Range: ">&lt; 60</td>
+													<td data-header="Description: ">Unacceptable or excessive absences</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>							
 							</div>
 							<div class="col-lg-3 right-rail">	
@@ -187,22 +255,29 @@
 								<div class="item post-it yellow">
 									<dl>
 										<dt>My Comics</dt>
-										<dd><strong>Inky Stories</strong> is my collection of web comics of mostly short, self-contained stories. Genres include <em>satire, horror, romance, sci-fi,</em> and <em>crime fiction.</em></dd>
+										<dd><strong>Inky Stories</strong> My ongoing webcomic with short stories spanning satire, horror, romance, sci-fi, and crime fiction</em></dd>
 										<dd class="cta"><a href="https://www.inkystories.com" aria-label="Inky Stories" target="_blank" rel="noopener noreferrer">Read my comics</a></dd>
-									</dl>
-								</div>
-								<div class="item post-it orange">
-									<dl>
-										<dt>Rodier Studio</dt>
-										<dd>Short videos of Canadian artist Denis Rodier inking and drawing</dd>
-										<dd class="cta"><a href="https://www.youtube.com/c/rodier_studio" aria-label="art media demos by Denis Rodier" target="_blank" rel="noopener noreferrer">Watch Rodier's demos</a></dd>
 									</dl>
 								</div>
 								<div class="item post-it blue">
 									<dl>
-										<dt>Boston Comics Roundtable</dt>
-										<dd>Local creators of all levels meet online every week to share work, plan events, and publish</dd>
+										<dt>Video Demos</dt>
+										<dd><strong>Canadian artist Denis Rodier</strong> Demonstrates inking and drawing techniques</dd>
+										<dd class="cta"><a href="https://www.youtube.com/c/rodier_studio" aria-label="art media demos by Denis Rodier" target="_blank" rel="noopener noreferrer">Watch Rodier's demos</a></dd>
+									</dl>
+								</div>
+								<div class="item post-it pink">
+									<dl>
+										<dt>Community</dt>
+										<dd><strong>Boston Comics Roundtable (BCR)</strong> Local creators of all levels meet online every week to share work, plan events, and publish</dd>
 										<dd class="cta"><a href="https://bostoncomics.com" aria-label="Boston Comics Roundtable" target="_blank" rel="noopener noreferrer">Visit BCR today</a></dd>
+									</dl>
+								</div>
+								<div class="item post-it white">
+									<dl class="link-list">
+										<dt>Ready to start?</dt>
+										<dd><a href="/schedule/index.html">View current schedule</a> </dd>
+										<dd><a href="mailto:dsm@artofthecomicbook.com?subject=Question about Art of the Comic Book">Contact with questions</a></dd>
 									</dl>
 								</div>
 							</div>
@@ -212,7 +287,7 @@
 			</main>
 			<footer>
 				<div class="container">
-					<p>&copy;2025 Marshall Art Studio. All rights reserved. The material may not, under any circumstances, be resold or redistributed for compensation of any kind without prior written permission from Marshall Art Studio nor may the information be used in any commercial venue without such prior written permission.</p>
+					<p>&copy;2026 Marshall Art Studio. All rights reserved. The material may not, under any circumstances, be resold or redistributed for compensation of any kind without prior written permission from Marshall Art Studio nor may the information be used in any commercial venue without such prior written permission.</p>
 					<ul class="list-inline social">
 						<li class="follow-me d-none d-sm-inline-block">Follow me on </li>
 						<li class="email"><a href="mailto:dsm@artofthecomicbook.com?subject=Tell me about Art of the Comic Book!" aria-label="Art of the Comic Book email"></a></li>
@@ -220,7 +295,7 @@
 						<li class="bluesky"><a href="https://bsky.app/profile/illdave.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Art of the Comic Book on Bluesky"></a></li>
 						<li class="youtube"><a href="https://youtube.com/channel/UCaX8UPlxmAKMaYR1dwjHK3Q" target="_blank" rel="noopener noreferrer" aria-label="Art of the Comic Book demos on Youtube"></a></li>
 					</ul>						
-					<p class="back-to-top sr-only sr-only-focusable">
+					<p class="back-to-top visually-hidden visually-hidden-focusable">
 						<a href="#main-content">Back to top<i class="fas"></i></a>
 					</p>
 				</div>
