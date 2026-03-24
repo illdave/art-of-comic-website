@@ -150,21 +150,28 @@
 			padding: .5rem;
 		}
 		td {
+			display: flex;
+			gap: 1rem;
 			&:before {
 				content: attr(data-header);
-				font-weight: bold;
-				display: inline-block;
-				width: 50%;
-				text-align: right;
-				padding-right: 1rem;
+				flex-basis: 50%;
+				
+				flex-shrink: 0;				
 			}
 		}
 		th {
 			text-align: left;
-			background-color: $item-bg;
 			padding: 5px;
 			&[scope="col"] {
 				display: none;
+			}
+		}
+		tbody {
+			th {
+				font-family: $font-family-headers;
+				font-weight: normal;
+				padding-left: 0;
+				margin-top: $spacer-base;
 			}
 		}
 		tfoot {
