@@ -384,6 +384,11 @@
 .post-it {
 	background-color: pink;
 	box-shadow: $box-shadow-boxed;
+	
+	ul {
+		margin-bottom: 0;
+	}
+	
 	&.white-bg {
 		box-shadow: $box-shadow-white-bg;
 	}
